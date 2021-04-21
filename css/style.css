@@ -1,0 +1,178 @@
+body {
+  margin: 0px;
+  background-color: #f2f2f2;
+}
+/* navigation */
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightsteelblue;
+  border-top: solid 2px lightslategrey;
+  border-bottom: solid 2px lightslategrey;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.topnav a {
+  float: left;
+  display: block;
+  width: 10vw;
+  color: #f2f2f2;
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 0.3vw;
+  margin: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 2vw;
+}
+.topnav a:hover {
+  color: red;
+  border-radius: 0.5em;
+}
+
+.topnav a.active {
+  color: black;
+  border-bottom: 2px solid red;
+  border-radius: 0.5em;
+}
+
+.marker {
+  margin: 0;
+}
+
+.main-container {
+  color: black;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vmax;
+  padding-top: 10vw;
+}
+
+.main-container-info,
+.variant-payment-all,
+.variant-payment-online,
+.variant-payment-terminal,
+.variant-payment-bank {
+  background: lightsteelblue;
+  padding: 1em 2em 3em 2em;
+  margin: 0em 2em 2em 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ol-method {
+  margin-left: 5vw;
+}
+
+.justify-img-pay-sys {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5em 2em 1em 2em;
+}
+
+.img-pay-sys {
+  height: 5vw;
+  box-shadow: 3px 3px 6px 4px #888;
+  margin: 5%;
+  padding: 10%;
+  border-radius: 0.2em;
+}
+
+img {
+  width: 10vw;
+  box-shadow: 3px 3px 6px 4px #888;
+  margin: 0.8em 2em 2em 0.8em;
+  border-radius: 0.2em;
+}
+
+p {
+  text-align: justify;
+  margin: 2%;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: auto;
+  width: 100%;
+}
+
+tr {
+  border: 1px solid #ddd;
+  padding: 0.35em;
+  white-space: inherit;
+}
+
+td {
+  padding: 0.625em;
+}
+.container-img {
+  border: 1px solid #ddd;
+  padding: 1em 1em 0em 1em;
+  overflow: auto;
+  border-radius: 1em;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 6px 4px #888;
+}
+
+.contract-h2 {
+  text-align: center;
+}
+.contract-ul {
+  list-style-type: "- ";
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.contract-hide {
+  display: none;
+}
+.contract-hide + label ~ div {
+  display: none;
+}
+/* оформляем текст label */
+.contract-hide + label {
+  border-bottom: 1px dotted blue;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.contract-hide:checked + label {
+  color: red;
+  border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.contract-hide:checked + label + div {
+  display: block;
+  background: cornsilk;
+  -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+  -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+  box-shadow: inset 3px 3px 10px #7d8e8f;
+  padding: 10px;
+  border-radius: 0.35em;
+}
+
+/* contract контейнер */
+.contract-container {
+  border: 5px;
+  border-color: black;
+}
+.phone-list {
+  list-style-type: none;
+  margin-left: 10vw;
+}
+.link-type {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px dashed blue;
+}
+.work-time {
+  border-bottom: 1px dashed #888;
+}
