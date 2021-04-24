@@ -1,23 +1,59 @@
+/* Оформление тела сайта */
 body {
   margin: 0px;
   background-color: #f2f2f2;
 }
-/* navigation */
-.topnav {
-  overflow: hidden;
+
+/* Оформление заголовка сайта */
+.header-site {
+  display: flex;
+  flex-direction: column-reverse;
   position: fixed;
+  margin: 0 1em;
+  width: 95%;
   top: 0;
-  width: 100%;
   background-color: lightsteelblue;
-  border-top: solid 2px lightslategrey;
-  border-bottom: solid 2px lightslategrey;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* background-image: url(../img/bluecable.jpg);
+  background-position: center;
+  background-size: 100%; */
+  border-left: 1px solid lightslategrey;
+  border-right: 1px solid lightslategrey;
+  border-bottom: 3px solid lightslategrey;
+  border-radius: 1em;
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.5);
 }
+.header-logo-slogan {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.3em;
+  margin-bottom: 1em;
+}
+.logo-container img {
+  width: 10vw;
+  margin: 0.8em 0 1.5em 1.2em;
+  border-radius: 0.2em;
+  border: 1px solid lightskyblue;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+}
+.slogan-container p {
+  color: rgb(48, 144, 240);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3vw;
+  padding: 1.2em 3em;
+  /* border-radius: 0.2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+/* навигация по сайту */
+.topnav {
+  margin-left: 1em;
+  position: fixed;
+}
+/* оформление пунктов меню */
 .topnav a {
   float: left;
   display: block;
   width: 10vw;
-  color: #f2f2f2;
+  color: rgb(48, 144, 240);
   border-radius: 0.5em;
   text-align: center;
   padding: 0.3vw;
@@ -26,29 +62,28 @@ body {
   text-decoration: none;
   font-size: 2vw;
 }
+/* наведение на пункт меню */
 .topnav a:hover {
-  color: red;
+  color: lightyellow;
   border-radius: 0.5em;
 }
-
+/* нажатие на пункт меню */
 .topnav a.active {
-  color: black;
+  color: darkblue;
   border-bottom: 2px solid red;
   border-radius: 0.5em;
 }
 
-.marker {
-  margin: 0;
-}
-
+/* Основной блок с данными на каждой страничке */
 .main-container {
   color: black;
   background: transparent;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vmax;
-  padding-top: 10vw;
+  padding-top: 10em;
 }
 
+/* Оформление тематических блоков */
 .main-container-info,
 .variant-payment-all,
 .variant-payment-online,
@@ -56,21 +91,20 @@ body {
 .variant-payment-bank {
   background: lightsteelblue;
   padding: 1em 2em 3em 2em;
-  margin: 0em 2em 2em 2em;
+  margin: 0em 2em 3em 2em;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.ol-method {
+/* Оформление странички систем платежей */
+.method-list {
   margin-left: 5vw;
 }
-
 .justify-img-pay-sys {
   display: flex;
   justify-content: space-around;
   margin: 0.5em 2em 1em 2em;
 }
-
 .img-pay-sys {
   height: 5vw;
   box-shadow: 3px 3px 6px 4px #888;
@@ -79,18 +113,18 @@ body {
   border-radius: 0.2em;
 }
 
+/* Оформление типовых элементов сайта */
 img {
   width: 10vw;
   box-shadow: 3px 3px 6px 4px #888;
   margin: 0.8em 2em 2em 0.8em;
   border-radius: 0.2em;
+  border: 1px solid lightskyblue;
 }
-
 p {
   text-align: justify;
-  margin: 2%;
+  margin: 2vw;
 }
-
 table {
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -99,34 +133,52 @@ table {
   table-layout: auto;
   width: 100%;
 }
-
 tr {
   border: 1px solid #ddd;
   padding: 0.35em;
   white-space: inherit;
 }
-
 td {
   padding: 0.625em;
 }
+
+/* Оформление увеличения логотипа */
+/* контейнер с картинкой и текстом */
 .container-img {
+  overflow: auto;
   border: 1px solid #ddd;
   padding: 1em 1em 0em 1em;
-  overflow: auto;
   border-radius: 1em;
 }
-iframe {
+/* Исходное изображение */
+.container-img img {
+  width: 8vw;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border: 1px solid lightskyblue;
+}
+/* Изображение при наведении курсора */
+.container-img img:hover {
+  transition: 0.3s;
+  transform: scale(2);
+  padding: 0;
+  margin: 2em 3em 3em 2em;
+  border-radius: 0.3em;
+}
+
+/* Оформление странички с текстом договора */
+/* Вариант для загрузки во фрейм договора в формате .pdf */
+/* iframe {
   width: 100%;
   height: 500px;
   border-radius: 0.5em;
   box-shadow: 3px 3px 6px 4px #888;
-}
-
+} */
 .contract-h2 {
   text-align: center;
 }
 .contract-ul {
-  list-style-type: "- ";
+  list-style-type: '– ';
 }
 /* скрываем чекбоксы и блоки с содержанием */
 .contract-hide {
@@ -158,12 +210,12 @@ iframe {
   padding: 10px;
   border-radius: 0.35em;
 }
-
-/* contract контейнер */
 .contract-container {
   border: 5px;
   border-color: black;
 }
+
+/* Оформление странички контактов */
 .phone-list {
   list-style-type: none;
   margin-left: 10vw;
@@ -175,4 +227,19 @@ iframe {
 }
 .work-time {
   border-bottom: 1px dashed #888;
+}
+
+/* Оформление подвала */
+.footer-container {
+  background-color: lightsteelblue;
+  width: 90%;
+  margin-left: 1em;
+  padding: 1em;
+  font-size: 2vw;
+  color: rgb(48, 144, 240);
+  border-left: 1px solid lightslategrey;
+  border-right: 1px solid lightslategrey;
+  border-top: 3px solid lightslategrey;
+  border-radius: 1em;
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.5);
 }

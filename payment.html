@@ -5,23 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#297bae" />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -29,25 +15,32 @@
     <title>HomeNET-поповнення рахунку</title>
   </head>
   <body>
+    <a name="top"></a>
     <div class="main-container">
-      <div class="topnav">
-        <a href="index.html">Головна</a>
-        <a class="active" href="payment.html">Оплата</a>
-        <a href="contract.html">Договір</a>
-        <a href="contact.html">Контакти</a>
+      <div class="header-site">
+        <div class="header-logo-slogan">
+          <div class="logo-container">
+            <img src="./img/apple-touch-icon.png" alt="logo HomeNET" />
+          </div>
+          <div class="slogan-container">
+            <p>Інтернет до кожної оселі!</p>
+          </div>
+        </div>
+        <div class="topnav">
+          <a href="index.html">Головна</a>
+          <a class="active" href="payment.html">Оплата</a>
+          <a href="contract.html">Договір</a>
+          <a href="contact.html">Контакти</a>
+        </div>
       </div>
-      <a class="marker" name="top"></a>
       <div class="variant-payment-all">
         <h2>Варіанти поповнення рахунку</h2>
         <p>
-          Облік руху коштів ведеться за Вашим особовим рахунком, який формується
-          при підключенні.
+          Облік руху коштів ведеться за Вашим особовим рахунком, який формується при підключенні.
         </p>
-        <p>Поповнити свій рахунок Ви можете:</p>
-        <ol class="ol-method">
-          <li>
-            Банківською карткою <a class="link-type" href="#online">online</a>.
-          </li>
+        <p>Поповнюйте свій рахунок:</p>
+        <ul class="method-list">
+          <li>Банківською карткою <a class="link-type" href="#online">у мережі</a>.</li>
           <li>
             Готівкою через
             <a class="link-type" href="#terminal">термінал</a>
@@ -57,119 +50,92 @@
             Переказом за
             <a class="link-type" href="#bank">реквізитами банку</a>.
           </li>
-        </ol>
+        </ul>
+        <a name="online"></a>
         <p>
           Для уточнення необхідної інформації, будь ласка,
-          <a class="link-type" href="contact.html">звертайтесь</a> зручним для
-          Вас способом.
+          <a class="link-type" href="contact.html">звертайтесь</a> зручним для Вас способом.
         </p>
-        <a class="marker" name="online"></a>
       </div>
       <div class="variant-payment-online">
-        <h2>Поповнення online</h2>
+        <h2>Поповнення у мережі</h2>
         <p>
-          Ми <b>радимо</b> Вам використовувати <b>саме цей</b> спосіб
-          поповнення. Адже автоматизовані платіжні системи - це самий швидкий і
-          безпечний спосіб поповнити свій рахунок, не виходячи з дому. До того ж
-          поповнення відбувається в будь який час доби та день тижня без
-          вихідних та свят.
+          Ми <b>радимо</b> Вам використовувати <b>саме цей</b> спосіб. Адже автоматизовані платіжні
+          системи - це самий швидкий і безпечний спосіб поповнити свій особовий рахунок у мережі
+          (online). До того ж це можна робити в будь який час доби та день тижня без вихідних та
+          свят.
         </p>
         <p>
-          Скористайтеся можливістю поповнити свій рахунок, не виходяи з дому, за
-          допомогою автоматизованих систем поповнення:
+          Скористайтеся можливістю сплатити за послуги, не виходяи з дому, за допомогою
+          автоматизованих систем приймання платежів:
         </p>
         <span class="justify-img-pay-sys">
           <a target="_blank" href="https://coin.com.ua/HomeNet-Kiev"
             ><img class="img-pay-sys" src="./img/coin.png" alt="CoIn"
           /></a>
-          <a
-            target="_blank"
-            href="https://easypay.ua/catalog/internet/homenet-kyiv"
+          <a target="_blank" href="https://easypay.ua/catalog/internet/homenet-kyiv"
             ><img class="img-pay-sys" src="./img/easypay.png" alt="EasyPay"
           /></a>
         </span>
-        <p>Для оплати використовуйте будь-яку платіжну карту банку України.</p>
-        <p>
-          Доступ до Internet буде надано автоматично на протязі однієї години
-          після поповнення.
-        </p>
-        <a class="link-type" href="#top">до гори ^</a>
-        <a class="marker" name="terminal"></a>
+        <p>Для здійснення оплати використовуйте будь-яку платіжну карту банку України.</p>
+        <a name="terminal"></a>
+        <p>Доступ до Internet буде надано автоматично на протязі однієї години після поповнення.</p>
+        <a class="link-type" href="#top">до гори &#8593</a>
       </div>
       <div class="variant-payment-terminal">
         <h2>Поповнення через термінали</h2>
         <p>
-          Термінали самообслуговування дозволяють дуже зручно поповнити свій
-          рахунок. Адже вони працюють цілодобово і повністю автоматизовані.
+          Термінали самообслуговування дозволяють дуже зручно поповнити свій особовий рахунок. Адже
+          вони працюють цілодобово і повністю автоматизовані. Термінали самообслуговування зазвичай
+          розташовані біля зупинок автотранспорту та при вході в магазини.
         </p>
-        <p>Поповнювати можна в терміналах:</p>
+        <p>Оберіть найближчий до Вас термінал:</p>
         <span class="justify-img-pay-sys">
           <a href="https://ibox.ua/map" target="_blank"
-            ><img
-              class="img-pay-sys"
-              src="./img/ibox.png"
-              alt="I-Box"
-              height="50"
+            ><img class="img-pay-sys" src="./img/ibox.png" alt="I-Box" height="50"
           /></a>
           <a href="https://2click.money/" target="_blank"
-            ><img
-              class="img-pay-sys"
-              src="./img/2click.png"
-              alt="2Click"
-              height="50"
+            ><img class="img-pay-sys" src="./img/2click.png" alt="2Click" height="50"
           /></a>
           <a href="https://terminals.easypay.ua/?map=true" target="_blank"
-            ><img
-              class="img-pay-sys"
-              src="./img/easypay.png"
-              alt="EasyPay"
-              height="50"
+            ><img class="img-pay-sys" src="./img/easypay.png" alt="EasyPay" height="50"
           /></a>
-          <a
-            href="http://24nonstop.com.ua/Customers/TerminalMap"
-            target="_blank"
-            ><img
-              class="img-pay-sys"
-              src="./img/24nonstop.png"
-              alt="24NonStop"
-              height="50"
+          <a href="http://24nonstop.com.ua/Customers/TerminalMap" target="_blank"
+            ><img class="img-pay-sys" src="./img/24nonstop.png" alt="24NonStop" height="50"
           /></a>
         </span>
-        <p>
-          Доступ до Internet надається на протязі однієї години після поповнення
-          рахунку.
-        </p>
+        <p>Доступ до Internet надається на протязі однієї години після поповнення рахунку.</p>
         <p>Це зручно і економить Ваш час.</p>
         <div class="container-img">
-          <img src="./img/apple-touch-icon.png" alt="HomeNET" align="left" />
+          <img src="./img/homenet.png" alt="локотип HomeNET" align="left" />
           <p>
-            <b>Зверніть увагу</b> на зображення нашого логотипу, щоб не
-            помилитися під час оплати в автоматизованих терміналах
-            самообслуговування.
+            <b>Зверніть увагу</b> на зображення нашого логотипу на екрані терміналу (розділ
+            Інтернет), щоб не помилитися під час оплати.
           </p>
         </div>
         <p>
-          Будь ласка, після оплати зберігайте чек до моменту зарахування коштів
-          на Ваш особовий рахунок.
+          Будь ласка, після оплати зберігайте чек до моменту зарахування коштів на Ваш особовий
+          рахунок.
         </p>
         <p>
-          Якщо термінал за якихось причин не видав чек, звернітся до служби
-          підтримки термінальної мережі прийому платежів за телефонами, що
-          вказані на треміналі, де ви сплачували.
+          Якщо термінал за якихось причин не видав чек, звернітся до служби підтримки термінальної
+          мережі прийому платежів за телефонами, що вказані на треміналі, де ви сплачували.
+          <a name="bank"></a>
         </p>
-        <a class="link-type" href="#top">до гори ^</a>
-        <a class="marker" name="bank"></a>
+        <a class="link-type" href="#top">до гори &#8593</a>
       </div>
       <div class="variant-payment-bank">
         <h2>Поповнення за банківськими реквізитами</h2>
         <p>
-          Ви завжди можете поповнити свій особовий рахунок, використовуючи
-          банківський переказ, за реквізитами нашої компанії:
+          Поповнюйте свій особовий рахунок, використовуючи банківський переказ. Це можна зробити в
+          будь-якому відділенні банку, або безпечно у мережі, не виходячи з дому, через Вашу систему
+          клієнт-банк.
         </p>
+        <p>Банківські реквізити нашої компанії:</p>
         <table>
           <tr>
             <td>Отримувач:</td>
-            <td><b>ТОВ "ХОУМНЕТ"</b></td>
+            <td><b>ТОВ &laquo;ХОУМНЕТ&raquo;</b></td>
           </tr>
           <tr>
             <td>Код ЄДРПОУ:</td>
@@ -181,7 +147,7 @@
           </tr>
           <tr>
             <td>Банк:</td>
-            <td><b>ПАТ "Альфа-Банк"</b></td>
+            <td><b>ПАТ &laquo;Альфа-Банк&raquo;</b></td>
           </tr>
           <tr>
             <td>Призначення:</td>
@@ -200,15 +166,20 @@
           Обов'язково вказуйте свій особовий рахунок в призначенні платежу.
         </p>
         <p>
-          Будь ласка, зберігайте квитанцію про сплату до зарахування коштів на
-          Ваш особовий рахунок.
+          Будь ласка, зберігайте квитанцію про сплату до зарахування коштів на Ваш особовий рахунок.
         </p>
         <p>
-          Враховуйте те, що зарахування коштів в разі банківського переказу
-          відбувається щонайменше наступного робочого дня.
+          Враховуйте те, що зарахування коштів в разі банківського переказу відбувається щонайменше
+          наступного робочого дня по фактичному зарахуванню коштів на розрахунковий рахунок нашої
+          компанії.
         </p>
-        <a class="link-type" href="#top">до гори ^</a>
+        <a class="link-type" href="#top">до гори &#8593</a>
       </div>
     </div>
+    <footer>
+      <div class="footer-container">
+        <p>ТОВ &laquo;ХОУМНЕТ&raquo; <sup>&copy;</sup> 2021</p>
+      </div>
+    </footer>
   </body>
 </html>
