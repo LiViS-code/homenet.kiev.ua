@@ -1,4 +1,4 @@
-/* Оформление тела сайта */
+/* Оформление тела странички */
 body {
   margin: 0px;
   background-color: cornsilk;
@@ -6,13 +6,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vmax;
 }
 
 /* Оформление заголовка сайта */
-.header-site {
-  display: flex;
+header {
+  /* display: flex;
   flex-direction: column;
-  position: fixed;
+  /* position: fixed; */
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -22,40 +24,39 @@ body {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 .header-logo-slogan {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: 0; */
 }
 .logo-container {
-  margin: 0;
-  padding: 0.5em;
+  /* margin: 0;
+  padding: 0.5em; */
 }
 .logo-container img {
-  width: 12vw;
+  /* width: 12vw;
   padding: 0;
   margin: 0;
   border-radius: 0.3em;
   border: 1px solid lightskyblue;
-  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.5); */
 }
 .slogan-container {
-  color: rgb(48, 144, 240);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3vw;
+  /* color: rgb(48, 144, 240);
+  font-size: 3vw; */
 }
 .slogan-container p {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 /* навигация по сайту */
 .topnav {
-  background-color: lightslategrey;
+  /* background-color: lightslategrey; */
 }
 /* оформление пунктов меню */
 .topnav a {
-  float: left;
+  /* float: left;
   color: lightskyblue;
   border-radius: 0.3em;
   padding-bottom: 0.15em;
@@ -66,119 +67,145 @@ body {
   margin-top: 0.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 2vw; */
 }
 /* наведение на пункт меню */
 .topnav a:hover {
-  color: cornsilk;
-  border-radius: 0.5em;
+  /* color: cornsilk;
+  border-radius: 0.5em; */
 }
 /* нажатие на пункт меню */
 .topnav a.active {
-  color: cornsilk;
+  /* color: cornsilk;
   border-bottom: 1px solid red;
-  border-radius: 0.5em;
+  border-radius: 0.5em; */
+}
+.topnav-list {
+  /* list-style-type: none; */
 }
 
 /* Основной блок с данными на каждой страничке */
 .main-container {
-  flex: 1;
+  /* flex: 1;
   background: transparent;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2vmax;
-  padding-top: 8em;
+  padding-top: 8em; */
 }
 
 /* Оформление тематических блоков */
 .main-container-info,
-.variant-payment-all,
-.variant-payment-online,
-.variant-payment-terminal,
-.variant-payment-bank {
-  background: lightsteelblue;
+.option-payment-all,
+.option-payment-online,
+.option-payment-terminal,
+.option-payment-bank,
+.services-container {
+  /* background: lightsteelblue;
   padding: 1em 2em 3em 2em;
   margin: 0em 2em 2em 2em;
   border-radius: 1em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
 /* Оформление странички систем платежей */
 .method-list {
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
 }
 .justify-img-pay-sys {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  margin: 0.5em 2em 1em 2em;
+  margin: 0.5em 2em 1em 2em; */
 }
 .img-pay-sys {
-  height: 5vw;
+  /* height: 5vw;
   box-shadow: 3px 3px 6px 4px #888;
   margin: 5%;
   padding: 10%;
-  border-radius: 0.2em;
+  border-radius: 0.2em; */
 }
 
 /* Оформление типовых элементов сайта */
 img {
-  width: 10vw;
+  /* width: 10vw;
   box-shadow: 3px 3px 6px 4px #888;
   margin: 0.8em 2em 2em 0.8em;
   border-radius: 0.2em;
-  border: 1px solid lightskyblue;
+  border: 1px solid lightskyblue; */
 }
 p {
-  text-align: justify;
-  margin: 2vw;
+  /* text-align: justify;
+  margin: 0.5vw;
+  padding: 1vw 0 1vw 0;
+  line-height: 1.2; */
 }
 table {
-  border: 1px solid cornsilk;
-  border-radius: 1em;
+  /* border: 1px solid cornsilk;
+  border-radius: 0.5em;
   border-collapse: separate;
   margin: 0;
   padding: 0;
   table-layout: auto;
-  width: 100%;
+  width: 100%; */
 }
 tr {
-  padding: 0.35em;
-  white-space: inherit;
+  /* padding: 0.35em;
+  white-space: inherit; */
 }
 td {
-  padding: 0.625em;
+  /* padding: 0.625em; */
 }
-/* Оформление картинок месенджеров */
-/* .img-messenger {
-  width: 3vw;
-  border-radius: 1vw;
+
+.section-info-option {
+  /* font-size: 2vmax; */
+  /* line-height: 1.5; */
+}
+ul.connection-options-list {
+  /* font-size: 2vmax;
+  padding: 0;
+  list-style-type: none;
+  margin-left: -6vmax; */
+}
+
+.tarif {
+  /* border: 1px solid #888;
   margin: 0;
   padding: 0;
-} */
+  table-layout: auto;
+  width: 100%; */
+}
+
+/* Оформление картинок месенджеров */
+.img-messenger {
+  /* width: 3vw;
+  border-radius: 1vw;
+  margin: 0;
+  padding: 0; */
+}
 /* Оформление увеличения логотипа */
 /* контейнер с картинкой и текстом */
 .container-border {
-  overflow: auto;
+  /* overflow: auto;
   border: 1px solid cornsilk;
   padding: 1em 1em 0em 1em;
-  border-radius: 1em;
+  border-radius: 1em; */
 }
 /* Исходное изображение */
 .container-border img {
-  width: 8vw;
+  /* width: 8vw;
   padding: 0.5em;
   border-radius: 0.2em;
-  border: 1px solid lightskyblue;
+  border: 1px solid lightskyblue; */
 }
 /* Изображение при наведении курсора */
 .container-border img:hover {
-  transition: 0.3s;
+  /* transition: 0.3s;
   transform: scale(2);
   padding: 0;
   margin: 2em 3em 3em 2em;
-  border-radius: 0.3em;
+  border-radius: 0.3em; */
 }
 
-/* Оформление странички с текстом договора */
+/* Оформление раскрывающихся текстов */
 /* Вариант для загрузки во фрейм договора в формате .pdf */
 /* iframe {
   width: 100%;
@@ -187,78 +214,145 @@ td {
   box-shadow: 3px 3px 6px 4px #888;
 } */
 .contract-header {
-  text-align: center;
+  /* text-align: center;
+  font-size: 2.3vmax; */
+}
+.contract-container-list {
+  /* list-style-position: inside; */
 }
 .contract-ul {
-  list-style-type: '– ';
+  /* list-style-type: '– '; */
 }
 /* скрываем чекбоксы и блоки с содержанием */
-.contract-hide {
-  display: none;
+.contract-hide,
+.services-hide {
+  /* display: none; */
 }
-.contract-hide + label ~ div {
-  display: none;
+.contract-hide + label ~ section,
+.services-hide + label ~ section {
+  /* display: none; */
 }
 /* оформляем текст label */
-.contract-hide + label {
-  border-bottom: 1px dotted blue;
+.contract-hide + label,
+.services-hide + label {
+  /* border-bottom: 1px dotted blue;
   padding: 0;
   margin-left: 0.5em;
   color: black;
   cursor: pointer;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-around; */
 }
 /* вид текста label при активном переключателе */
-.contract-hide:checked + label {
-  color: darkblue;
+.contract-hide:checked + label,
+.services-hide:checked + label {
+  /* color: darkblue;
   border-bottom: 1px solid red;
   border-radius: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 1em; */
 }
 /* когда чекбокс активен показываем блоки с содержанием  */
-.contract-hide:checked + label + div {
-  display: block;
+.contract-hide:checked + label + section,
+.services-hide:checked + label + section {
+  /* display: block;
   background: cornsilk;
   -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
   -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
   box-shadow: inset 3px 3px 10px #7d8e8f;
-  padding: 10px;
-  border-radius: 0.35em;
+  padding: 2vmax;
+  border-radius: 0.35em; */
 }
 .contract-container h4:hover {
-  color: darkblue;
+  /* color: darkblue; */
+}
+/* Оформление вложенных нумерованных списков */
+ol {
+  /* list-style: none;
+  font-size: 1.3vmax;
+  padding: 0; */
+  /* margin: 2vmax 0 0 0; */
+}
+li {
+  /* margin: 0;
+  padding: 1vmax 0 1vmax 5vmax;
+  position: relative;
+  line-height: 1.5; */
+}
+li::before {
+  /* display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 3.6vmax;
+  font-size: 1.2vmax; */
+}
+
+/* 1-й уровень */
+ol {
+  counter-reset: num;
+}
+ol > li {
+  counter-increment: num;
+}
+ol > li::before {
+  content: counter(num) '.';
+}
+
+/* 2-й уровень */
+ol ol {
+  counter-reset: num2;
+}
+ol ol > li {
+  counter-increment: num2;
+}
+ol ol > li::before {
+  content: counter(num) '.' counter(num2) '.';
+}
+
+/* 3-й уровень */
+ol ol ol {
+  counter-reset: num3;
+}
+ol ol ol > li {
+  counter-increment: num3;
+}
+ol ol ol > li::before {
+  content: counter(num) '.' counter(num2) '.' counter(num3) '.';
 }
 
 /* Оформление странички контактов */
 .phone-list {
-  margin-left: 3%;
-  list-style-type: none;
+  /* margin-left: 3%;
+  list-style-type: none; */
 }
 .link-type {
-  text-decoration: none;
+  /* text-decoration: none;
   color: black;
-  border-bottom: 1px dotted blue;
+  border-bottom: 1px dotted blue; */
 }
 .link-type:hover {
-  color: darkblue;
+  /* color: darkblue; */
 }
 .work-time {
-  border-bottom: 1px dotted #888;
+  /* border-bottom: 1px dotted #888; */
 }
 
 /* Оформление подвала */
 footer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: lightsteelblue;
   width: 100%;
   border-top: 3px solid lightslategrey;
-  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.5); */
 }
 footer p {
-  color: #888;
+  /* color: #888;
   font-size: 1vmax;
   text-align: center;
   padding: 0em 2em 2em 2em;
+}
+
+.bookmark {
+  /* padding-top: 12vmax;
+  border: 1px solid transparent; */
 }
