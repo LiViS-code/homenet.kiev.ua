@@ -1,0 +1,7 @@
+body {
+  margin: 0px;
+  font-family: $font-family-site;
+  @include font-set(14, 18, map-get($font-weights, 'regular'), 0.03);
+  color: $text-color;
+  background-color: $background-primary-color;
+}
