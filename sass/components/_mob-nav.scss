@@ -10,6 +10,7 @@
   transition: transform $transition-duration $timing-function;
   @media screen and (orientation: landscape) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   // когда открыт
@@ -19,9 +20,8 @@
 
   // список ссылок навигации моб.меню
   &__list {
-    margin-bottom: 2 * $gap;
-    @media screen and (orientation: landscape) {
-      margin-right: 2 * $gap;
+    @media screen and (orientation: portrait) {
+      margin-bottom: 2 * $gap;
     }
   }
 
@@ -35,31 +35,34 @@
   // список авторизации
   &__auth-list {
     display: flex;
-    justify-content: space-around;
-    @media screen and (orientation: portrait) {
-      margin-bottom: 2 * $gap;
-    }
     padding: $gap;
     border: 1px solid $accent-color;
     border-radius: 4px;
+
+    @media screen and (orientation: portrait) {
+      justify-content: space-around;
+      margin-bottom: 2 * $gap;
+    }
+
     @media screen and (orientation: landscape) {
-      flex-direction: column;
+      max-height: 30%;
+      margin: $gap auto;
       align-items: center;
-      margin-right: 2 * $gap;
     }
   }
 
-  // &__auth-item {
-  //   &:not(:last-child) {
-  //     margin-right: $gap;
-  //   }
+  &__auth-item {
+    &:not(:last-child) {
+      margin-right: $gap;
+    }
+  }
 
   &__contact-list {
     display: flex;
     justify-content: center;
     @media screen and (orientation: landscape) {
-      flex-direction: column;
-      align-items: center;
+      margin-left: 50%;
+      align-items: flex-end;
     }
   }
   &__contact-item {
@@ -68,13 +71,7 @@
       align-items: center;
     }
     &:not(:last-child) {
-      @media screen and (orientation: portrait) {
-        margin-right: $gap;
-      }
-
-      @media screen and (orientation: landscape) {
-        margin-bottom: 2 * $gap;
-      }
+      margin-right: $gap;
     }
   }
 }

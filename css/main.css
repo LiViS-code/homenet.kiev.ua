@@ -73,13 +73,6 @@ body {
 .title {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 1600 px) {
-  .title {
-    margin-bottom: 30px;
-  }
 }
 
 .title--slogan {
@@ -111,6 +104,10 @@ body {
 .section {
   margin: 50px 0;
   background-color: #fff8dc;
+}
+
+.section__header {
+  padding: 15px 0;
 }
 
 .container {
@@ -194,6 +191,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -202,13 +201,9 @@ body {
           transform: translate3d(0, 0, 0);
 }
 
-.mob-nav__list {
-  margin-bottom: 60px;
-}
-
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
   .mob-nav__list {
-    margin-right: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -220,8 +215,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 30px;
   border: 1px solid #ffa600;
   border-radius: 4px;
@@ -229,21 +222,24 @@ body {
 
 @media screen and (orientation: portrait) {
   .mob-nav__auth-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 60px;
   }
 }
 
 @media screen and (orientation: landscape) {
   .mob-nav__auth-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    max-height: 30%;
+    margin: 30px auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 60px;
   }
+}
+
+.mob-nav__auth-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .mob-nav__contact-list {
@@ -257,13 +253,10 @@ body {
 
 @media screen and (orientation: landscape) {
   .mob-nav__contact-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 50%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -279,15 +272,7 @@ body {
   }
 }
 
-@media screen and (orientation: portrait) {
-  .mob-nav__contact-item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  .mob-nav__contact-item:not(:last-child) {
-    margin-bottom: 60px;
-  }
+.mob-nav__contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=main.css.map */
