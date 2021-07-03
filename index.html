@@ -1,74 +1,108 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#297bae" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>HomeNET</title>
+  </head>
   <body>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./css/style.css" />
-      <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
-      <link rel="manifest" href="/site.webmanifest" />
-      <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#297bae" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
-      <title>HomeNET</title>
-    </head>
-    <header>
-      <nav class="topnav">
-        <a href="/"
-          ><img src="./img/homenet.png" alt="logo HomeNET" width="180" />
-          <h1>Інтернет до кожної оселі!</h1></a
-        >
-        <ul class="topnav-list">
-          <li><a class="active" href="index.html">Головна</a></li>
-          <li><a href="services.html">Послуги</a></li>
-          <li><a href="payment.html">Оплата</a></li>
-          <li><a href="contract.html">Договір</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-        </ul>
-        <ul class="topnav-list">
-          <li><a href="#">Кабінет</a></li>
-          <li><a href="#">Реєстрація</a></li>
-        </ul>
-      </nav>
+    <header class="header-section">
+      <div class="container header-container">
+        <div class="logo-box">
+          <a class="logo-link" href="/"
+            ><img class="logo-img" src="./img/homenet.png" alt="logo HomeNET" width="120" />
+          </a>
+          <!-- TODO сделать вызов формы оформления заказа -->
+          <h1 class="title title-appeal">Інтернет до кожної оселі!</h1>
+        </div>
+        <nav class="mob-nav">
+          <button class="btn__mob-menu" type="button">
+            <svg width="16" height="16">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <nav class="top-nav">
+          <ul class="list nav-list">
+            <li class="nav-item"><a class="link link-nav active" href="index.html">Головна</a></li>
+            <li class="nav-item"><a class="link link-nav" href="services.html">Послуги</a></li>
+            <li class="nav-item"><a class="link link-nav" href="payment.html">Оплата</a></li>
+            <li class="nav-item"><a class="link link-nav" href="contract.html">Договір</a></li>
+            <li class="nav-item"><a class="link link-nav" href="contact.html">Контакти</a></li>
+          </ul>
+          <ul class="list auth-list">
+            <li><a class="link link-nav" href="#">Кабінет</a></li>
+            <li><a class="link link-nav" href="#">Реєстрація</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main-container">
-      <section class="main-container-info">
-        <h2>
-          Ви на сайті мережі HomeNET <br />
-          (ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ)
-        </h2>
-        <p>Вітаємо!</p>
-        <p>
-          HomeNET - оптоволоконна мультисервісна мережа. Пропонуємо Вам якісний і швидкий доступ до
-          Інтернет та інших телекомунікаційних послуг за місцем Вашого проживання або роботи.
-        </p>
-        <p>
-          Ми використовуюємо сучасне обладнання, що пройшло сертифікацію в Україні. Наш багаторічний
-          досвід є запорукою надання якісних і стабільних послуг.
-        </p>
-        <p>Будемо раді бачити Вас нашим клієнтом. Сподіваємося на плідну і довгу співпрацю.</p>
-        <p>
-          З усіма нагальними питаннями звертайтесь за нашими
-          <a class="link-type" href="contact.html">контактами</a>. Завжди раді надати відповідь та
-          допомогти.
-        </p>
-        <p>З повагою до Вас,<br />Команда ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ</p>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2 class="title">
+            Ви на сайті мережі HomeNET <br />
+            (ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ)
+          </h2>
+          <p class="text text--welcome">Вітаємо!</p>
+          <p class="text">HomeNET - оптоволоконна мультисервісна мережа.</p>
+          <p class="text">
+            Пропонуємо Вам якісний і швидкий доступ до Інтернет та інших телекомунікаційних послуг
+            за місцем Вашого проживання або роботи.
+          </p>
+          <p class="text">
+            Для забезпечення доступу до Інтернет використовуюємо сучасне обладнання, що пройшло
+            сертифікацію в Україні. Наш багаторічний досвід є запорукою надання якісних і стабільних
+            послуг.
+          </p>
+          <p class="text">
+            Будемо раді бачити Вас нашим клієнтом. Сподіваємося на плідну і довгу співпрацю.
+          </p>
+          <p class="text">
+            З усіма нагальними питаннями звертайтесь за нашими
+            <a class="link" href="./contact.html">контактами</a>. Завжди раді надати відповідь та
+            допомогти.
+          </p>
+          <p class="text">З повагою до Вас,<br />Команда ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ</p>
+        </div>
       </section>
     </main>
     <footer>
-      <p>
-        &copy; 2010
-        <script>
-          new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear());
-        </script>
-        , ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
-        Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
-        ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
-      </p>
-      <address>Київ, бульвар Академіка Вернадського, буд. 34/1</address>
+      <div class="container">
+        <p class="text">
+          &copy; 2010
+          <script>
+            new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear());
+          </script>
+          , ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
+          Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
+          ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
+        </p>
+        <address>
+          <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
