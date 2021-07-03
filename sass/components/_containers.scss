@@ -1,0 +1,9 @@
+// основной контейнер для разделов сайта
+.container {
+  max-width: $size-min - 2 * $min-padding;
+  margin: 0 auto;
+  @media screen and (min-width: $size-desk) {
+    max-width: $size-desk - 400;
+    padding: 0 $min-padding;
+  }
+}

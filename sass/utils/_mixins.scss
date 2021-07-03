@@ -1,0 +1,77 @@
+// сплошной бордюр с нужным цветом
+@mixin border-solid-color($color) {
+  border: 1px solid $color;
+}
+// сплошной борюр с нужным цветом и радиусом
+@mixin bordered($color, $br) {
+  @include border-solid-color($color);
+  border-radius: $br;
+}
+// установка типографии
+@mixin font-sizes($fs, $lh) {
+  font-size: $fs + px;
+  line-height: lh-ceil($fs, $lh);
+}
+
+// типография + межсимвольный интервал
+@mixin font-sizes-letter-spacing($fs, $lh, $ls) {
+  @include font-sizes($fs, $lh);
+  letter-spacing: $ls + em;
+}
+
+// типография + начертание
+@mixin font-sizes-weight($fs, $lh, $fw) {
+  @include font-sizes($fs, $lh);
+  font-weight: $fw;
+}
+
+// типография полный набор
+@mixin font-set($fs, $lh, $fw, $ls) {
+  @include font-sizes-weight($fs, $lh, $fw);
+  letter-spacing: $ls + em;
+}
+
+// сброс списков
+@mixin reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+// сброс для ссылок
+@mixin reset-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: $link-color;
+}
+
+// сброс для текста
+@mixin reset-text {
+  margin: 0;
+  padding: 0;
+}
+
+// сброс для заголовков
+@mixin reset-title {
+  margin: 0;
+  padding: 0;
+}
+
+// расчет для сетки элементов
+@mixin grid($quantity, $spacing) {
+  flex-basis: calc((100% - #{$quantity} * #{$spacing}) / #{$quantity});
+}
+
+// флекс с выравниванием по высоте
+@mixin flex-align($disp: flex, $align: center) {
+  display: $disp;
+  align-items: $align;
+}
+
+// флекс с центрированием элементов
+@mixin flex-elements-center {
+  @include flex-align();
+  justify-content: center;
+}

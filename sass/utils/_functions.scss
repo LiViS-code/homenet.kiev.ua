@@ -1,0 +1,6 @@
+// расчет высоты линии шрифта с точнотью 4 знака после запятой
+@function lh-ceil($fs, $lh) {
+  $result: $lh / $fs * 10000;
+  $result: ceil($result) / 10000;
+  @return $result;
+} ;

@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 4px;
+  color: $text-color;
+  &__mob-menu {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    @include flex-elements-center;
+    @media screen and (min-width: $size-tab) {
+      display: none;
+    }
+  }
+}

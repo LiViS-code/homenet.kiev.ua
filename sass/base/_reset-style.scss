@@ -1,0 +1,28 @@
+.list {
+  @include reset-list;
+}
+
+.link {
+  @include reset-link;
+}
+
+.title {
+  @include reset-title;
+  margin-bottom: $gap / 2;
+  @media screen and (min-width: $size-desk) {
+    margin-bottom: $gap;
+  }
+}
+
+.text {
+  @include reset-text;
+  margin-bottom: $gap / 2;
+  @media screen and (min-width: $size-desk) {
+    margin-bottom: $gap;
+  }
+  &--welcome,
+  &__address {
+    margin-bottom: $gap / 4;
+    font-weight: map-get($font-weights, 'medium');
+  }
+}

@@ -1,0 +1,6 @@
+.top-nav {
+  display: none;
+  @media screen and (min-width: $size-tab) {
+    display: flex;
+  }
+}
