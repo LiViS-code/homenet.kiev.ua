@@ -1,7 +1,9 @@
 // цветовая палитра
 $text-color: #0d3d74;
-$accent-color: #4c00ff;
+$accent-color: #ffa600;
 $link-color: #3b70e4;
+$link-nav-color: #0328ff;
+$link-nav-color-muted: rgba(3, 40, 255, 0.6);
 
 $background-primary-color: #fff8dc;
 $background-block-color: #b0c4de;
@@ -17,3 +19,7 @@ $gap: 30px;
 
 // минимальный паддинг
 $min-padding: 15px;
+
+// переходы
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

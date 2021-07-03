@@ -26,34 +26,91 @@
     <meta name="theme-color" content="#ffffff" />
     <title>HomeNET</title>
   </head>
-  <body>
+  <body style>
     <header class="header-section">
       <div class="container header-container">
         <div class="logo-box">
           <a class="logo-link" href="/"
-            ><img class="logo-img" src="./img/homenet.png" alt="logo HomeNET" width="120" />
+            ><img class="logo-img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
           </a>
           <!-- TODO сделать вызов формы оформления заказа -->
-          <h1 class="title title-appeal">Інтернет до кожної оселі!</h1>
+          <h1 class="title title--slogan">Інтернет до кожної оселі!</h1>
         </div>
-        <nav class="mob-nav">
-          <button class="btn__mob-menu" type="button">
-            <svg width="16" height="16">
-              <use href="./img/icons.svg#icon-menu"></use>
+        <!-- мобильное меню навигации -->
+        <button
+          class="btn btn__menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="btn__toggle-icon" width="20" height="20">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-nav js-menu-container" id="mobile-menu">
+          <button
+            class="btn btn__menu-toggle js-close-menu"
+            type="button"
+            aria-expanded="true"
+            aria-controls="mobile-menu"
+          >
+            <svg class="btn__toggle-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-menu-close"></use>
             </svg>
           </button>
+          <ul class="list mob-nav__list">
+            <li class="mob-nav__item">
+              <a class="link link__nav link__nav--active" href="index.html">Головна</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./services.html">Послуги</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./payment.html">Оплата</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./contract.html">Договір</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./contact.html">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mob-nav__auth-list">
+            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Кабінет</a></li>
+            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Реєстрація</a></li>
+          </ul>
+          <ul class="list mob-nav__contact-list">
+            <li class="mob-nav__contact-item">
+              <a href="tel:+0442281629" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(044) 228-16-29</a
+              >
+            </li>
+            <li class="mob-nav__contact-item">
+              <a href="mailto:og@bigmir.net" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-email"></use>
+                </svg>
+                og@bigmir.net</a
+              >
+            </li>
+          </ul>
         </nav>
+        <!-- Навигация по сайту -->
         <nav class="top-nav">
           <ul class="list nav-list">
-            <li class="nav-item"><a class="link link-nav active" href="index.html">Головна</a></li>
-            <li class="nav-item"><a class="link link-nav" href="services.html">Послуги</a></li>
-            <li class="nav-item"><a class="link link-nav" href="payment.html">Оплата</a></li>
-            <li class="nav-item"><a class="link link-nav" href="contract.html">Договір</a></li>
-            <li class="nav-item"><a class="link link-nav" href="contact.html">Контакти</a></li>
+            <li class="nav-item">
+              <a class="link link__nav link__nav--active" href="./index.html">Головна</a>
+            </li>
+            <li class="nav-item"><a class="link link__nav" href="./services.html">Послуги</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./payment.html">Оплата</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./contract.html">Договір</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
           </ul>
           <ul class="list auth-list">
-            <li><a class="link link-nav" href="#">Кабінет</a></li>
-            <li><a class="link link-nav" href="#">Реєстрація</a></li>
+            <li><a class="link link__nav" href="#">Кабінет</a></li>
+            <li><a class="link link__nav" href="#">Реєстрація</a></li>
           </ul>
         </nav>
       </div>
@@ -104,5 +161,12 @@
         </address>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

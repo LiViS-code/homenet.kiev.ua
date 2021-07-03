@@ -1,15 +1,31 @@
 .btn {
+  padding: 2px;
   border-radius: 4px;
   color: $text-color;
-  &__mob-menu {
-    width: 30px;
-    height: 30px;
+
+  &__menu-toggle {
+    width: 32px;
+    height: 32px;
     top: 8px;
-    right: 8px;
+    right: 15px;
     position: absolute;
-    @include flex-elements-center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
     @media screen and (min-width: $size-tab) {
       display: none;
     }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &__toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    fill: currentColor;
   }
 }

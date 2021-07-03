@@ -1,0 +1,80 @@
+.mob-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: $gap;
+  transform: translate3d(100%, 0, 0);
+  background-color: $background-primary-color;
+  transition: transform $transition-duration $timing-function;
+  @media screen and (orientation: landscape) {
+    display: flex;
+  }
+
+  // когда открыт
+  &.is-open {
+    transform: translate3d(0, 0, 0);
+  }
+
+  // список ссылок навигации моб.меню
+  &__list {
+    margin-bottom: 2 * $gap;
+    @media screen and (orientation: landscape) {
+      margin-right: 2 * $gap;
+    }
+  }
+
+  // задаем интервал между ссылками
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: $gap / 2;
+    }
+  }
+
+  // список авторизации
+  &__auth-list {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (orientation: portrait) {
+      margin-bottom: 2 * $gap;
+    }
+    padding: $gap;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    @media screen and (orientation: landscape) {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 2 * $gap;
+    }
+  }
+
+  // &__auth-item {
+  //   &:not(:last-child) {
+  //     margin-right: $gap;
+  //   }
+
+  &__contact-list {
+    display: flex;
+    justify-content: center;
+    @media screen and (orientation: landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__contact-item {
+    @media screen and (orientation: landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &:not(:last-child) {
+      @media screen and (orientation: portrait) {
+        margin-right: $gap;
+      }
+
+      @media screen and (orientation: landscape) {
+        margin-bottom: 2 * $gap;
+      }
+    }
+  }
+}

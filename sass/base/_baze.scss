@@ -12,6 +12,28 @@ body {
 
 .link {
   @include reset-link;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &__nav {
+    padding: 5px;
+    color: $link-nav-color;
+    &--active {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+    }
+    &--muted {
+      display: flex;
+      justify-content: center;
+      @include font-sizes(12, 16);
+      color: $link-nav-color-muted;
+    }
+    &--icon {
+      margin-right: $gap / 5;
+      fill: currentColor;
+    }
+  }
 }
 
 .title {
