@@ -2,4 +2,8 @@
 .section {
   margin: 50px 0;
   background-color: $background-primary-color;
+
+  &__header {
+    padding: $min-padding 0;
+  }
 }
