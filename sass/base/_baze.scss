@@ -38,10 +38,6 @@ body {
 
 .title {
   @include reset-title;
-  margin-bottom: $gap / 2;
-  @media screen and (min-width: $size-desk) {
-    margin-bottom: $gap;
-  }
 
   &--slogan {
     @include font-set(18, 24, map-get($font-weights, 'black'), 0.03);
