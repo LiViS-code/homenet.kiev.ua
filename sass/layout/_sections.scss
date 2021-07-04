@@ -18,6 +18,7 @@
   }
 
   &__footer {
+    margin: $gap / 2 0;
     background-color: $background-block-color;
     border-top: 3px solid $accent-color;
     box-shadow: $top-shadow;

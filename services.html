@@ -25,87 +25,173 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>HomeNET-послуги</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/"
-          ><img src="./img/homenet.png" alt="logo HomeNET" width="180" />
-          <h1>Інтернет до кожної оселі!</h1></a
+  <body style>
+    <header class="section section__header">
+      <div class="container container__header">
+        <div class="logo-box">
+          <a class="link logo__link" href="/"
+            ><img class="logo__img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
+          </a>
+          <!-- TODO сделать вызов формы оформления заказа -->
+          <h1 class="title title--slogan">Інтернет до кожної оселі!</h1>
+        </div>
+        <!-- мобильное меню навигации -->
+        <button
+          class="btn btn__menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-        <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a class="active" href="services.html">Послуги</a></li>
-          <li><a href="payment.html">Оплата</a></li>
-          <li><a href="contract.html">Договір</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Кабінет</a></li>
-          <li><a href="#">Реєстрація</a></li>
-        </ul>
-      </nav>
+          <svg class="btn__toggle-icon" width="20" height="20">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-nav js-menu-container" id="mobile-menu">
+          <button
+            class="btn btn__menu-toggle js-close-menu"
+            type="button"
+            aria-expanded="true"
+            aria-controls="mobile-menu"
+          >
+            <svg class="btn__toggle-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="list mob-nav__list">
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="index.html">Головна</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav link__nav--active" href="./services.html">Послуги</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./payment.html">Оплата</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./contract.html">Договір</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="link link__nav" href="./contact.html">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mob-nav__auth-list">
+            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Кабінет</a></li>
+            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Реєстрація</a></li>
+          </ul>
+          <ul class="list mob-nav__contact-list">
+            <li class="mob-nav__contact-item">
+              <a href="tel:+0442281629" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(044) 228-16-29</a
+              >
+            </li>
+            <li class="mob-nav__contact-item">
+              <a href="tel:+0960001659" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(096) 000-16-59</a
+              >
+            </li>
+            <li class="mob-nav__contact-item">
+              <a href="tel:+0950001659" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(095) 000-16-59</a
+              >
+            </li>
+            <li class="mob-nav__contact-item">
+              <a href="tel:+0442281629" class="link link__nav--muted"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(093) 000-16-59</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Навигация по сайту -->
+        <nav class="top-nav">
+          <ul class="list nav-list">
+            <li class="nav-item">
+              <a class="link link__nav link__nav--active" href="./index.html">Головна</a>
+            </li>
+            <li class="nav-item"><a class="link link__nav" href="./services.html">Послуги</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./payment.html">Оплата</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./contract.html">Договір</a></li>
+            <li class="nav-item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
+          </ul>
+          <ul class="list auth-list">
+            <li><a class="link link__nav" href="#">Кабінет</a></li>
+            <li><a class="link link__nav" href="#">Реєстрація</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main-container">
+    <main class="section section__main">
       <!-- Услуги подключения Интернет -->
-      <section class="services-container">
-        <h2>Інтернет</h2>
-        <p>
-          Підключемо Вашу <a class="link-type" href="#option_1">оселю</a>,
-          <a class="link-type" href="#option_2">приватний будинок</a> або
-          <a class="link-type" href="#option_3"></a> офіс до мережі Інтернет.
+      <section class="container">
+        <h2 class="title">Інтернет</h2>
+        <p class="text">
+          Підключемо Вашу <a class="link" href="#option_1">оселю</a>,
+          <a class="link" href="#option_2">приватний будинок</a> або
+          <a class="link" href="#option_3"></a> офіс до мережі Інтернет.
         </p>
-        <p>
-          Також, розглянемо <a class="link-type" href="#option_4">індивідуальне пікдлючення</a> за
+        <p class="text">
+          Також, розглянемо <a class="link" href="#option_4">індивідуальне пікдлючення</a> за
           особливими умовами.
         </p>
-        <p>
+        <p class="text">
           Маємо розгалужену оптоволоконну мережу в м.Києві та Київській області (Броварський,
           Васильківський райони).
         </p>
-        <p>
+        <p class="text">
           Замовте послугу підключення, подавши заявку, зручним для Вас способом в розділі
-          <a class="link-type" href="contact.html">контакти</a>
+          <a class="link" href="contact.html">контакти</a>
         </p>
-        <p>Оберіть нижче варіант, що Вам підходить та ознайомтесь з умовами надання послуги.</p>
+        <p class="text">
+          Оберіть нижче варіант, що Вам підходить та ознайомтесь з умовами надання послуги.
+        </p>
         <a name="option_1" class="bookmark"></a>
-        <ul class="connection-options-list">
+        <ul class="list">
           <!-- Услович подключения многоквартирных домов -->
           <li>
             <input type="checkbox" id="option-1" class="services-hide" />
-            <label for="option-1"><h3>Київ. Багатоквартирні будинки.</h3></label>
-            <section class="section-info-option">
-              <p>
+            <label for="option-1"
+              ><h3 class="title title__feature">Київ. Багатоквартирні будинки.</h3></label
+            >
+            <section class="container">
+              <p class="text">
                 Мешканцям Деснянського району м.&nbsp;Києва пропонуємо безлімітне підключення до
                 Інтернет у межах покриття мережі HomeNET.
               </p>
-              <p>
+              <p class="text">
                 Багатоквартирні будинки під'єднано до нашої оптоволоконної мережі. Це дозволяє
                 абонентам HomeNET отримати швидкісний та якісний доступ до Інтернет за вигідними
                 умовами.
               </p>
-              <p>
+              <p class="text">
                 До оселі абонента ми прокладаємо кабель UTP Cat5e - вита пара і під'єднуємо його до
                 Вашого маршрутизатора.
               </p>
-              <p>
+              <p class="text">
                 Роботи з прокладання кабелю від нашого комутатійоного обладнання в будинку до Вашого
                 помешкання виконуємо <u>безкоштовно</u>.
               </p>
-              <p>
+              <p class="text">
                 Прокладання кабелю в квартирі залежить від конкретних умов і узгоджується з нашими
                 майстрами під час виконування підключення.
               </p>
-              <p>
+              <p class="text">
                 Монтажна бригада має необхідний інструмент, та виконує роботи з підключення до
                 послуги добросовістно та якісно.
               </p>
-              <p>Пропонуємо наступну схему роботи:</p>
-              <ul>
+              <p class="text">Пропонуємо наступну схему роботи:</p>
+              <ul class="list">
                 <li>
-                  <a class="link-type" href="contact.html">Уточніть</a> технічну можливість
-                  підключення Вашої оселі.
+                  <a class="link" href="contact.html">Уточніть</a> технічну можливість підключення
+                  Вашої оселі.
                 </li>
-                <li><a class="link-type" href="contact.html">Залиште заявку</a> на підлкючення.</li>
+                <li><a class="link" href="contact.html">Залиште заявку</a> на підлкючення.</li>
                 <li>
                   Отримайте підтвердження телефоном про час та день підключення від нашої монтажної
                   бригади.
@@ -113,12 +199,12 @@
                 <li>Оберіть тарифний план.</li>
                 <li>Користуйтеся послугою.</li>
               </ul>
-              <p>
+              <p class="text">
                 Після здійснення підключення Ви сплачуєте авансовий платіж, що становить 200 грн. Ці
                 кошти зараховуються на Ваш особовий рахунок і використовуються Вами вже згідно
                 обраного тарифного плану.
               </p>
-              <p>Саме <span>підключення для Вас - безкоштовне</span>.</p>
+              <p class="text">Саме <span>підключення для Вас - безкоштовне</span>.</p>
               <table class="tarif">
                 <caption>
                   Тарифи мережі HomeNET
@@ -169,9 +255,11 @@
           <li>
             <a name="option_2" class="bookmark"></a>
             <input type="checkbox" id="option-2" class="services-hide" />
-            <label for="option-2"><h3>Київська область. Приватні будинки.</h3></label>
-            <section>
-              <p>
+            <label for="option-2"
+              ><h3 class="title title__feature">Київська область. Приватні будинки.</h3></label
+            >
+            <section class="container">
+              <p class="text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo
                 laborum deserunt quaerat numquam assumenda maiores incidunt voluptate temporibus,
                 est perferendis dolore voluptates praesentium neque possimus corporis officiis odio
@@ -183,9 +271,11 @@
           <a name="option_3" class="bookmark"></a>
           <li>
             <input type="checkbox" id="option-3" class="services-hide" />
-            <label for="option-3"><h3>Підключення корпоративних замовників.</h3></label>
-            <section>
-              <p>
+            <label for="option-3"
+              ><h3 class="title title__feature">Підключення корпоративних замовників.</h3></label
+            >
+            <section class="container">
+              <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rerum iusto,
                 facere porro praesentium sequi enim soluta eius molestias laudantium quam
                 voluptatem! Delectus error sit eos? Libero corrupti quibusdam totam omnis eos nam
@@ -203,9 +293,11 @@
           <a name="option_4" class="bookmark"></a>
           <li>
             <input type="checkbox" id="option-4" class="services-hide" />
-            <label for="option-4"><h3>Індивідуальні умови підключення.</h3></label>
-            <section>
-              <p>
+            <label for="option-4"
+              ><h3 class="title title__feature">Індивідуальні умови підключення.</h3></label
+            >
+            <section class="container">
+              <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam
                 voluptatem, expedita eligendi sequi illum aperiam ratione unde quia harum, nisi
                 maiores quod necessitatibus reprehenderit eveniet officiis tempore? Asperiores,
@@ -216,32 +308,32 @@
         </ul>
       </section>
       <!-- Услуги подключения IPTV -->
-      <section class="services-container">
-        <h2>IPTV</h2>
-        <p>
+      <section class="container">
+        <h2 class="title">IPTV</h2>
+        <p class="text">
           Сучасні технології дозволяють здійснювати перегляд телевізійних передач за допомогою нової
           послуги - IPTV.
         </p>
-        <p>
+        <p class="text">
           Це інтерактивне телебачення, яке окрім звичного для всіх перегляду телепередач, надає
           додаткові можливості для користувачів:
         </p>
-        <ul>
+        <ul class="list">
           <li>поставити перегляд передачі на паузу;</li>
           <li>переглянути запис передачі у зручний час;</li>
           <li>мати доступ до фільмів та передач, що транслювались раніше;</li>
           <li>формувати списки обраних телеканалів;</li>
           <li>обмежувати доступ до перегляду телеканалів паролем.</li>
         </ul>
-        <p>
+        <p class="text">
           Послуга IPTV надається всім користувачам мережі HomeNET за бажанням і тарифікується
           окремо, в залежності від обраного списку каналів.
         </p>
-        <p>
+        <p class="text">
           Також у Вас є можливість перегляду більше 100 IPTV-каналів безкоштовно у соціальному
           пакеті.
         </p>
-        <p>
+        <p class="text">
           Після підключення послуги IPTV ви отримаєте безкоштовно необмежений доступ до перегляду
           більше 300 телеканалів на протязі промоперіоду, що становить сім днів.
         </p>
@@ -249,31 +341,75 @@
           Керувати послугою IPTV, обирати списки каналів, формувати плей-листи та отримати детальні
           інсрукції з налаштування обладнання Ви зможете із свого осбистого кабінету.
         </p>
-        <p>
+        <p class="text">
           До одного облікового запису Ви зможете підключити незалежно 5 пристроїв для одночасного
           перегляду телеканалів.
         </p>
-        <p>
+        <p class="text">
           Ви завжди можете призупинити користування послугою IPTV, або обрати безкоштовний
           соціальний пакет.
         </p>
-        <p>
-          <a href="/contact.html">Подайте заявку</a> на підключення послуги IPTV, зручним для Вас
-          способом, та отримайте досуп до особового кабінету IPTV.
+        <p class="text">
+          <a class="link" href="/contact.html">Подайте заявку</a> на підключення послуги IPTV,
+          зручним для Вас способом, та отримайте досуп до особового кабінету IPTV.
         </p>
       </section>
     </main>
   </body>
-  <footer>
-    <p>
-      &copy; 2010
-      <script>
-        new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear());
-      </script>
-      , ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
-      Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
-      ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
-    </p>
-    <address>Київ, бульвар Академіка Вернадського, буд. 34/1</address>
+  <footer class="section section__footer">
+    <div class="container container__footer">
+      <p class="text text--copyright">
+        &copy; 2010
+        <script>
+          new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear() + ',');
+        </script>
+        ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
+        Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
+        ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
+      </p>
+      <address>
+        <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+        <ul class="list list__contact-footer">
+          <li class="list__item-contact">
+            <a href="tel:+0442281629" class="link link__nav--footer"
+              ><svg class="link__nav--icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-phone"></use></svg
+              >(044) 228-16-29</a
+            >
+          </li>
+
+          <li class="list__item-contact">
+            <a href="tel:+0960001659" class="link link__nav--footer"
+              ><svg class="link__nav--icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-phone"></use></svg
+              >(096) 000-16-59</a
+            >
+          </li>
+
+          <li class="list__item-contact">
+            <a href="tel:+0950001659" class="link link__nav--footer"
+              ><svg class="link__nav--icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-phone"></use></svg
+              >(095) 000-16-59</a
+            >
+          </li>
+
+          <li class="list__item-contact">
+            <a href="tel:+0930001659" class="link link__nav--footer"
+              ><svg class="link__nav--icon" width="14" height="16">
+                <use href="./img/icons.svg#icon-phone"></use></svg
+              >(093) 000-16-59</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
+  <script
+    defer=""
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
 </html>

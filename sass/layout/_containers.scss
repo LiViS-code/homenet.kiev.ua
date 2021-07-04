@@ -1,7 +1,7 @@
 // основной контейнер для разделов сайта
 .container {
   max-width: 95vw;
-  margin: 0 auto;
+  margin: $gap auto;
   padding: $min-padding * 2 $min-padding;
   border-radius: $min-padding;
   background-color: $background-block-color;
@@ -10,8 +10,11 @@
     padding: 0 $min-padding;
   }
 
-  &__header {
+  &__header,
+  &__footer {
     padding: $min-padding;
     border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

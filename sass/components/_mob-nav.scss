@@ -58,20 +58,20 @@
   }
 
   &__contact-list {
+    max-width: $size-min - $gap;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     @media screen and (orientation: landscape) {
       margin-left: 50%;
-      align-items: flex-end;
+      align-items: center;
     }
   }
   &__contact-item {
     @media screen and (orientation: landscape) {
       flex-direction: column;
       align-items: center;
-    }
-    &:not(:last-child) {
-      margin-right: $gap;
     }
   }
 }

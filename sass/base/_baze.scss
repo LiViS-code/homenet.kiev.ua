@@ -8,6 +8,14 @@ body {
 
 .list {
   @include reset-list;
+
+  &__contact-footer {
+    max-width: $size-min - 2 * $gap;
+    margin: 0 auto $gap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .link {
@@ -33,11 +41,12 @@ body {
     &--footer,
     &--muted {
       display: flex;
+      padding: 12px 0;
       @include font-sizes(12, 16);
     }
 
     &--icon {
-      margin-right: $gap / 5;
+      margin-right: $gap / 6;
       fill: currentColor;
     }
   }
@@ -45,16 +54,22 @@ body {
 
 .title {
   @include reset-title;
+  margin-bottom: $gap;
+  @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
 
   &--slogan {
-    @include font-set(18, 24, map-get($font-weights, 'black'), 0.03);
+    margin-bottom: 0;
+    @include font-sizes-weight(18, 24, map-get($font-weights, 'black'));
     text-transform: uppercase;
     text-align: center;
   }
 
   &__represent {
-    margin-bottom: $gap;
     text-align: center;
+  }
+
+  &__feature {
+    @include font-sizes(14, 20);
   }
 }
 
@@ -70,7 +85,12 @@ body {
     font-weight: map-get($font-weights, 'medium');
   }
 
+  &__address {
+    text-align: center;
+  }
+
   &--copyright {
-    @include font-sizes(10, 12);
+    @include font-sizes(8, 10);
+    margin-bottom: 0;
   }
 }
