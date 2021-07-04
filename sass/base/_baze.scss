@@ -16,6 +16,7 @@ body {
   &:focus {
     color: $accent-color;
   }
+
   &__nav {
     padding: 5px;
     color: $link-nav-color;
@@ -23,12 +24,18 @@ body {
       color: $accent-color;
       border-bottom: 1px solid $accent-color;
     }
+
+    &--muted {
+      color: $link-nav-color-muted;
+      justify-content: center;
+    }
+
+    &--footer,
     &--muted {
       display: flex;
-      justify-content: center;
       @include font-sizes(12, 16);
-      color: $link-nav-color-muted;
     }
+
     &--icon {
       margin-right: $gap / 5;
       fill: currentColor;
@@ -44,6 +51,11 @@ body {
     text-transform: uppercase;
     text-align: center;
   }
+
+  &__represent {
+    margin-bottom: $gap;
+    text-align: center;
+  }
 }
 
 .text {
@@ -56,5 +68,9 @@ body {
   &__address {
     margin-bottom: $gap / 4;
     font-weight: map-get($font-weights, 'medium');
+  }
+
+  &--copyright {
+    @include font-sizes(10, 12);
   }
 }

@@ -3,9 +3,9 @@
   border: 1px solid $color;
 }
 // сплошной борюр с нужным цветом и радиусом
-@mixin bordered($color, $br) {
+@mixin bordered($color, $br: 5) {
   @include border-solid-color($color);
-  border-radius: $br;
+  border-radius: $br + px;
 }
 // установка типографии
 @mixin font-sizes($fs, $lh) {

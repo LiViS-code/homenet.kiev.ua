@@ -1,0 +1,25 @@
+// основная секция разделов сайта
+.section {
+  margin: $gap 0;
+  background-color: $background-primary-color;
+
+  &__header {
+    width: 100vw;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    background-color: $background-block-color;
+    border-bottom: 3px solid $accent-color;
+    box-shadow: $bottom-shadow;
+  }
+
+  &__main {
+    margin-top: 111px;
+  }
+
+  &__footer {
+    background-color: $background-block-color;
+    border-top: 3px solid $accent-color;
+    box-shadow: $top-shadow;
+  }
+}

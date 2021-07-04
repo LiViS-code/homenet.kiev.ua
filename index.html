@@ -27,11 +27,11 @@
     <title>HomeNET</title>
   </head>
   <body style>
-    <header class="section__header">
-      <div class="container header-container">
+    <header class="section section__header">
+      <div class="container container__header">
         <div class="logo-box">
-          <a class="logo-link" href="/"
-            ><img class="logo-img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
+          <a class="link logo__link" href="/"
+            ><img class="logo__img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
           </a>
           <!-- TODO сделать вызов формы оформления заказа -->
           <h1 class="title title--slogan">Інтернет до кожної оселі!</h1>
@@ -116,9 +116,9 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section section__main">
         <div class="container">
-          <h2 class="title">
+          <h2 class="title title__represent">
             Ви на сайті мережі HomeNET <br />
             (ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ)
           </h2>
@@ -145,19 +145,33 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="section section__footer">
       <div class="container">
-        <p class="text">
+        <p class="text text--copyright">
           &copy; 2010
           <script>
-            new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear());
+            new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear() + ',');
           </script>
-          , ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
+          ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
           Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
           ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
         </p>
         <address>
-          <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+          <ul class="list">
+            <li>
+              <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+            </li>
+
+            <li>
+              <p class="text text__address">
+                <a href="tel:+0442281629" class="link link__nav--footer"
+                  ><svg class="link__nav--icon" width="14" height="16">
+                    <use href="./img/icons.svg#icon-phone"></use></svg
+                  >(044) 228-16-29</a
+                >
+              </p>
+            </li>
+          </ul>
         </address>
       </div>
     </footer>

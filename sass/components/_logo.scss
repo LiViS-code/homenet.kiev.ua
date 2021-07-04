@@ -1,0 +1,13 @@
+.logo {
+  &__link {
+    display: inline-flex;
+    margin-right: $gap;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    @include bordered($link-color);
+    box-shadow: $lights-shadow;
+  }
+}
