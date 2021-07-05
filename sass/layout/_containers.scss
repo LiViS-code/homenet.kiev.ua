@@ -1,10 +1,9 @@
 // основной контейнер для разделов сайта
 .container {
   max-width: 95vw;
-  margin: $gap auto;
+  margin: 0 auto;
   padding: $min-padding;
-  border-radius: $min-padding;
-  background-color: $background-block-color;
+
   @media screen and (min-width: $size-desk) {
     max-width: $size-desk - 400;
     padding: 0 $min-padding;
@@ -18,7 +17,20 @@
     margin-bottom: 0;
   }
 
+  &__main {
+    margin-top: $gap;
+    box-shadow: $light-shadow;
+    border-radius: $min-padding;
+    background-color: $background-block-color;
+  }
+
   &__support {
     @include bordered($accent-color);
+
+    &:hover,
+    &:focus {
+      background-color: $background-support;
+      box-shadow: $paper-shadow;
+    }
   }
 }

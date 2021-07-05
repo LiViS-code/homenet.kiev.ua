@@ -3,7 +3,6 @@ body {
   font-family: $font-family-site;
   @include font-set(14, 18, map-get($font-weights, 'regular'), 0.03);
   color: $text-color;
-  background-color: $background-primary-color;
 }
 
 .list {
@@ -20,6 +19,11 @@ body {
   &__contact-footer {
     margin: 0 auto $gap;
   }
+
+  &__correspondence {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .link {
@@ -27,6 +31,12 @@ body {
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  &--icon {
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
   }
 
   &__nav {

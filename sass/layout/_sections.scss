@@ -1,7 +1,6 @@
 // основная секция разделов сайта
 .section {
-  margin: $gap 0;
-  background-color: $background-primary-color;
+  padding: $gap 0;
 
   &__header {
     width: 100vw;
@@ -14,13 +13,19 @@
   }
 
   &__main {
-    margin-top: 111px;
+    padding-top: 82px;
+    background-color: $background-primary-color;
   }
 
   &__footer {
-    margin: $gap / 2 0;
     background-color: $background-block-color;
     border-top: 3px solid $accent-color;
     box-shadow: $top-shadow;
+  }
+
+  &__header,
+  &__footer {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

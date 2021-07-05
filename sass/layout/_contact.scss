@@ -1,0 +1,5 @@
+.list-supports > li {
+  &:not(:last-child) {
+    margin-bottom: $gap;
+  }
+}

@@ -1,12 +1,14 @@
 // цветовая палитра
 $text-color: #0d3d74;
-$accent-color: #ffa600;
+// $accent-color: #ffa600;
+$accent-color: #b36c35;
 $link-color: #3b70e4;
 $link-nav-color: #0328ff;
 $link-nav-color-muted: rgba(3, 40, 255, 0.6);
 
 $background-primary-color: #fff8dc;
 $background-block-color: #b0c4de;
+$background-support: #9ebce2;
 
 // точки перелома
 $size-min: 320px;
@@ -35,3 +37,6 @@ $bottom-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
 
 // тень сверху
 $top-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+
+$paper-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.6),
+  23px 0 20px -23px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(0, 0, 0, 0.1);
