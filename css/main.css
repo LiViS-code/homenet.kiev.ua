@@ -32,9 +32,8 @@ body {
   list-style-type: none;
 }
 
-.list__contact-footer {
+.list__contact, .list__contact-footer {
   max-width: 260px;
-  margin: 0 auto 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +42,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.list__contact-footer {
+  margin: 0 auto 30px;
 }
 
 .link {
@@ -130,6 +133,10 @@ body {
 .text--welcome, .text__address {
   margin-bottom: 7.5px;
   font-weight: 500;
+}
+
+.text--no-margin {
+  margin-bottom: 0;
 }
 
 .text__address {
@@ -343,7 +350,7 @@ body {
 .container {
   max-width: 95vw;
   margin: 30px auto;
-  padding: 30px 15px;
+  padding: 15px;
   border-radius: 15px;
   background-color: #b0c4de;
 }
@@ -360,6 +367,11 @@ body {
   border-radius: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.container__support {
+  border: 1px solid #ffa600;
+  border-radius: 5px;
 }
 
 .logo-box {

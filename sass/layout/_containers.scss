@@ -2,7 +2,7 @@
 .container {
   max-width: 95vw;
   margin: $gap auto;
-  padding: $min-padding * 2 $min-padding;
+  padding: $min-padding;
   border-radius: $min-padding;
   background-color: $background-block-color;
   @media screen and (min-width: $size-desk) {
@@ -16,5 +16,9 @@
     border-radius: 0;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  &__support {
+    @include bordered($accent-color);
   }
 }

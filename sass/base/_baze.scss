@@ -9,12 +9,16 @@ body {
 .list {
   @include reset-list;
 
+  &__contact,
   &__contact-footer {
     max-width: $size-min - 2 * $gap;
-    margin: 0 auto $gap;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &__contact-footer {
+    margin: 0 auto $gap;
   }
 }
 
@@ -83,6 +87,10 @@ body {
   &__address {
     margin-bottom: $gap / 4;
     font-weight: map-get($font-weights, 'medium');
+  }
+
+  &--no-margin {
+    margin-bottom: 0;
   }
 
   &__address {
