@@ -13,7 +13,7 @@
   }
 
   &__main {
-    padding-top: 82px;
+    padding-top: 82px + $gap;
     background-color: $background-primary-color;
   }
 

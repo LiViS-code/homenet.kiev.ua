@@ -17,12 +17,46 @@ body {
   }
 
   &__contact-footer {
-    margin: 0 auto $gap;
+    margin: 0 auto $gap / 4;
   }
 
   &__correspondence {
     display: flex;
     justify-content: space-around;
+  }
+
+  &__pay-list,
+  &__terminal-list {
+    @include flex-elements-center();
+    margin-bottom: $gap;
+  }
+
+  &__terminal-list {
+    flex-wrap: wrap;
+  }
+
+  &__pay-item {
+    flex-basis: calc((100% - 2 * #{$gap}) / 2);
+
+    &:not(:last-child) {
+      margin-right: $gap;
+    }
+  }
+
+  &__terminal-item {
+    flex-basis: calc((100% - 2 * #{$gap}) / 2);
+
+    &:nth-child(odd) {
+      margin-right: $gap;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: $gap;
+    }
+  }
+
+  &__methods-item {
+    margin-bottom: $gap;
   }
 }
 
@@ -37,6 +71,10 @@ body {
     padding: 5px 0;
     display: inline-flex;
     align-items: center;
+  }
+
+  &__context {
+    text-decoration: underline 1px dotted $link-nav-color;
   }
 
   &__nav {
@@ -85,6 +123,10 @@ body {
   &__feature {
     @include font-sizes(14, 20);
   }
+
+  &__method {
+    margin-bottom: $gap / 2;
+  }
 }
 
 .text {
@@ -93,6 +135,11 @@ body {
   @media screen and (min-width: $size-desk) {
     margin-bottom: $gap;
   }
+
+  &--last-paragraph {
+    margin-bottom: 0;
+  }
+
   &--welcome,
   &__address {
     margin-bottom: $gap / 4;

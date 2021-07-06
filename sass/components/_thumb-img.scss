@@ -1,0 +1,10 @@
+.thumb-img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  &--shadow {
+    box-shadow: $light-shadow;
+    border-radius: 5px;
+  }
+}
