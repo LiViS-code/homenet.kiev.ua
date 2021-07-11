@@ -129,26 +129,26 @@
     </header>
     <main class="section section__main">
       <div class="container container__main">
-        <a name="top" class="bookmark__pay"></a>
+        <a class="bookmark" id="top"></a>
         <ul class="list list__methods-list">
           <!-- Варианты пополнения счета -->
           <li class="list__methods-item">
-            <h2 class="title title__method">Варіанти поповнення рахунку</h2>
+            <h2 class="title title__method">Особовий рахунок. Поповнення.</h2>
             <p class="text">
               Облік руху коштів ведеться за Вашим особовим рахунком, який формується при
               підключенні.
             </p>
             <p class="text">Поповнюйте свій рахунок:</p>
-            <ul class="method-list">
-              <li>
+            <ul class="list__method-menu">
+              <li class="list__marker-item">
                 Банківською карткою <a class="link link__context" href="#online">у мережі</a>.
               </li>
-              <li>
+              <li class="list__marker-item">
                 Готівкою через
                 <a class="link link__context" href="#terminal">термінал</a>
                 самообслуговування.
               </li>
-              <li>
+              <li class="list__marker-item">
                 Переказом за
                 <a class="link link__context" href="#bank">реквізитами банку</a>.
               </li>
@@ -161,7 +161,7 @@
 
           <!-- Пополнение онлайн -->
           <li class="list__methods-item">
-            <a name="online" class="bookmark__pay"></a>
+            <a class="bookmark" id="online"></a>
             <h2 class="title title__method">Поповнення у мережі</h2>
             <p class="text">
               Ми <b>радимо</b> Вам використовувати <b>саме цей</b> спосіб. Адже автоматизовані
@@ -207,12 +207,12 @@
             <p class="text">
               Доступ до Internet буде надано автоматично на протязі однієї години після поповнення.
             </p>
-            <a class="link-type" href="#top">до гори &#8657;</a>
+            <a class="link link__lift" href="#top">до гори &#8657;</a>
           </li>
 
           <!-- Пополнение через сети терминалов -->
           <li class="list__methods-item">
-            <a name="terminal" class="bookmark__pay"></a>
+            <a class="bookmark" id="terminal"></a>
             <h2 class="title title__method">Поповнення через термінали</h2>
             <p class="text">
               Термінали самообслуговування дозволяють дуже зручно поповнити свій особовий рахунок.
@@ -222,7 +222,7 @@
             <p class="text">Оберіть найближчий до Вас термінал:</p>
             <ul class="list list__terminal-list">
               <li class="list__terminal-item">
-                <a href="https://ibox.ua/map" target="_blank"
+                <a class="link" href="https://ibox.ua/map" target="_blank"
                   ><img
                     class="thumb-img thumb-img--shadow"
                     src="./img/term2.jpg"
@@ -233,7 +233,7 @@
               </li>
 
               <li class="list__terminal-item">
-                <a href="https://2click.money/" target="_blank"
+                <a class="link" href="https://2click.money/" target="_blank"
                   ><img
                     class="thumb-img thumb-img--shadow"
                     src="./img/term3.jpg"
@@ -244,7 +244,7 @@
               </li>
 
               <li class="list__terminal-item">
-                <a href="https://terminals.easypay.ua/?map=true" target="_blank"
+                <a class="link" href="https://terminals.easypay.ua/?map=true" target="_blank"
                   ><img
                     class="thumb-img thumb-img--shadow"
                     src="./img/term1.jpg"
@@ -255,7 +255,7 @@
               </li>
 
               <li class="list__terminal-item">
-                <a href="http://24nonstop.com.ua/Customers/TerminalMap" target="_blank"
+                <a class="link" href="http://24nonstop.com.ua/Customers/TerminalMap" target="_blank"
                   ><img
                     class="thumb-img thumb-img--shadow"
                     src="./img/term4.jpg"
@@ -269,9 +269,14 @@
               Доступ до Internet надається на протязі однієї години після поповнення рахунку.
             </p>
             <p class="text">Це зручно і економить Ваш час.</p>
-            <div class="container-border">
-              <img src="./img/apple-touch-icon.png" alt="локотип HomeNET" align="left" />
-              <p class="text">
+            <div class="container__logo-img">
+              <img
+                class="thumb-img thumb-img--logo"
+                src="./img/apple-touch-icon.png"
+                alt="логотип HomeNET"
+                width="100"
+              />
+              <p class="text text--last-paragraph">
                 <b>Зверніть увагу</b> на зображення нашого логотипу на екрані терміналу (розділ
                 Інтернет), щоб не помилитися під час оплати.
               </p>
@@ -285,12 +290,12 @@
               термінальної мережі прийому платежів за телефонами, що вказані на треміналі, де ви
               сплачували.
             </p>
-            <a class="link-type" href="#top">до гори &#8657;</a>
+            <a class="link link__lift" href="#top">до гори &#8657;</a>
           </li>
 
           <!-- Пополнение по банковским реквизитам -->
           <li class="list__methods-item">
-            <a name="bank" class="bookmark__pay"></a>
+            <a class="bookmark" id="bank"></a>
             <h2 class="title title__method">Поповнення за банківськими реквізитами</h2>
             <p class="text">
               Поповнюйте свій особовий рахунок, використовуючи банківський переказ. Це можна зробити
@@ -340,7 +345,7 @@
               щонайменше наступного робочого дня по фактичному зарахуванню коштів на розрахунковий
               рахунок нашої компанії.
             </p>
-            <a class="link-type" href="#top">до гори &#8657;</a>
+            <a class="link link__lift" href="#top">до гори &#8657;</a>
           </li>
         </ul>
       </div>

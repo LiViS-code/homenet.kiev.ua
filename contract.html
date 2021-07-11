@@ -128,10 +128,9 @@
       </div>
     </header>
     <main class="section section__main">
-      <a name="top" class="bookmark"></a>
       <section class="container container__main">
-        <!-- <iframe src="./Files/PubDOG.pdf" frameborder="0"></iframe> -->
-        <h2 class="title">
+        <a id="top" class="bookmark"></a>
+        <h2 class="title title--center">
           ПУБЛІЧНИЙ ДОГОВІР <br />
           про надання інформаційних послуг
         </h2>
@@ -148,162 +147,184 @@
           платежу в рахунок оплати Послуг та отримання відповідного фінансового документа, що
           підтверджує факт оплати.
         </p>
-        <section class="container">
+        <div class="container__contract">
           <ol class="list contract-list">
             <!-- Предмет договора -->
-            <li>
-              <input type="checkbox" id="hd-1" class="contract-hide" />
-              <label for="hd-1"><h3>Предмет Договору.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-1" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-1">Предмет Договору.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     ВИКОНАВЕЦЬ забезпечує доступ абонента до інформаційних ресурсів (в тому числі:
                     доступ до глобальної мережі Інтернет).
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Послуга доступу до інформаційних ресурсів надається у точній відповідності з
                     діючими тарифами та умовами, опублікованими в Інтернеті на веб-сайті ВИКОНАВЦЯ
                     за адресою
-                    <a href="http://homenet.kiev.ua">http://homenet.kiev.ua</a>.
+                    <a class="link" href="http://homenet.kiev.ua">http://homenet.kiev.ua</a>.
                   </li>
-                  <li>АБОНЕНТ сплачує послуги ВИКОНАВЦЯ за чинним Тарифом.</li>
+                  <li class="contract-list__item--second-level">
+                    АБОНЕНТ сплачує послуги ВИКОНАВЦЯ за чинним Тарифом.
+                    <label class="checkbox__label checkbox__label--bottom" for="hd-1"
+                      >Згорнути текст</label
+                    >
+                  </li>
                 </ol>
-              </section>
+              </div>
             </li>
             <!-- Права и обязанности Сторон -->
-            <li>
-              <input type="checkbox" id="hd-2" class="contract-hide" />
-              <label for="hd-2"><h3>Права та обов’язки Сторін.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
-                    ВИКОНАВЕЦЬ зобов'язується:
-                    <ol>
-                      <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-2" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-2">Права та обов’язки Сторін.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
+                    ВИКОНАВЕЦЬ зобов'язується: <br /><br />
+                    <ol class="list contract-list">
+                      <li class="contract-list__item--third-level">
                         Надавати Абоненту Послуги згідно з чинним Договором, Тарифами та Умовами
                         надання послуг.
                       </li>
-                      <li>Забезпечити надання Абоненту якісних послуг зв'язку.</li>
-                      <li>
+                      <li class="contract-list__item--third-level">
+                        Забезпечити надання Абоненту якісних послуг зв'язку.
+                      </li>
+                      <li class="contract-list__item--third-level">
                         Не розголошувати третім особам персональні ідентифікаційні дані АБОНЕНТА і
                         використовувати їх тільки для обліку та контакту з АБОНЕНТОМ.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Своєчасно попереджати АБОНЕНТА про зміни в Договорі та Тарифах шляхом
                         публікації змін на офіційному сайті ВИКОНАВЦЯ не менше ніж за 10 (десять)
                         календарних днів перед вступом змін в силу.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Забезпечувати підключення АБОНЕНТА протягом п'яти календарних днів з моменту
                         подачі заявки на підключення, за умови, що є така технічна можливість.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         У разі незгоди з новою редакцією Договору, АБОНЕНТ має право припинити
                         користування Послугою відповідно до п. 8.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Оперативно реагувати на повідомлення АБОНЕНТА про несправності. Виконання
                         робіт з усунення несправностей проводиться відповідно до п.3 цього Договору.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         ВИКОНАВЕЦЬ залишає за собою право періодичного контролю діяльності АБОНЕНТА
                         в частині недопущення розсилки спаму і вірусів, попередження, а в разі
                         необхідності, відключенняАБОНЕНТА.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Про зміну банківських реквізитів ВИКОНАВЕЦЬ повідомляє через сайт
                         <a href="http://homenet.kiev.ua">http://homenet.kiev.ua</a> не пізніше, ніж
                         за 20 днів до вступу змін в силу.
                       </li>
                     </ol>
                   </li>
-                  <li>
-                    АБОНЕНТ зобов'язується:
-                    <ol>
-                      <li>
+                  <li class="contract-list__item--second-level">
+                    АБОНЕНТ зобов'язується: <br /><br />
+                    <ol class="list contract-list">
+                      <li class="contract-list__item--third-level">
                         Своєчасно і в повному обсязі вносити оплату згідно з вибраним тарифом і
                         замовленими послугами.
                       </li>
-                      <li>Виконувати умови діючого Договору та умови надання Послуг.</li>
-                      <li>
+                      <li class="contract-list__item--third-level">
+                        Виконувати умови діючого Договору та умови надання Послуг.
+                      </li>
+                      <li class="contract-list__item--third-level">
                         Стежити за станом свого Особового рахунку за допомогою персональної сторінки
                         на сайті ВИКОНАВЦЯ в особистому кабінеті, де враховується вся інформація
                         щодо спожитих послуг і платежів.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Своєчасно проводити оплату наданих додаткових Послуг платежем відповідно до
                         чинних Тарифів та порядком розрахунків.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Зберігати квитанцію, що підтверджує оплату Послуг за поточний місяць не
                         менше одного календарного місяця після надання таких Послуг.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Не розголошувати третім особам персональні ідентифікаційні дані доступу до
                         Послуги.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Систематично ознайомлюватися зі змінами в Договорі, Тарифах та умовах
                         надання Послуг, а також інших технологічних і організаційних змінах, що
                         розміщуються на офіційному сайті ВИКОНАВЦЯ.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Повідомляти диспетчеру ВИКОНАВЦЯ по телефону про виниклі збої або погіршення
                         якості зв'язку за місцем свого підключення, а також про будь-які аварійні
                         ситуації, що унеможливлюють отримувати послугу на території АБОНЕНТА.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Надавати службовцям ВИКОНАВЦЯ необхідне сприяння у проведенні робіт на
                         території АБОНЕНТА.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Не надавати послуги доступу в Інтернет третім особам і не проводити,
                         пов'язану з цим, комерційну діяльність через мережу ВИКОНАВЦЯ без додаткової
                         з ним Угоди.
                       </li>
-                      <li>Не допускати розсилки спаму і вірусів в Мережі.</li>
-                      <li>
+                      <li class="contract-list__item--third-level">
+                        Не допускати розсилки спаму і вірусів в Мережі.
+                      </li>
+                      <li class="contract-list__item--third-level">
                         Не вчиняти протиправних дій, пов’язаних з Послугою та передбачених
                         законодавством України.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Не вчиняти дії спрямовані проти нормального функціонування мережі ВИКОНАВЦЯ.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Використовувати отримані за цим Договором послуги відповідно до
                         законодавства України та правилами, прийнятими в мережі Інтернет.
                       </li>
-                      <li>Повідомляти ВИКОНВЦЯ про зміну своїх контактних телефонів.</li>
+                      <li class="contract-list__item--third-level">
+                        Повідомляти ВИКОНВЦЯ про зміну своїх контактних телефонів.
+                      </li>
                     </ol>
+                    <label class="checkbox__label checkbox__label--bottom" for="hd-2"
+                      >Згорнути текст</label
+                    >
                   </li>
                 </ol>
-              </section>
+              </div>
             </li>
             <!-- Порядок устранения неисправностей -->
-            <li>
-              <input type="checkbox" id="hd-3" class="contract-hide" />
-              <label for="hd-3"><h3>Порядок усунення несправностей.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-3" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-3">Порядок усунення несправностей.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     Заявки про збої в роботі Мережі приймаються операторами чергової служби за
                     телефонами та час вказаними на сайті ВИКОНАВЦЯ.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Виконання заявки проводиться в робочий час в термін не більше 24 робочих годин,
                     за винятком тих випадків, коли причиною збоїв є акти вандалізму або форс-мажорні
                     обставини, в цих випадках час відновлення може бути більше і заздалегідь не
                     визначається.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Інформація про можливі перерви у зв'язку, на час проведення профілактичних
                     робіт, розміщується на сайті ВИКОНАВЦЯ не менше ніж за 8 годин до початку їх
                     виконання.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Не є підставою для пред'явлення претензій за якістю послуг до ВИКОНАВЦЯ наступні
                     обставини:
-                    <ul class="contract-ul">
+                    <ul class="contract-list__ul">
                       <li>знеструмлення будівлі на території АБОНЕНТА;</li>
                       <li>
                         застосування абонентом нестандартного або неліцензійного програмного
@@ -316,167 +337,190 @@
                       <li>аварійний вихід з ладу обладнання ВИКОНАВЦЯ;</li>
                       <li>застосування АБОНЕНТОМ нестандартного кінцевогообладнання.</li>
                     </ul>
+                    <label class="checkbox__label checkbox__label--bottom" for="hd-3"
+                      >Згорнути текст</label
+                    >
                   </li>
                 </ol>
-              </section>
+              </div>
             </li>
             <!-- Порядок оплаты -->
-            <li>
-              <input type="checkbox" id="hd-4" class="contract-hide" />
-              <label for="hd-4"><h3>Порядок оплати.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-4" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-4">Порядок оплати.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     Оплата послуг проводиться в гривнях у безготівковій формі відповідно до чинних
                     Тарифів.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Прийняті від АБОНЕНТА грошові кошти враховуються ВИКОНАВЦЕМ на особовому рахунку
                     АБОНЕНТА.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Послуги надаються за умови наявності коштів на особовому рахунку АБОНЕНТА.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Оплата приймається через банківський переказ на розрахунковий рахунок ВИКОНАВЦЯ
                     з обов'язковим зазначенням ідентифікаційних даних АБОНЕНТА (особового рахунку) в
                     призначенні платежу, або іншим способом згідно інформації розміщеної на сайті
                     ВИКОНАВЦЯ.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Списання з особового рахунку коштів АБОНЕНТА проводиться регулярно першого числа
                     календарного місяця відповідно до обраного тарифного плану.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Списання з особового рахунку коштів АБОНЕНТА за разові послуги проводиться за
                     фактом їх надання.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Грошові кошти з особового рахунку АБОНЕНТА не списуються у разі призупинення
                     обслуговування за заявою АБОНЕНТА.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     ВИКОНАВЕЦЬ має право призупинити обслуговування АБОНЕНТА в разі невиконання
                     АБОНЕНТОМ пункту 2.2.1. Договору.
                   </li>
-                  <li>
-                    Кредит довіри.
-                    <ol>
-                      <li>
+                  <li class="contract-list__item--second-level">
+                    Кредит довіри. <br />
+                    <br />
+                    <ol class="list contract-list">
+                      <li class="contract-list__item--third-level">
                         АБОНЕНТ може скористатися кредитом довіри, протягом якого зобов'язується
                         погасити свою заборгованість.
                       </li>
-                      <li>
-                        Кредит довіри може бути наданий з 1-го по 4-е число поточного місяця включно
+                      <li class="contract-list__item--third-level">
+                        Кредит довіри може бути наданий з 1-го по 5-е число поточного місяця включно
                         за умови, що у АБОНЕНТА не було заборгованості в попередньому календарному
                         місяці і дозволяє отримати доступ до Послуги незалежно від стану особового
                         рахунку.
                       </li>
-                      <li>
+                      <li class="contract-list__item--third-level">
                         Кредит довіри активується АБОНЕНТОМ самостійно на персональній сторінці
                         особового кабінету на сайті ВИКОНАВЦЯ.
                       </li>
                     </ol>
                   </li>
                 </ol>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-4"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
             <!-- Порядок подключения и приемки-сдачи услуг -->
-            <li>
-              <input type="checkbox" id="hd-5" class="contract-hide" />
-              <label for="hd-5"><h3>Порядок підключення та здачі-приймання послуг.</h3> </label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-5" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-5">
+                  Порядок підключення та здачі-приймання послуг.
+                </label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     Підключення АБОНЕНТА здійснюється силами ВИКОНАВЦЯ або із залученням підрядних
                     організацій.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     При підключенні АБОНЕНТУ, за необхідності, надається кінцеве обладнання.
                     Обладнання може бути передано на платній або безоплатній основі за домовленістю
                     сторін в кожному конкретному випадку, про що складається окремий акт передачі
                     обладнання, в якому вказуються умови передачі такого обладнання.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     АБОНЕНТ дозволяє ВИКОНАВЦЮ використання кабельних каналів, стовпів, опор, та
                     таке інше, що належать АБОНЕНТУ на правах приватної та колективної власності де
                     проводиться підключення, які необхідні для здійснення можливості підключення.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Після підключення АБОНЕНТУ повідомляється персональний особовий рахунок, на
                     якому в подальшому проводиться облік руху коштів АБОНЕНТА.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Надання ВИКОНАВЦЕМ та отримання АБОНЕНТОМ послуг починається протягом години з
                     моменту зарахування грошових коштів на особовий рахунок АБОНЕНТА.
                   </li>
                 </ol>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-5"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
             <!-- Ответсвенность сторон -->
-            <li>
-              <input type="checkbox" id="hd-6" class="contract-hide" />
-              <label for="hd-6"><h3>Відповідальність сторін.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-6" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-6">Відповідальність сторін.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     За невиконання або неналежне виконання прийнятих зобов'язань винна Сторона несе
                     матеріальну відповідальність у порядку і на підставах, передбачених чинним
                     законодавством України та за цим Договором.
                   </li>
-                  <li>
-                    У випадку порушення Абонентом п.п. 2.2.8., 2.2.9., 2.2.10., 2.2.11. ВИКОНАВЕЦЬ
-                    має право припинити надання послуг Абоненту без його згоди до усунення порушень
-                    умов цього Договору.
+                  <li class="contract-list__item--second-level">
+                    У випадку порушення Абонентом п.п. 2.2.10.-2.2.13. ВИКОНАВЕЦЬ має право
+                    припинити надання послуг Абоненту без його згоди до усунення порушень умов цього
+                    Договору.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Усі спори між Сторонами в рамках цього Договору підлягають розв'язанню шляхом
                     переговорів, а при не досягненні згоди, шляхом звернення до суду.
                   </li>
                 </ol>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-6"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
             <!-- Особенные условия -->
-            <li>
-              <input type="checkbox" id="hd-7" class="contract-hide" />
-              <label for="hd-7"><h3>Особливі умови.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-7" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-7">Особливі умови.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     Оскільки Інтернет є добровільним об'єднанням різних мереж, ВИКОНАВЕЦЬ не несе
                     відповідальності за доступність і нормальне функціонування не підконтрольних
                     йому окремих сегментів зовнішнього Інтернету.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     ВИКОНАВЕЦЬ не контролює і не несе відповідальності за якість та правдивість
                     одержаної АБОНЕНТОМ інформації з зовнішньої мережі Інтернет.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     ВИКОНАВЕЦЬ не несе відповідальності за понесені АБОНЕНТОМ збитки, пов'язані з
                     доступом сторонніх осіб до інформації і устаткуванню АБОНЕНТА.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     АБОНЕНТ самостійно відповідає за свої дії, які призвели до заподіянню шкоди
                     особі або майну громадян, юридичним особам, державі або порушили етичні принципи
                     суспільства в результаті прямого або непрямого використання Послуги.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Ні за яких обставин ВИКОНАВЕЦЬ не несе відповідальності за прямий або непрямий
                     збиток, заподіяний АБОНЕНТОВІ або третім особам в результаті використання або
                     неможливості використання послуг, або понесений у результаті помилок, пропусків,
                     перерв у роботі, видалення файлів, зміни функцій, дефектів, затримок в роботі
                     при використанні Послуги.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     АБОНЕНТ дозволяє ВИКОНАВЦЮ зберігати і робити обробку своїх персональних даних,
                     які використовуються для обліку руху коштів та зв'язку з АБОНЕНТОМ, за умови їх
                     нерозголошення третім особам без згоди АБОНЕНТА або наявних на те законних
                     підстав.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     АБОНЕНТ зобов'язується не робити ВИКОНАВЦЯ відповідачем по будь-яких
                     зобов'язаннях, витратам, а також по прямим або непрямим збитків, пов'язаних з:
-                    <ul class="contract-ul">
+                    <ul class="contract-list__ul">
                       <li>використання третіми особами наданих Абоненту послуг і можливостей;</li>
                       <li>
                         подальшим використанням ресурсів і можливостей мережі Інтернет, що має місце
@@ -502,56 +546,66 @@
                     </ul>
                   </li>
                 </ol>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-7"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
             <!-- Порядок расторжения Договора -->
-            <li>
-              <input type="checkbox" id="hd-8" class="contract-hide" />
-              <label for="hd-8"><h3>Порядок розірвання Договору.</h3></label>
-              <section class="contract-hide">
-                <ol>
-                  <li>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-8" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-8">Порядок розірвання Договору.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <ol class="list contract-list">
+                  <li class="contract-list__item--second-level">
                     При порушенні АБОНЕНТОМ умов цього Договору та/або Умов надання послуг
                     ВИКОНАВЕЦЬ має право на одностороннє розірвання Договору.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     ВИКОНАВЕЦЬ має право розірвати Договір в односторонньому порядку, якщо протягом
                     трьох місяців після повного вичерпання коштів на Рахунку АБОНЕНТА, він не внесе
                     чергової передоплати, або не повідомить про призупинення користування Послугою.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Сторони мають право на одностороннє розірвання Договору без пояснення причини.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     При відмові АБОНЕНТА від отримання Послуги та розірвання даного Договору, без
                     подання офіційно мотивованої відмови протягом двох днів з моменту початку
                     надання послуг, надання послуг припиняється до моменту врегулювання відносин.
                     При цьому послуги вважаються наданими і підлягають оплаті в розмірі обговореними
                     в п.4.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Повернення залишку невикористаних коштів у поточному місяці з особового рахунку
                     АБОНЕНТА при розірванні Договору з ініціативи або з вини АБОНЕНТА не
                     проводиться. Виняток становлять авансові платежі на використання послуги в
                     майбутніх періодах. Такі кошти повертаються Абоненту в повному обсязі.
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Повернення залишку невикористаних коштів, згідно особового рахунку АБОНЕНТА,
                     проводиться при розірванні Договору з ініціативи АБОНЕНТА
                   </li>
-                  <li>
+                  <li class="contract-list__item--second-level">
                     Повернення залишку відбувається банківським переказом за наданими АБОНЕНТОМ
                     реквізитами на підставі поданої до ВИКОНАВЦЯ заяви.
                   </li>
                 </ol>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-8"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
             <!-- Реквизиты -->
-            <li>
-              <input type="checkbox" id="hd-9" class="contract-hide" />
-              <label for="hd-9"><h3>Реквізити.</h3></label>
-              <section class="contract-hide">
-                <table>
+            <li class="contract-list__item--first-level">
+              <input class="checkbox__content-hide visually-hidden" type="checkbox" id="hd-9" />
+              <h3 class="title title__contract">
+                <label class="checkbox__label" for="hd-9">Реквізити.</label>
+              </h3>
+              <div class="container__contract container__contract--hidden">
+                <table class="">
                   <tr>
                     <td>ВИКОНАВЕЦЬ:</td>
                     <td><b>ТОВ &laquo;ХОУМНЕТ&raquo;</b></td>
@@ -573,11 +627,14 @@
                     <td><b>ПАТ "Альфа-Банк"</b></td>
                   </tr>
                 </table>
-              </section>
+                <label class="checkbox__label checkbox__label--bottom" for="hd-9"
+                  >Згорнути текст</label
+                >
+              </div>
             </li>
           </ol>
-          <a class="link-type" href="#top">до гори &#8657;</a>
-        </section>
+          <a class="link link__lift" href="#top">до гори &#8657;</a>
+        </div>
       </section>
     </main>
     <footer class="section section__footer">

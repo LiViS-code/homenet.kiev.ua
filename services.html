@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -115,7 +115,9 @@
             <li class="nav-item">
               <a class="link link__nav link__nav--active" href="./index.html">Головна</a>
             </li>
-            <li class="nav-item"><a class="link link__nav" href="./services.html">Послуги</a></li>
+            <li class="nav-item">
+              <a class="link link__nav" href="./services.html#tab-01">Послуги</a>
+            </li>
             <li class="nav-item"><a class="link link__nav" href="./payment.html">Оплата</a></li>
             <li class="nav-item"><a class="link link__nav" href="./contract.html">Договір</a></li>
             <li class="nav-item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
@@ -129,289 +131,377 @@
     </header>
     <main class="section section__main">
       <div class="container container__main">
-        <!-- Услуги подключения Интернет -->
-        <section>
-          <h2 class="title">Інтернет</h2>
-          <p class="text">
-            Підключемо Вашу <a class="link" href="#option_1">оселю</a>,
-            <a class="link" href="#option_2">приватний будинок</a> або
-            <a class="link" href="#option_3"></a> офіс до мережі Інтернет.
-          </p>
-          <p class="text">
-            Також, розглянемо <a class="link" href="#option_4">індивідуальне пікдлючення</a> за
-            особливими умовами.
-          </p>
-          <p class="text">
-            Маємо розгалужену оптоволоконну мережу в м.Києві та Київській області (Броварський,
-            Васильківський райони).
-          </p>
-          <p class="text">
-            Замовте послугу підключення, подавши заявку, зручним для Вас способом в розділі
-            <a class="link" href="contact.html">контакти</a>
-          </p>
-          <p class="text">
-            Оберіть нижче варіант, що Вам підходить та ознайомтесь з умовами надання послуги.
-          </p>
-          <a name="option_1" class="bookmark"></a>
-          <ul class="list">
-            <!-- Услович подключения многоквартирных домов -->
-            <li>
-              <input type="checkbox" id="option-1" class="services-hide" />
-              <label for="option-1"
-                ><h3 class="title title__feature">Київ. Багатоквартирні будинки.</h3></label
-              >
-              <section class="container">
+        <div class="container container__tabs-body">
+          <nav class="nav-tabs">
+            <ul class="list list__tabs">
+              <li class="list__tab-item">
+                <button
+                  class="btn__tab-link tablinks active"
+                  type="button"
+                  onclick="openService(event, 'Internet')"
+                >
+                  Інтернет
+                </button>
+              </li>
+
+              <li class="list__tab-item">
+                <button
+                  class="btn__tab-link tablinks"
+                  type="button"
+                  onclick="openService(event, 'IPTV')"
+                >
+                  Телебачення IPTV
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="container container__tabs">
+            <div class="container container__tab-content tabcontent" id="Internet">
+              <!-- Услуги подключения Интернет -->
+              <section class="section section__features">
+                <h2 class="title">Інтернет</h2>
                 <p class="text">
-                  Мешканцям Деснянського району м.&nbsp;Києва пропонуємо безлімітне підключення до
-                  Інтернет у межах покриття мережі HomeNET.
+                  ТОВ ХОУМНЕТ пропонує підключити Вашу
+                  <a class="link link__context" href="#option_1">оселю</a>,
+                  <a class="link link__context" href="#option_2">приватний будинок</a> або
+                  <a class="link link__context" href="#option_3">офіс</a> до мережі Інтернет.
                 </p>
                 <p class="text">
-                  Багатоквартирні будинки під'єднано до нашої оптоволоконної мережі. Це дозволяє
-                  абонентам HomeNET отримати швидкісний та якісний доступ до Інтернет за вигідними
+                  Також, розглянемо
+                  <a class="link" href="#option_4">індивідуальне пікдлючення</a> за особливими
                   умовами.
                 </p>
                 <p class="text">
-                  До оселі абонента ми прокладаємо кабель UTP Cat5e - вита пара і під'єднуємо його
-                  до Вашого маршрутизатора.
+                  Маємо розгалужену оптоволоконну мережу в м.Києві та Київській області
+                  (Броварський, Васильківський райони).
                 </p>
                 <p class="text">
-                  Роботи з прокладання кабелю від нашого комутатійоного обладнання в будинку до
-                  Вашого помешкання виконуємо <u>безкоштовно</u>.
+                  Замовте послугу підключення, подавши заявку, зручним для Вас способом в розділі
+                  <a class="link" href="contact.html">контакти</a>
                 </p>
                 <p class="text">
-                  Прокладання кабелю в квартирі залежить від конкретних умов і узгоджується з нашими
-                  майстрами під час виконування підключення.
+                  Оберіть нижче варіант, що Вам підходить та ознайомтесь з умовами надання послуги.
                 </p>
-                <p class="text">
-                  Монтажна бригада має необхідний інструмент, та виконує роботи з підключення до
-                  послуги добросовістно та якісно.
-                </p>
-                <p class="text">Пропонуємо наступну схему роботи:</p>
                 <ul class="list">
+                  <!-- Условия подключения многоквартирных домов -->
                   <li>
-                    <a class="link" href="contact.html">Уточніть</a> технічну можливість підключення
-                    Вашої оселі.
+                    <a id="option_1" class="bookmark"></a>
+                    <input
+                      class="checkbox__content-hide visually-hidden"
+                      type="checkbox"
+                      id="option-1"
+                    />
+                    <h3 class="title title__feature">
+                      <label class="checkbox__label" for="option-1"
+                        >Київ. Багатоквартирні будинки.</label
+                      >
+                    </h3>
+                    <section class="container container__features container__features--hidden">
+                      <h3 class="visually-hidden">Умови підключення багатоквартирних будинків</h3>
+                      <p class="text">
+                        Мешканцям Деснянського району м.&nbsp;Києва пропонуємо безлімітне
+                        підключення до Інтернет у межах покриття мережі HomeNET.
+                      </p>
+                      <p class="text">
+                        Багатоквартирні будинки під'єднано до нашої оптоволоконної мережі. Це
+                        дозволяє абонентам HomeNET отримати швидкісний та якісний доступ до Інтернет
+                        за вигідними умовами.
+                      </p>
+                      <p class="text">
+                        До оселі абонента ми прокладаємо кабель UTP Cat5e - вита пара і під'єднуємо
+                        його до Вашого маршрутизатора.
+                      </p>
+                      <p class="text">
+                        Роботи з прокладання кабелю від нашого комутатійоного обладнання в будинку
+                        до Вашого помешкання виконуємо <u>безкоштовно</u>.
+                      </p>
+                      <p class="text">
+                        Прокладання кабелю в квартирі залежить від конкретних умов і узгоджується з
+                        нашими майстрами під час виконування підключення.
+                      </p>
+                      <p class="text">
+                        Монтажна бригада має необхідний інструмент, та виконує роботи з підключення
+                        до послуги добросовістно та якісно.
+                      </p>
+                      <p class="text">Пропонуємо наступну схему роботи:</p>
+                      <ul class="list">
+                        <li>
+                          <a class="link" href="contact.html">Уточніть</a> технічну можливість
+                          підключення Вашої оселі.
+                        </li>
+                        <li>
+                          <a class="link" href="contact.html">Залиште заявку</a> на підлкючення.
+                        </li>
+                        <li>
+                          Отримайте підтвердження телефоном про час та день підключення від нашої
+                          монтажної бригади.
+                        </li>
+                        <li>Оберіть тарифний план.</li>
+                        <li>Користуйтеся послугою.</li>
+                      </ul>
+                      <p class="text">
+                        Після здійснення підключення Ви сплачуєте авансовий платіж, що становить 200
+                        грн. Ці кошти зараховуються на Ваш особовий рахунок і використовуються Вами
+                        вже згідно обраного тарифного плану.
+                      </p>
+                      <p class="text">Саме <span>підключення для Вас - безкоштовне</span>.</p>
+                      <table class="tarif">
+                        <caption>
+                          Тарифи мережі HomeNET
+                          <br />для мешканців багатоквартирних будинків.
+                        </caption>
+                        <tr>
+                          <th>Назва</th>
+                          <th>
+                            Вартість,<br />
+                            грн./міс.
+                          </th>
+                          <th>Характеристика пакету</th>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>100</td>
+                          <td>Швидкість доступу до 20 Мбіт/с.</td>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>120</td>
+                          <td>Швидкість доступу до 30 Мбіт/с.</td>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>150</td>
+                          <td>Швидкість доступу до 40 Мбіт/с.</td>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>200</td>
+                          <td>Швидкість доступу до 50 Мбіт/с.</td>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>250</td>
+                          <td>Швидкість доступу до 75 Мбіт/с.</td>
+                        </tr>
+                        <tr>
+                          <td>Тариф</td>
+                          <td>300</td>
+                          <td>Швидкість доступу до 100 Мбіт/с.</td>
+                        </tr>
+                      </table>
+                      <label class="checkbox__label checkbox__label--bottom" for="option-1"
+                        >Згорнути текст</label
+                      >
+                    </section>
                   </li>
-                  <li><a class="link" href="contact.html">Залиште заявку</a> на підлкючення.</li>
+                  <!-- Условия подключения домов в частном секторе -->
                   <li>
-                    Отримайте підтвердження телефоном про час та день підключення від нашої
-                    монтажної бригади.
+                    <a id="option_2" class="bookmark"></a>
+                    <input
+                      class="checkbox__content-hide visually-hidden"
+                      type="checkbox"
+                      id="option-2"
+                    />
+                    <h3 class="title title__feature">
+                      <label class="checkbox__label" for="option-2"
+                        >Київська область. Приватні будинки.</label
+                      >
+                    </h3>
+                    <section class="container container__features container__features--hidden">
+                      <h3 class="visually-hidden">
+                        Умови підключення будинків в приватному секторі
+                      </h3>
+                      <p class="text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+                        explicabo laborum deserunt quaerat numquam assumenda maiores incidunt
+                        voluptate temporibus, est perferendis dolore voluptates praesentium neque
+                        possimus corporis officiis odio animi?
+                      </p>
+                      <label class="checkbox__label checkbox__label--bottom" for="option-2"
+                        >Згорнути текст</label
+                      >
+                    </section>
                   </li>
-                  <li>Оберіть тарифний план.</li>
-                  <li>Користуйтеся послугою.</li>
+
+                  <!-- Условия подключения корпоративных заказчиков -->
+                  <li>
+                    <a id="option_3" class="bookmark"></a>
+                    <input
+                      class="checkbox__content-hide visually-hidden"
+                      type="checkbox"
+                      id="option-3"
+                    />
+                    <h3 class="title title__feature">
+                      <label class="checkbox__label" for="option-3">Підключення організацій.</label>
+                    </h3>
+                    <section class="container container__features container__features--hidden">
+                      <h3 class="visually-hidden">Умови підключення коропоративних замовників</h3>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rerum
+                        iusto, facere porro praesentium sequi enim soluta eius molestias laudantium
+                        quam voluptatem! Delectus error sit eos? Libero corrupti quibusdam totam
+                        omnis eos nam doloremque reiciendis esse? Minus iure officia laudantium
+                        eligendi cupiditate, impedit dolores, sint sunt labore amet delectus natus
+                        omnis cum dolorem consequatur possimus veritatis esse hic quas. Sint ipsum
+                        tempora eaque reiciendis et! Neque, doloremque vitae temporibus similique
+                        autem provident in nisi nihil a nam voluptatum? Explicabo, officia fugit
+                        atque blanditiis harum soluta non ea pariatur accusantium aut inventore
+                        minima perferendis, repellendus velit vero eius voluptatibus. At, corrupti.
+                      </p>
+                      <label class="checkbox__label checkbox__label--bottom" for="option-3"
+                        >Згорнути текст</label
+                      >
+                    </section>
+                  </li>
+
+                  <!-- Индивидуальные условия подключения объектов -->
+                  <li>
+                    <a id="option_4" class="bookmark"></a>
+                    <input
+                      class="checkbox__content-hide visually-hidden"
+                      type="checkbox"
+                      id="option-4"
+                    />
+                    <h3 class="title title__feature">
+                      <label class="checkbox__label" for="option-4"
+                        >Індивідуальні умови підключення.</label
+                      >
+                    </h3>
+                    <section class="container container__features container__features--hidden">
+                      <h3 class="visually-hidden">Індивідуальні варіанти підключення</h3>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                        quibusdam voluptatem, expedita eligendi sequi illum aperiam ratione unde
+                        quia harum, nisi maiores quod necessitatibus reprehenderit eveniet officiis
+                        tempore? Asperiores, minus.
+                      </p>
+                      <label class="checkbox__label checkbox__label--bottom" for="option-4"
+                        >Згорнути текст</label
+                      >
+                    </section>
+                  </li>
+                </ul>
+              </section>
+              <a class="link link__lift" href="#top">до гори &#8657;</a>
+            </div>
+            <div
+              class="container container__tab-content container__tab-content--hidden tabcontent"
+              id="IPTV"
+            >
+              <!-- Услуги подключения IPTV -->
+              <section class="section section__features">
+                <h2 class="title">IPTV</h2>
+                <p class="text">
+                  Сучасні технології дозволяють здійснювати перегляд телевізійних передач за
+                  допомогою нової послуги - IPTV.
+                </p>
+                <p class="text">
+                  Це інтерактивне телебачення, яке окрім звичного для всіх перегляду телепередач,
+                  надає додаткові можливості для користувачів:
+                </p>
+                <ul class="list list__marker">
+                  <li class="list__marker-item">поставити перегляд передачі на паузу;</li>
+                  <li class="list__marker-item">переглянути запис передачі у зручний час;</li>
+                  <li class="list__marker-item">
+                    мати доступ до фільмів та передач, що транслювались раніше;
+                  </li>
+                  <li class="list__marker-item">формувати списки обраних телеканалів;</li>
+                  <li class="list__marker-item">
+                    обмежувати доступ до перегляду телеканалів паролем.
+                  </li>
                 </ul>
                 <p class="text">
-                  Після здійснення підключення Ви сплачуєте авансовий платіж, що становить 200 грн.
-                  Ці кошти зараховуються на Ваш особовий рахунок і використовуються Вами вже згідно
-                  обраного тарифного плану.
+                  Послуга IPTV надається всім користувачам мережі HomeNET за бажанням і
+                  тарифікується окремо, в залежності від обраного списку каналів.
                 </p>
-                <p class="text">Саме <span>підключення для Вас - безкоштовне</span>.</p>
-                <table class="tarif">
-                  <caption>
-                    Тарифи мережі HomeNET
-                    <br />для мешканців багатоквартирних будинків.
-                  </caption>
-                  <tr>
-                    <th>Назва</th>
-                    <th>
-                      Вартість,<br />
-                      грн./міс.
-                    </th>
-                    <th>Характеристика пакету</th>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>100</td>
-                    <td>Швидкість доступу до 20 Мбіт/с.</td>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>120</td>
-                    <td>Швидкість доступу до 30 Мбіт/с.</td>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>150</td>
-                    <td>Швидкість доступу до 40 Мбіт/с.</td>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>200</td>
-                    <td>Швидкість доступу до 50 Мбіт/с.</td>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>250</td>
-                    <td>Швидкість доступу до 75 Мбіт/с.</td>
-                  </tr>
-                  <tr>
-                    <td>Тариф</td>
-                    <td>300</td>
-                    <td>Швидкість доступу до 100 Мбіт/с.</td>
-                  </tr>
-                </table>
-              </section>
-            </li>
-            <!-- Условия подключения домов в частном секторе -->
-            <li>
-              <a name="option_2" class="bookmark"></a>
-              <input type="checkbox" id="option-2" class="services-hide" />
-              <label for="option-2"
-                ><h3 class="title title__feature">Київська область. Приватні будинки.</h3></label
-              >
-              <section class="container">
                 <p class="text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo
-                  laborum deserunt quaerat numquam assumenda maiores incidunt voluptate temporibus,
-                  est perferendis dolore voluptates praesentium neque possimus corporis officiis
-                  odio animi?
+                  Також у Вас є можливість перегляду більше 100 IPTV-каналів безкоштовно у
+                  соціальному пакеті.
                 </p>
-              </section>
-            </li>
-            <!-- Условия подключения корпоративных заказчиков -->
-            <a name="option_3" class="bookmark"></a>
-            <li>
-              <input type="checkbox" id="option-3" class="services-hide" />
-              <label for="option-3"
-                ><h3 class="title title__feature">Підключення корпоративних замовників.</h3></label
-              >
-              <section class="container">
                 <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rerum iusto,
-                  facere porro praesentium sequi enim soluta eius molestias laudantium quam
-                  voluptatem! Delectus error sit eos? Libero corrupti quibusdam totam omnis eos nam
-                  doloremque reiciendis esse? Minus iure officia laudantium eligendi cupiditate,
-                  impedit dolores, sint sunt labore amet delectus natus omnis cum dolorem
-                  consequatur possimus veritatis esse hic quas. Sint ipsum tempora eaque reiciendis
-                  et! Neque, doloremque vitae temporibus similique autem provident in nisi nihil a
-                  nam voluptatum? Explicabo, officia fugit atque blanditiis harum soluta non ea
-                  pariatur accusantium aut inventore minima perferendis, repellendus velit vero eius
-                  voluptatibus. At, corrupti.
+                  Після підключення послуги IPTV ви отримаєте безкоштовно необмежений доступ до
+                  перегляду більше 300 телеканалів на протязі промоперіоду, що становить сім днів.
                 </p>
-              </section>
-            </li>
-            <!-- Индивидуальные условия подключения объектов -->
-            <a name="option_4" class="bookmark"></a>
-            <li>
-              <input type="checkbox" id="option-4" class="services-hide" />
-              <label for="option-4"
-                ><h3 class="title title__feature">Індивідуальні умови підключення.</h3></label
-              >
-              <section class="container">
+                <p>
+                  Керувати послугою IPTV, обирати списки каналів, формувати плей-листи та отримати
+                  детальні інсрукції з налаштування обладнання Ви зможете із свого осбистого
+                  кабінету.
+                </p>
                 <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam
-                  voluptatem, expedita eligendi sequi illum aperiam ratione unde quia harum, nisi
-                  maiores quod necessitatibus reprehenderit eveniet officiis tempore? Asperiores,
-                  minus.
+                  До одного облікового запису Ви зможете підключити незалежно 5 пристроїв для
+                  одночасного перегляду телеканалів.
+                </p>
+                <p class="text">
+                  Ви завжди можете призупинити користування послугою IPTV, або обрати безкоштовний
+                  соціальний пакет.
+                </p>
+                <p class="text">
+                  <a class="link" href="/contact.html">Подайте заявку</a> на підключення послуги
+                  IPTV, зручним для Вас способом, та отримайте досуп до особового кабінету IPTV.
                 </p>
               </section>
-            </li>
-          </ul>
-        </section>
-        <!-- Услуги подключения IPTV -->
-        <section>
-          <h2 class="title">IPTV</h2>
-          <p class="text">
-            Сучасні технології дозволяють здійснювати перегляд телевізійних передач за допомогою
-            нової послуги - IPTV.
-          </p>
-          <p class="text">
-            Це інтерактивне телебачення, яке окрім звичного для всіх перегляду телепередач, надає
-            додаткові можливості для користувачів:
-          </p>
-          <ul class="list">
-            <li>поставити перегляд передачі на паузу;</li>
-            <li>переглянути запис передачі у зручний час;</li>
-            <li>мати доступ до фільмів та передач, що транслювались раніше;</li>
-            <li>формувати списки обраних телеканалів;</li>
-            <li>обмежувати доступ до перегляду телеканалів паролем.</li>
-          </ul>
-          <p class="text">
-            Послуга IPTV надається всім користувачам мережі HomeNET за бажанням і тарифікується
-            окремо, в залежності від обраного списку каналів.
-          </p>
-          <p class="text">
-            Також у Вас є можливість перегляду більше 100 IPTV-каналів безкоштовно у соціальному
-            пакеті.
-          </p>
-          <p class="text">
-            Після підключення послуги IPTV ви отримаєте безкоштовно необмежений доступ до перегляду
-            більше 300 телеканалів на протязі промоперіоду, що становить сім днів.
-          </p>
-          <p>
-            Керувати послугою IPTV, обирати списки каналів, формувати плей-листи та отримати
-            детальні інсрукції з налаштування обладнання Ви зможете із свого осбистого кабінету.
-          </p>
-          <p class="text">
-            До одного облікового запису Ви зможете підключити незалежно 5 пристроїв для одночасного
-            перегляду телеканалів.
-          </p>
-          <p class="text">
-            Ви завжди можете призупинити користування послугою IPTV, або обрати безкоштовний
-            соціальний пакет.
-          </p>
-          <p class="text">
-            <a class="link" href="/contact.html">Подайте заявку</a> на підключення послуги IPTV,
-            зручним для Вас способом, та отримайте досуп до особового кабінету IPTV.
-          </p>
-        </section>
+              <a class="link link__lift" href="#top">до гори &#8657;</a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <footer class="section section__footer">
+      <div class="container container__footer">
+        <address>
+          <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+          <ul class="list list__contact-footer">
+            <li class="list__item-contact">
+              <a href="tel:+0442281629" class="link link__nav--footer"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(044) 228-16-29</a
+              >
+            </li>
+
+            <li class="list__item-contact">
+              <a href="tel:+0960001659" class="link link__nav--footer"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(096) 000-16-59</a
+              >
+            </li>
+
+            <li class="list__item-contact">
+              <a href="tel:+0950001659" class="link link__nav--footer"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(095) 000-16-59</a
+              >
+            </li>
+
+            <li class="list__item-contact">
+              <a href="tel:+0930001659" class="link link__nav--footer"
+                ><svg class="link__nav--icon" width="14" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use></svg
+                >(093) 000-16-59</a
+              >
+            </li>
+          </ul>
+        </address>
+        <p class="text text--copyright">
+          &copy; 2010
+          <script>
+            new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear() + ',');
+          </script>
+          ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
+          Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
+          ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/tab-toggle.js"></script>
   </body>
-  <footer class="section section__footer">
-    <div class="container container__footer">
-      <p class="text text--copyright">
-        &copy; 2010
-        <script>
-          new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear() + ',');
-        </script>
-        ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
-        Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
-        ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
-      </p>
-      <address>
-        <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
-        <ul class="list list__contact-footer">
-          <li class="list__item-contact">
-            <a href="tel:+0442281629" class="link link__nav--footer"
-              ><svg class="link__nav--icon" width="14" height="16">
-                <use href="./img/icons.svg#icon-phone"></use></svg
-              >(044) 228-16-29</a
-            >
-          </li>
-
-          <li class="list__item-contact">
-            <a href="tel:+0960001659" class="link link__nav--footer"
-              ><svg class="link__nav--icon" width="14" height="16">
-                <use href="./img/icons.svg#icon-phone"></use></svg
-              >(096) 000-16-59</a
-            >
-          </li>
-
-          <li class="list__item-contact">
-            <a href="tel:+0950001659" class="link link__nav--footer"
-              ><svg class="link__nav--icon" width="14" height="16">
-                <use href="./img/icons.svg#icon-phone"></use></svg
-              >(095) 000-16-59</a
-            >
-          </li>
-
-          <li class="list__item-contact">
-            <a href="tel:+0930001659" class="link link__nav--footer"
-              ><svg class="link__nav--icon" width="14" height="16">
-                <use href="./img/icons.svg#icon-phone"></use></svg
-              >(093) 000-16-59</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
-  </footer>
-  <script src="./js/mobile-menu.js"></script>
-  <script
-    defer=""
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
 </html>
