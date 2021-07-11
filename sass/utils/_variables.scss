@@ -1,14 +1,16 @@
 // цветовая палитра
-$text-color: #0d3d74;
-// $accent-color: #ffa600;
-$accent-color: #b36c35;
-$link-color: #3b70e4;
-$link-nav-color: #0328ff;
-$link-nav-color-muted: rgba(3, 40, 255, 0.6);
+$text-color: #071830;
+$text-color-muted: rgba(7, 24, 48, 0.7);
+$accent-color: #079dd9;
+$link-color: rgb(48, 24, 230);
+$link-nav-color: rgb(24, 48, 200);
+$link-nav-color-muted: rgba(48, 24, 230, 0.8);
 
 $background-primary-color: #fff8dc;
+$backgouund-secondary-color: #b0c4de;
 $background-block-color: #b0c4de;
-$background-support: #9ebce2;
+$background-block-color-dark: #8b9cb1;
+$background-accent-color: #f2f2f2;
 
 // точки перелома
 $size-min: 320px;
@@ -26,8 +28,11 @@ $min-padding: 15px;
 $transition-duration: 250ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-//легкая тень
+// светлая тень
 $light-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+// темная тень
+$dark-shadow: 3px 3px 6px 4px #888888;
 
 // тень - подсветка
 $lights-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);

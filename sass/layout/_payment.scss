@@ -1,9 +1,0 @@
-// ссылка-якорь с отступом
-.bookmark__pay {
-  &::before {
-    content: '';
-    height: 112px;
-    margin-top: -112px;
-    display: block;
-  }
-}

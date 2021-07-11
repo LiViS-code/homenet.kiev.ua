@@ -1,0 +1,91 @@
+.list {
+  &__contact,
+  &__contact-footer {
+    margin: 0 auto;
+    max-width: $size-min - 2 * $gap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__contact-footer {
+    margin-bottom: $gap / 4;
+  }
+
+  &__correspondence {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__pay-list,
+  &__terminal-list {
+    @include flex-elements-center();
+    margin-bottom: $gap;
+  }
+
+  &__terminal-list {
+    flex-wrap: wrap;
+  }
+
+  &__pay-item {
+    flex-basis: calc((100% - 2 * #{$gap}) / 2);
+
+    &:not(:last-child) {
+      margin-right: $gap;
+    }
+  }
+
+  &__terminal-item {
+    flex-basis: calc((100% - 2 * #{$gap}) / 2);
+
+    &:nth-child(odd) {
+      margin-right: $gap;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: $gap;
+    }
+  }
+
+  &__methods-item {
+    &:not(:last-child) {
+      margin-bottom: $gap;
+    }
+  }
+
+  &__method-menu,
+  &__marker {
+    margin-bottom: $gap;
+  }
+
+  &__marker,
+  &__method-menu {
+    padding-left: $min-padding;
+    list-style: '\2713';
+  }
+
+  &__marker-item {
+    padding-left: $min-padding;
+    &::marker {
+      font-size: 1.5em;
+      color: $accent-color;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+  }
+
+  &__tab-item {
+    display: flex;
+    flex: 1 1 50%;
+
+    &:not(:last-child) {
+      margin-right: $gap / 2;
+    }
+  }
+}
+
+.list-supports > li {
+  margin-bottom: $gap;
+}

@@ -1,0 +1,10 @@
+// ссылка-якорь с отступом
+.bookmark {
+  &::before {
+    content: '';
+    width: 1px;
+    height: calc(81px + #{$gap * 1.5});
+    margin-top: calc(-1 * (81px + #{$gap * 1.5}));
+    display: inline-block;
+  }
+}

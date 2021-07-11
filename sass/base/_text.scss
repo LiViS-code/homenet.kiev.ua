@@ -1,0 +1,29 @@
+.text {
+  margin-bottom: $gap / 2;
+  @media screen and (min-width: $size-desk) {
+    margin-bottom: $gap;
+  }
+
+  &--last-paragraph {
+    margin-bottom: 0;
+  }
+
+  &--welcome,
+  &__address {
+    margin-bottom: $gap / 4;
+    font-weight: map-get($font-weights, 'medium');
+  }
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+
+  &__address {
+    text-align: center;
+  }
+
+  &--copyright {
+    @include font-sizes(8, 10);
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.checkbox {
+  &__content-hide {
+    &:checked ~ .checkbox__label {
+      border-bottom: 1px dashed $accent-color;
+      color: $accent-color;
+    }
+  }
+  &__label {
+    display: block;
+    padding: 3px 0;
+    border-bottom: 1px dashed $accent-color;
+
+    &--bottom {
+      margin-top: $gap / 2;
+      text-align: right;
+      border-top: 1px dashed $accent-color;
+    }
+  }
+}

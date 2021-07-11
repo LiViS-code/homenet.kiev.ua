@@ -28,8 +28,59 @@
 
     &:hover,
     &:focus {
-      background-color: $background-support;
+      background-color: $background-accent-color;
       box-shadow: $paper-shadow;
     }
+  }
+
+  &__logo-img {
+    margin-bottom: $gap / 2;
+    padding-left: $gap / 2;
+    display: flex;
+    align-items: center;
+  }
+
+  &__contract,
+  &__features {
+    width: 100%;
+    padding: 0;
+
+    &--hidden {
+      display: none;
+      padding: $min-padding;
+      margin-bottom: $gap;
+      border-radius: 5px;
+      background-color: $background-accent-color;
+      box-shadow: $paper-shadow;
+    }
+
+    .checkbox__content-hide:checked ~ &--hidden {
+      display: block;
+      color: $accent-color;
+    }
+  }
+
+  &__tabs-body,
+  &__tab-content,
+  &__tabs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__tabs-body {
+    padding-bottom: 0;
+  }
+
+  &__tab-content {
+    padding-top: 0;
+  }
+
+  &__tab-content--hidden {
+    display: none;
+  }
+
+  &__tabs {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

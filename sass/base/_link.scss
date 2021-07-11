@@ -1,0 +1,51 @@
+.link {
+  display: inline-block;
+  transition: transform $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transform: scale(1.05);
+  }
+
+  &--icon {
+    padding: 5px 0;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__context {
+    text-decoration: underline dotted $link-nav-color;
+  }
+
+  &__nav {
+    padding: 5px;
+    color: $link-nav-color;
+    &--active {
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
+    }
+
+    &--muted {
+      color: $link-nav-color-muted;
+      justify-content: center;
+    }
+
+    &--footer,
+    &--muted {
+      display: flex;
+      padding: 12px 0;
+      @include font-sizes(12, 16);
+    }
+
+    &--icon {
+      margin-right: $gap / 6;
+      fill: currentColor;
+    }
+  }
+
+  &__lift {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

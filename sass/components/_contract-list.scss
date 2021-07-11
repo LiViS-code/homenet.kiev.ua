@@ -1,0 +1,69 @@
+// список пунктов договора
+.contract-list {
+  margin: 0 0 $gap;
+  counter-reset: num;
+  position: relative;
+
+  &__item--first-level {
+    counter-increment: num;
+
+    &::before {
+      position: absolute;
+      content: counter(num) '.';
+      @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
+    }
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & & {
+    counter-reset: num2;
+  }
+
+  // номера вторго уровня вложенности
+  &__item--second-level {
+    counter-increment: num2;
+
+    &::before {
+      margin-right: $gap / 4;
+      content: counter(num) '.' counter(num2) '.';
+    }
+  }
+
+  & & & {
+    counter-reset: num3;
+  }
+
+  // номера третьего уровня вложенности
+  &__item--third-level {
+    counter-increment: num3;
+
+    &::before {
+      margin-right: $gap / 4;
+      content: counter(num) '.' counter(num2) '.' counter(num3) '.';
+    }
+  }
+
+  &__item--second-level,
+  &__item--third-level {
+    &:not(:last-child) {
+      margin-bottom: $gap / 2;
+    }
+  }
+
+  // не нумерованный список в договре
+  &__ul {
+    margin-top: $gap / 2;
+    padding-left: $gap;
+    list-style-type: '- ';
+
+    & > li {
+      &:not(:last-child) {
+        margin-bottom: $gap / 3;
+      }
+    }
+  }
+}

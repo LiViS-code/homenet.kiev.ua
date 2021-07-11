@@ -7,7 +7,7 @@
   &__img {
     max-width: 100%;
     height: auto;
-    @include bordered($link-color);
+    @include bordered($accent-color);
     box-shadow: $lights-shadow;
   }
 }

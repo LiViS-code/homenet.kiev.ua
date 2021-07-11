@@ -6,7 +6,7 @@
   height: 100vh;
   padding: $gap;
   transform: translate3d(100%, 0, 0);
-  background-color: $background-primary-color;
+  background-color: $background-accent-color;
   transition: transform $transition-duration $timing-function;
   @media screen and (orientation: landscape) {
     display: flex;

@@ -1,10 +1,34 @@
 .thumb-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 
   &--shadow {
+    width: 100%;
+  }
+
+  &--logo {
+    margin-right: $gap;
+    transition: transform $transition-duration $timing-function;
+  }
+
+  &--shadow,
+  &--logo {
     box-shadow: $light-shadow;
     border-radius: 5px;
+    transition: box-shadow $transition-duration $timing-function;
+  }
+
+  &--logo:focus,
+  &--logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &--logo:focus,
+  &--logo:hover,
+  .link:focus > &--shadow,
+  .link:hover > &--shadow {
+    box-shadow: $dark-shadow;
   }
 }

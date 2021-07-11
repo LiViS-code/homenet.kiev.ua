@@ -7,24 +7,29 @@
     top: 0;
     margin: 0;
     position: fixed;
-    background-color: $background-block-color;
+    z-index: 2;
     border-bottom: 3px solid $accent-color;
     box-shadow: $bottom-shadow;
   }
 
   &__main {
-    padding-top: 82px + $gap;
+    padding-top: 81px + $gap;
     background-color: $background-primary-color;
   }
 
   &__footer {
-    background-color: $background-block-color;
     border-top: 3px solid $accent-color;
     box-shadow: $top-shadow;
   }
 
   &__header,
   &__footer {
+    background-color: $backgouund-secondary-color;
+  }
+
+  &__header,
+  &__footer,
+  &__features {
     padding-top: 0;
     padding-bottom: 0;
   }

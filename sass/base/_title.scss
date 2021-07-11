@@ -1,0 +1,34 @@
+.title {
+  margin-bottom: $gap;
+  @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
+
+  &--center {
+    text-align: center;
+  }
+
+  &--slogan {
+    margin-bottom: 0;
+    @include font-sizes-weight(18, 24, map-get($font-weights, 'black'));
+    text-transform: uppercase;
+    text-align: center;
+    color: $accent-color;
+  }
+
+  &__represent {
+    text-align: center;
+  }
+
+  &__feature {
+    margin-bottom: $gap / 2;
+    @include font-sizes(14, 20);
+  }
+
+  &__method {
+    margin-bottom: $gap / 2;
+  }
+
+  &__contract {
+    padding-left: $gap;
+    margin-bottom: 0;
+  }
+}

@@ -7,155 +7,16 @@ body {
 
 .list {
   @include reset-list;
-
-  &__contact,
-  &__contact-footer {
-    max-width: $size-min - 2 * $gap;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  &__contact-footer {
-    margin: 0 auto $gap / 4;
-  }
-
-  &__correspondence {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__pay-list,
-  &__terminal-list {
-    @include flex-elements-center();
-    margin-bottom: $gap;
-  }
-
-  &__terminal-list {
-    flex-wrap: wrap;
-  }
-
-  &__pay-item {
-    flex-basis: calc((100% - 2 * #{$gap}) / 2);
-
-    &:not(:last-child) {
-      margin-right: $gap;
-    }
-  }
-
-  &__terminal-item {
-    flex-basis: calc((100% - 2 * #{$gap}) / 2);
-
-    &:nth-child(odd) {
-      margin-right: $gap;
-    }
-
-    &:nth-child(-n + 2) {
-      margin-bottom: $gap;
-    }
-  }
-
-  &__methods-item {
-    margin-bottom: $gap;
-  }
 }
 
 .link {
   @include reset-link;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-
-  &--icon {
-    padding: 5px 0;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &__context {
-    text-decoration: underline 1px dotted $link-nav-color;
-  }
-
-  &__nav {
-    padding: 5px;
-    color: $link-nav-color;
-    &--active {
-      color: $accent-color;
-      border-bottom: 1px solid $accent-color;
-    }
-
-    &--muted {
-      color: $link-nav-color-muted;
-      justify-content: center;
-    }
-
-    &--footer,
-    &--muted {
-      display: flex;
-      padding: 12px 0;
-      @include font-sizes(12, 16);
-    }
-
-    &--icon {
-      margin-right: $gap / 6;
-      fill: currentColor;
-    }
-  }
 }
 
 .title {
   @include reset-title;
-  margin-bottom: $gap;
-  @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
-
-  &--slogan {
-    margin-bottom: 0;
-    @include font-sizes-weight(18, 24, map-get($font-weights, 'black'));
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &__represent {
-    text-align: center;
-  }
-
-  &__feature {
-    @include font-sizes(14, 20);
-  }
-
-  &__method {
-    margin-bottom: $gap / 2;
-  }
 }
 
 .text {
   @include reset-text;
-  margin-bottom: $gap / 2;
-  @media screen and (min-width: $size-desk) {
-    margin-bottom: $gap;
-  }
-
-  &--last-paragraph {
-    margin-bottom: 0;
-  }
-
-  &--welcome,
-  &__address {
-    margin-bottom: $gap / 4;
-    font-weight: map-get($font-weights, 'medium');
-  }
-
-  &--no-margin {
-    margin-bottom: 0;
-  }
-
-  &__address {
-    text-align: center;
-  }
-
-  &--copyright {
-    @include font-sizes(8, 10);
-    margin-bottom: 0;
-  }
 }

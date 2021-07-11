@@ -28,4 +28,21 @@
     transform: translate3d(-50%, -50%, 0);
     fill: currentColor;
   }
+
+  &__tab-link {
+    width: 100%;
+    padding: 10px 5px;
+    color: inherit;
+    border: 1px solid $accent-color;
+    background-color: transparent;
+    border-radius: 10px;
+
+    &.active,
+    &:focus,
+    &:hover {
+      color: $background-accent-color;
+      background-color: $accent-color;
+      box-shadow: $lights-shadow;
+    }
+  }
 }
