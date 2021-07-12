@@ -1,0 +1,49 @@
+.table {
+  table-layout: fixed;
+  width: 100%;
+  @include bordered($accent-color);
+
+  @media screen and (max-width: $size-mob - 1) {
+    @include font-sizes(10, 14);
+  }
+
+  &__header {
+    padding: 5px 2px;
+    text-align: center;
+    color: $background-accent-color;
+    background-color: $accent-color;
+    &:nth-child(1) {
+      width: 40%;
+    }
+    &:nth-child(2) {
+      width: 25%;
+    }
+    &:nth-child(3) {
+      width: 35%;
+    }
+  }
+
+  &__data {
+    white-space: normal;
+    padding: 5px;
+    &:first-child {
+      color: $background-accent-color;
+      background-color: $accent-color;
+    }
+    &:last-child {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+  }
+
+  &__header,
+  &__data {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

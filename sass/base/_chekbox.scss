@@ -7,8 +7,13 @@
   }
   &__label {
     display: block;
-    padding: 3px 0;
+    padding: 5px 0 5px $gap;
     border-bottom: 1px dashed $accent-color;
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+    }
 
     &--bottom {
       margin-top: $gap / 2;

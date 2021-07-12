@@ -3,6 +3,7 @@
   border-radius: 4px;
   color: $text-color;
 
+  // переключатель мобильного меню
   &__menu-toggle {
     width: 32px;
     height: 32px;
@@ -29,6 +30,7 @@
     fill: currentColor;
   }
 
+  // кнопки переключения вкладок
   &__tab-link {
     width: 100%;
     padding: 10px 5px;

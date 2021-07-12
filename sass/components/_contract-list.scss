@@ -1,24 +1,28 @@
 // список пунктов договора
 .contract-list {
-  margin: 0 0 $gap;
+  margin: 0;
   counter-reset: num;
-  position: relative;
 
+  // первый уровень нумерации
   &__item--first-level {
     counter-increment: num;
 
+    // отображаем порядковый номер элемента списка
     &::before {
       position: absolute;
+      transform: translate3d(50%, 25%, 0);
       content: counter(num) '.';
       @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
     }
 
+    // курсор при наведении и фокусе на элемент списка
     &:focus,
     &:hover {
       cursor: pointer;
     }
   }
 
+  // сбрасываем счетчик для второго уровня вложенности
   & & {
     counter-reset: num2;
   }
@@ -27,12 +31,14 @@
   &__item--second-level {
     counter-increment: num2;
 
+    // формируем порядковый номер элемента списка второго уровня вложенности
     &::before {
       margin-right: $gap / 4;
       content: counter(num) '.' counter(num2) '.';
     }
   }
 
+  // сбрасываем счетчик для третего уровня вложенности
   & & & {
     counter-reset: num3;
   }
@@ -41,12 +47,14 @@
   &__item--third-level {
     counter-increment: num3;
 
+    // формируем порядковый номер 3-го уровня вложенности
     &::before {
       margin-right: $gap / 4;
       content: counter(num) '.' counter(num2) '.' counter(num3) '.';
     }
   }
 
+  // отступ между элементами в списке
   &__item--second-level,
   &__item--third-level {
     &:not(:last-child) {
@@ -57,10 +65,12 @@
   // не нумерованный список в договре
   &__ul {
     margin-top: $gap / 2;
-    padding-left: $gap;
-    list-style-type: '- ';
+    padding-left: $gap / 3;
+    list-style-type: '\2014';
 
+    // интервалы между элементами не нумерованного списка
     & > li {
+      padding-left: $gap / 3;
       &:not(:last-child) {
         margin-bottom: $gap / 3;
       }
