@@ -75,8 +75,14 @@
             </li>
           </ul>
           <ul class="list mob-nav__auth-list">
-            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Кабінет</a></li>
-            <li class="mob-nav__auth-item"><a class="link link__nav" href="#">Реєстрація</a></li>
+            <li class="mob-nav__auth-item">
+              <button class="btn btn__modal-open-signin" type="button" data-modal-open-signin>
+                Кабінет
+              </button>
+            </li>
+            <li class="mob-nav__auth-item">
+              <button class="btn btn__modal-open" type="button" data-modal-open>Реєстрація</button>
+            </li>
           </ul>
           <ul class="list mob-nav__contact-list">
             <li class="mob-nav__contact-item">
@@ -122,9 +128,15 @@
             <li class="nav-item"><a class="link link__nav" href="./contract.html">Договір</a></li>
             <li class="nav-item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
           </ul>
-          <ul class="list auth-list">
-            <li><a class="link link__nav" href="#">Кабінет</a></li>
-            <li><a class="link link__nav" href="#">Реєстрація</a></li>
+          <ul class="list mob-nav__auth-list">
+            <li class="mob-nav__auth-item">
+              <button class="btn btn__modal-open-signin" type="button" data-modal-open-signin>
+                Кабінет
+              </button>
+            </li>
+            <li class="mob-nav__auth-item">
+              <button class="btn btn__modal-open" type="button" data-modal-open>Реєстрація</button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -440,6 +452,44 @@
           </div>
         </div>
       </div>
+      <!-- модальное окно для входа в личный кабинет -->
+      <div class="backdrop is-hidden" data-modal-signin>
+        <div class="modal__login">
+          <button
+            class="btn btn__menu-toggle btn__menu-toggle--modal"
+            type="button"
+            data-modal-close-signin
+          >
+            <svg class="btn__toggle-icon" width="15" height="15">
+              <use href="./img/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <form class="form-login">
+            <label class="form-login__label"
+              >Логін<input
+                class="form-login__input form-login__input--name"
+                type="text"
+                placeholder="введіть логін"
+                required
+              />
+              <svg class="form-login__input--icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+
+            <label class="form-login__label"
+              >Пароль<input
+                class="form-login__input form-login__input--password"
+                type="password"
+                placeholder="введіть пароль"
+                required /><svg class="form-login__input--icon" width="16" height="18">
+                <use href="./img/icons.svg#icon-key"></use></svg
+            ></label>
+            <a href="./contact.html">Забули параоль?</a>
+            <button class="btn btn__sign-in" type="submit">Увійти</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="section section__footer">
       <div class="container container__footer">
@@ -491,6 +541,7 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal-signin.js"></script>
     <script
       defer=""
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
