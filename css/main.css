@@ -461,8 +461,12 @@ body {
 
 @media screen and (orientation: landscape) {
   .mob-nav__auth-list {
+    position: absolute;
     max-height: 30%;
-    margin: 30px auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -70%, 0);
+            transform: translate3d(-50%, -70%, 0);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -488,7 +492,15 @@ body {
 
 @media screen and (orientation: landscape) {
   .mob-nav__contact-list {
-    margin-left: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 30px;
+    bottom: 50%;
+    -webkit-transform: translate3d(0, 50%, 0);
+            transform: translate3d(0, 50%, 0);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

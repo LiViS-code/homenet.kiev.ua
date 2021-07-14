@@ -45,8 +45,12 @@
     }
 
     @media screen and (orientation: landscape) {
+      position: absolute;
       max-height: 30%;
-      margin: $gap auto;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -70%, 0);
+      // margin: $gap auto;
       align-items: center;
     }
   }
@@ -64,7 +68,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @media screen and (orientation: landscape) {
-      margin-left: 50%;
+      flex-direction: column;
+      position: absolute;
+      right: $gap;
+      bottom: 50%;
+      transform: translate3d(0, 50%, 0);
+      // margin-left: 50%;
       align-items: center;
     }
   }
