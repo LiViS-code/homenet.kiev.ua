@@ -849,6 +849,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px;
+  color: #071830;
   background-color: #fff8dc;
 }
 
