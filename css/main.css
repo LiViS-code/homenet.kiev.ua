@@ -322,9 +322,15 @@ body {
 }
 
 .btn {
-  padding: 2px;
+  padding: 5px;
   border-radius: 4px;
   color: #071830;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid #079dd9;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn.active, .btn:focus, .btn:hover {
@@ -342,9 +348,9 @@ body {
   top: 8px;
   right: 15px;
   position: absolute;
-  cursor: pointer;
-  background-color: transparent;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -361,7 +367,6 @@ body {
   right: 5px;
   border-radius: 50%;
   outline: none;
-  background-color: transparent;
 }
 
 .btn__toggle-icon {
@@ -376,9 +381,6 @@ body {
 .btn__tab-link {
   width: 100%;
   padding: 10px 5px;
-  color: inherit;
-  border: 1px solid #079dd9;
-  background-color: transparent;
   border-radius: 10px;
 }
 

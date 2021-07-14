@@ -1,7 +1,12 @@
 .btn {
-  padding: 2px;
+  padding: 5px;
   border-radius: 4px;
   color: $text-color;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid $accent-color;
+  box-shadow: $light-shadow;
 
   &.active,
   &:focus,
@@ -20,9 +25,9 @@
     top: 8px;
     right: 15px;
     position: absolute;
-    cursor: pointer;
-    background-color: transparent;
     border: none;
+    box-shadow: none;
+
     @media screen and (min-width: $size-tab) {
       display: none;
     }
@@ -36,7 +41,6 @@
       right: 5px;
       border-radius: 50%;
       outline: none;
-      background-color: transparent;
     }
   }
 
@@ -53,9 +57,6 @@
   &__tab-link {
     width: 100%;
     padding: 10px 5px;
-    color: inherit;
-    border: 1px solid $accent-color;
-    background-color: transparent;
     border-radius: 10px;
   }
 
