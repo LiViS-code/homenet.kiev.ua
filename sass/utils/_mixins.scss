@@ -1,10 +1,10 @@
 // сплошной бордюр с нужным цветом
-@mixin border-solid-color($color) {
-  border: 1px solid $color;
+@mixin border-solid-color($color, $bw: 1) {
+  border: $bw + px solid $color;
 }
 // сплошной борюр с нужным цветом и радиусом
-@mixin bordered($color, $br: 5) {
-  @include border-solid-color($color);
+@mixin bordered($color, $br: 5, $bw: 1) {
+  @include border-solid-color($color, $bw);
   border-radius: $br + px;
 }
 // установка типографии

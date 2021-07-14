@@ -23,12 +23,13 @@
     margin-top: 3px;
     padding: 5px 5px 5px 30px;
     @include bordered($text-color);
+    outline: none;
 
     &:hover,
     &:focus,
     &:active {
       @include border-solid-color($accent-color);
-      outline-color: $accent-color;
+      box-shadow: $background-border-active;
     }
 
     // иконка в поле ввода

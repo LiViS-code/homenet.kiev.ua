@@ -866,11 +866,13 @@ body {
   padding: 5px 5px 5px 30px;
   border: 1px solid #071830;
   border-radius: 5px;
+  outline: none;
 }
 
 .form-login__input:hover, .form-login__input:focus, .form-login__input:active {
   border: 1px solid #079dd9;
-  outline-color: #079dd9;
+  -webkit-box-shadow: 0px 0px 2px 1px #079dd9;
+          box-shadow: 0px 0px 2px 1px #079dd9;
 }
 
 .form-login__input--icon {
