@@ -3,14 +3,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 270px;
 
-    @media screen and (orientation: portrait) {
-      width: 80%;
-    }
+    // @media screen and (orientation: portrait) {
+    //   width: 85%;
+    // }
 
-    @media screen and (orientation: landscape) {
-      width: 50%;
-    }
+    // @media screen and (orientation: landscape) {
+    //   width: 60%;
+    // }
 
     transform: translate3d(-50%, -50%, 0);
     padding: $min-padding;

@@ -901,24 +901,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 270px;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   padding: 15px;
   border: 1px solid #079dd9;
   border-radius: 5px;
   background-color: #fff8dc;
-}
-
-@media screen and (orientation: portrait) {
-  .modal__login {
-    width: 80%;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  .modal__login {
-    width: 50%;
-  }
 }
 
 .is-hidden {
