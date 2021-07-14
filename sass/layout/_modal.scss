@@ -1,11 +1,31 @@
 .modal {
   &__login {
     position: absolute;
-    top: 20%;
-    left: 15%;
-    width: 70%;
+    top: 50%;
+    left: 50%;
+
+    @media screen and (orientation: portrait) {
+      width: 80%;
+    }
+
+    @media screen and (orientation: landscape) {
+      width: 50%;
+    }
+
+    transform: translate3d(-50%, -50%, 0);
     padding: $min-padding;
     @include bordered($accent-color);
     background-color: $background-primary-color;
   }
+}
+
+// скрыть модальное окно
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+// скрыть модальное окно
+.backdrop.is-hidden .modal {
+  transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
 }
