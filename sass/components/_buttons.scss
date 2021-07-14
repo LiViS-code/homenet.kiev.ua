@@ -3,6 +3,16 @@
   border-radius: 4px;
   color: $text-color;
 
+  &.active,
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $background-accent-color;
+    background-color: $accent-color;
+    box-shadow: $lights-shadow;
+    outline-color: $accent-color;
+  }
+
   // переключатель мобильного меню
   &__menu-toggle {
     width: 32px;
@@ -16,12 +26,21 @@
     @media screen and (min-width: $size-tab) {
       display: none;
     }
-    &:hover,
-    &:focus {
-      color: $accent-color;
+
+    // кнопка закрыть в модальном окне
+    &--modal {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border-radius: 50%;
+      outline: none;
+      background-color: transparent;
     }
   }
 
+  // иконка для кнопки
   &__toggle-icon {
     position: absolute;
     top: 50%;
@@ -38,13 +57,10 @@
     border: 1px solid $accent-color;
     background-color: transparent;
     border-radius: 10px;
+  }
 
-    &.active,
-    &:focus,
-    &:hover {
-      color: $background-accent-color;
-      background-color: $accent-color;
-      box-shadow: $lights-shadow;
-    }
+  &__sign-in {
+    padding: 5px 10px;
+    margin: $gap auto 0;
   }
 }

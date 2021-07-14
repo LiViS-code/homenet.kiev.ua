@@ -327,6 +327,15 @@ body {
   color: #071830;
 }
 
+.btn.active, .btn:focus, .btn:hover {
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #079dd9;
+  -webkit-box-shadow: 0 0 10px 5px #dddddd;
+          box-shadow: 0 0 10px 5px #dddddd;
+  outline-color: #079dd9;
+}
+
 .btn__menu-toggle {
   width: 32px;
   height: 32px;
@@ -344,8 +353,15 @@ body {
   }
 }
 
-.btn__menu-toggle:hover, .btn__menu-toggle:focus {
-  color: #079dd9;
+.btn__menu-toggle--modal {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
 }
 
 .btn__toggle-icon {
@@ -366,11 +382,9 @@ body {
   border-radius: 10px;
 }
 
-.btn__tab-link.active, .btn__tab-link:focus, .btn__tab-link:hover {
-  color: #f2f2f2;
-  background-color: #079dd9;
-  -webkit-box-shadow: 0 0 10px 5px #dddddd;
-          box-shadow: 0 0 10px 5px #dddddd;
+.btn__sign-in {
+  padding: 5px 10px;
+  margin: 30px auto 0;
 }
 
 .top-nav {
@@ -822,5 +836,70 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-right: 45px;
+}
+
+.form-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  background-color: #fff8dc;
+}
+
+.form-login__label {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-login__label:hover, .form-login__label:focus {
+  border-color: #079dd9;
+  color: #079dd9;
+}
+
+.form-login__input {
+  width: 100%;
+  margin-top: 3px;
+  padding: 5px 5px 5px 30px;
+  border: 1px solid #071830;
+  border-radius: 5px;
+}
+
+.form-login__input:hover, .form-login__input:focus, .form-login__input:active {
+  border: 1px solid #079dd9;
+  outline-color: #079dd9;
+}
+
+.form-login__input--icon {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  -webkit-transform: translate3d(0, -25%, 0);
+          transform: translate3d(0, -25%, 0);
+  fill: currentColor;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 156, 177, 0.5);
+}
+
+.modal__login {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  padding: 15px;
+  border: 1px solid #079dd9;
+  border-radius: 5px;
+  background-color: #fff8dc;
 }
 /*# sourceMappingURL=main.css.map */

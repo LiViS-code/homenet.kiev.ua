@@ -1,0 +1,43 @@
+// форма авторизации
+.form-login {
+  display: flex;
+  flex-direction: column;
+  padding: $min-padding;
+  background-color: $background-primary-color;
+
+  // метка для поля ввода
+  &__label {
+    position: relative;
+    margin-bottom: $gap / 2;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  // поле ввода в форме авторизации
+  &__input {
+    width: 100%;
+    margin-top: 3px;
+    padding: 5px 5px 5px 30px;
+    @include bordered($text-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include border-solid-color($accent-color);
+      outline-color: $accent-color;
+    }
+
+    // иконка в поле ввода
+    &--icon {
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      transform: translate3d(0, -25%, 0);
+      fill: currentColor;
+    }
+  }
+}

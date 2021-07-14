@@ -1,0 +1,11 @@
+.modal {
+  &__login {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    padding: $min-padding;
+    @include bordered($accent-color);
+    background-color: $background-primary-color;
+  }
+}
