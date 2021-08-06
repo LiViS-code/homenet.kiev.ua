@@ -75,3 +75,9 @@
   @include flex-align();
   justify-content: center;
 }
+
+@mixin circle($d) {
+  width: $d;
+  height: $d;
+  border-radius: 50%;
+}

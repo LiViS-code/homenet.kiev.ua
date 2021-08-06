@@ -389,6 +389,16 @@ body {
   margin: 30px auto 0;
 }
 
+.btn--up {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 3;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
 .top-nav {
   display: none;
 }
@@ -773,7 +783,7 @@ body {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  background-color: #b0c4de;
+  background-color: #ffffff;
 }
 
 .container__support {

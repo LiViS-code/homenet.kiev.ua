@@ -64,4 +64,13 @@
     padding: 5px 10px;
     margin: $gap auto 0;
   }
+
+  &--up {
+    position: absolute;
+    $size: 32px;
+    bottom: $gap;
+    right: $gap;
+    z-index: 3;
+    @include circle($size);
+  }
 }
