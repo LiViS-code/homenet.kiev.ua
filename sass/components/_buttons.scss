@@ -1,10 +1,9 @@
 .btn {
   padding: 5px;
   border-radius: 4px;
-  color: $text-color;
+  color: $link-color;
   cursor: pointer;
   background-color: transparent;
-  color: inherit;
   border: 1px solid $accent-color;
   box-shadow: $light-shadow;
   transition: color $transition-duration $timing-function,

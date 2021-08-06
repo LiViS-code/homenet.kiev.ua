@@ -332,10 +332,9 @@ body {
 .btn {
   padding: 5px;
   border-radius: 4px;
-  color: #071830;
+  color: #3018e6;
   cursor: pointer;
   background-color: transparent;
-  color: inherit;
   border: 1px solid #079dd9;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
