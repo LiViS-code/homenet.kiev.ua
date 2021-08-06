@@ -1,5 +1,6 @@
 .link {
   display: inline-block;
+  position: relative;
   transition: transform $transition-duration $timing-function,
     color $transition-duration $timing-function;
   &:hover,
@@ -44,16 +45,11 @@
     }
   }
 
-  &__lift {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   &--up {
     display: none;
     position: fixed;
     right: $gap;
     bottom: 30%;
-    z-index: 5;
+    z-index: 1;
   }
 }
