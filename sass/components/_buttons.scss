@@ -7,6 +7,10 @@
   color: inherit;
   border: 1px solid $accent-color;
   box-shadow: $light-shadow;
+  transition: color $transition-duration $timing-function,
+    background-color $transition-duration $timing-function,
+    box-shadow $transition-duration $timing-function,
+    outline-color $transition-duration $timing-function;
 
   &.active,
   &:focus,
@@ -20,8 +24,7 @@
 
   // переключатель мобильного меню
   &__menu-toggle {
-    width: 32px;
-    height: 32px;
+    @include circle();
     top: 8px;
     right: 15px;
     position: absolute;

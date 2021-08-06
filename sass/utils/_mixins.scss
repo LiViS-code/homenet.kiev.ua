@@ -76,7 +76,7 @@
   justify-content: center;
 }
 
-@mixin circle($d) {
+@mixin circle($d: 32px) {
   width: $d;
   height: $d;
   border-radius: 50%;
