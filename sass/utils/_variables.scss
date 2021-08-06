@@ -1,12 +1,12 @@
 // цветовая палитра
-$text-color: #071830;
+$text-color: #0b2549;
 $text-color-muted: rgba(7, 24, 48, 0.7);
-$accent-color: #079dd9;
+$accent-color: #10a7e3;
 $link-color: rgb(48, 24, 230);
 $link-nav-color: rgb(24, 48, 200);
 $link-nav-color-muted: rgba(48, 24, 230, 0.8);
 
-$background-primary-color: #fff8dc;
+$background-primary-color: #f5fafc;
 $backgouund-secondary-color: #b0c4de;
 $background-block-color: #ffffff;
 // $background-block-color: #b0c4de;
@@ -14,6 +14,12 @@ $background-block-color-dark: #8b9cb1;
 $background-accent-color: #f2f2f2;
 $background-backdrop: rgba(139, 156, 177, 0.5);
 $background-border-active: 0px 0px 2px 1px $accent-color;
+
+// цветовая палитра логотипа
+$logo-1: #10a7e3;
+$logo-2: #e0f1f6;
+$logo-3: #97d8f0;
+$logo-4: #5bc5eb;
 
 // точки перелома
 $size-min: 320px;
