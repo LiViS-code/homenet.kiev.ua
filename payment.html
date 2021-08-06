@@ -213,7 +213,6 @@
             <p class="text">
               Доступ до Internet буде надано автоматично на протязі однієї години після поповнення.
             </p>
-            <a class="link link__lift" href="#top">до гори &#8657;</a>
           </li>
 
           <!-- Пополнение через сети терминалов -->
@@ -296,7 +295,6 @@
               термінальної мережі прийому платежів за телефонами, що вказані на треміналі, де ви
               сплачували.
             </p>
-            <a class="link link__lift" href="#top">до гори &#8657;</a>
           </li>
 
           <!-- Пополнение по банковским реквизитам -->
@@ -351,7 +349,11 @@
               щонайменше наступного робочого дня по фактичному зарахуванню коштів на розрахунковий
               рахунок нашої компанії.
             </p>
-            <a class="link link__lift" href="#top">до гори &#8657;</a>
+            <a class="link link--up" id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+              <svg class="btn__toggle-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-circle-up"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -451,5 +453,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/up-button.js"></script>
   </body>
 </html>

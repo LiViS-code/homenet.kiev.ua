@@ -48,4 +48,12 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  &--up {
+    display: none;
+    position: fixed;
+    right: $gap;
+    bottom: 30%;
+    z-index: 5;
+  }
 }

@@ -389,7 +389,6 @@
                   </li>
                 </ul>
               </section>
-              <a class="link link__lift" href="#top">до гори &#8657;</a>
             </div>
             <div
               class="container container__tab-content container__tab-content--hidden tabcontent"
@@ -447,10 +446,14 @@
                   IPTV, зручним для Вас способом, та отримайте досуп до особового кабінету IPTV.
                 </p>
               </section>
-              <a class="link link__lift" href="#top">до гори &#8657;</a>
             </div>
           </div>
         </div>
+        <a class="link link--up" id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+          <svg class="btn__toggle-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-circle-up"></use>
+          </svg>
+        </a>
       </div>
       <!-- модальное окно для входа в личный кабинет -->
       <div class="backdrop is-hidden" data-modal-signin>
@@ -549,5 +552,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/tab-toggle.js"></script>
+    <script src="./js/up-button.js"></script>
   </body>
 </html>
