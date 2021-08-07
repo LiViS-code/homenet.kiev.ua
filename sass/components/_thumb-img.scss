@@ -9,21 +9,22 @@
 
   &--logo {
     margin-right: $gap;
-    transition: transform $transition-duration $timing-function;
+    transform: scale(1);
+    transition: transform $transition-duration $timing-function,
+      box-shadow $transition-duration $timing-function;
     border: 1px solid $accent-color;
+
+    &:focus,
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
   }
 
   &--shadow,
   &--logo {
     box-shadow: $light-shadow;
     border-radius: 5px;
-    transition: box-shadow $transition-duration $timing-function;
-  }
-
-  &--logo:focus,
-  &--logo:hover {
-    transform: scale(1.1);
-    cursor: pointer;
   }
 
   &--logo:focus,

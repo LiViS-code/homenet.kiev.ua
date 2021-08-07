@@ -3,6 +3,31 @@
   transition: transform $transition-duration $timing-function,
     color $transition-duration $timing-function;
 
+  &--underline {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -2px;
+      right: 0;
+      width: 0;
+      height: 1px;
+      background: $link-color;
+      z-index: 0;
+      transition: width $transition-duration $timing-function;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        width: 100%;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;
@@ -16,7 +41,7 @@
   }
 
   &__context {
-    text-decoration: underline dotted $link-nav-color;
+    text-decoration: underline dotted;
   }
 
   &__nav {
