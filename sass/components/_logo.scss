@@ -2,6 +2,12 @@
   &__link {
     display: inline-flex;
     margin-right: $gap;
+    transition: transform $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      transform: scale3d(1.05, 1.05, 1);
+    }
   }
 
   &__img {

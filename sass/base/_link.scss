@@ -1,8 +1,8 @@
 .link {
   display: inline-block;
-  position: relative;
   transition: transform $transition-duration $timing-function,
     color $transition-duration $timing-function;
+
   &:hover,
   &:focus {
     color: $accent-color;

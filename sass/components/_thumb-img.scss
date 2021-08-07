@@ -10,6 +10,7 @@
   &--logo {
     margin-right: $gap;
     transition: transform $transition-duration $timing-function;
+    border: 1px solid $accent-color;
   }
 
   &--shadow,
