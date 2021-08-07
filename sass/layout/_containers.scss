@@ -9,6 +9,11 @@
     padding: 0 $min-padding;
   }
 
+  // ограничиваем высоту хедера
+  &__header {
+    max-height: $header-max-height;
+  }
+
   &__header,
   &__footer {
     padding: $min-padding;
