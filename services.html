@@ -29,7 +29,7 @@
     <header class="section section__header">
       <div class="container container__header">
         <div class="logo-box">
-          <a class="link logo__link" href="/"
+          <a class="logo__link" href="/"
             ><img class="logo__img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
           </a>
           <!-- TODO сделать вызов формы оформления заказа -->
@@ -118,25 +118,17 @@
         <!-- Навигация по сайту -->
         <nav class="top-nav">
           <ul class="list nav-list">
-            <li class="nav-item">
-              <a class="link link__nav link__nav--active" href="./index.html">Головна</a>
+            <li class="nav-list__item">
+              <a class="link link__nav" href="./index.html">Головна</a>
             </li>
-            <li class="nav-item">
-              <a class="link link__nav" href="./services.html#tab-01">Послуги</a>
-            </li>
-            <li class="nav-item"><a class="link link__nav" href="./payment.html">Оплата</a></li>
-            <li class="nav-item"><a class="link link__nav" href="./contract.html">Договір</a></li>
-            <li class="nav-item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
+            <li class="nav-list__item"><a class="link link__nav link__nav--active" href="./services.html">Послуги</a></li>
+            <li class="nav-list__item"><a class="link link__nav" href="./payment.html">Оплата</a></li>
+            <li class="nav-list__item"><a class="link link__nav" href="./contract.html">Договір</a></li>
+            <li class="nav-list__item"><a class="link link__nav" href="./contact.html">Контакти</a></li>
           </ul>
-          <ul class="list mob-nav__auth-list">
-            <li class="mob-nav__auth-item">
-              <button class="btn btn__modal-open-signin" type="button" data-modal-open-signin>
-                Кабінет
-              </button>
-            </li>
-            <li class="mob-nav__auth-item">
-              <button class="btn btn__modal-open" type="button" data-modal-open>Реєстрація</button>
-            </li>
+          <ul class="list auth-list">
+            <li><a class="link link__nav" href="#" data-modal-open>Кабінет</a></li>
+            <li><a class="link link__nav" href="#">Реєстрація</a></li>
           </ul>
         </nav>
       </div>
@@ -194,6 +186,7 @@
                 <p class="text">
                   Оберіть нижче варіант, що Вам підходить та ознайомтесь з умовами надання послуги.
                 </p>
+          
                 <ul class="list">
                   <!-- Условия подключения многоквартирных домов -->
                   <li>
@@ -373,7 +366,7 @@
                       class="checkbox__content-hide visually-hidden"
                       type="checkbox"
                       id="option-4"
-                    />
+                      />
                     <h3 class="title title__feature">
                       <label class="checkbox__label" for="option-4"
                         >Індивідуальні умови підключення.</label
@@ -451,7 +444,7 @@
           </div>
         </div>
         <a class="link link--up" id="linkup" href="#" onclick="smoothJumpUp(); return false;">
-          <svg class="btn__toggle-icon" width="32" height="32">
+          <svg class="btn btn__up-icon" width="25" height="25">
             <use href="./img/icons.svg#icon-circle-up"></use>
           </svg>
         </a>

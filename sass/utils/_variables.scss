@@ -1,31 +1,58 @@
-// цветовая палитра
-$text-color: #0b2549;
-$text-color-muted: rgba(7, 24, 48, 0.7);
-$accent-color: #10a7e3;
-$link-color: rgb(48, 24, 230);
-$link-nav-color: rgb(24, 48, 200);
-$link-nav-color-muted: rgba(48, 24, 230, 0.8);
+// текст (размерность задается в миксине)
+// fs - font-size
+// lh - line-height
+$fs-baze: 12;
+$lh-baze: 15;
 
-$background-primary-color: #f5fafc;
-$backgouund-secondary-color: #b0c4de;
-$background-block-color: #ffffff;
-// $background-block-color: #b0c4de;
-$background-block-color-dark: #8b9cb1;
-$background-accent-color: #f2f2f2;
-$background-backdrop: rgba(139, 156, 177, 0.5);
-$background-border-active: 0px 0px 2px 1px $accent-color;
+$fs-mob: 14;
+$lh-mob: 18;
 
-// цветовая палитра логотипа
-$logo-1: #10a7e3;
-$logo-2: #e0f1f6;
-$logo-3: #97d8f0;
-$logo-4: #5bc5eb;
+$fs-tab: 16;
+$lh-tab: 21;
 
-// точки перелома
-$size-min: 320px;
-$size-mob: 480px;
-$size-tab: 768px;
-$size-desk: 1600 px;
+$fs-desk: 18;
+$lh-desk: 28;
+
+$fs-small: 8;
+$lh-small: 10;
+
+$fs-small-mob: 10;
+$lh-small-mob: 12;
+
+$fs-small-tab: 12;
+$lh-small-tab: 15;
+
+$fs-small-desk: 14;
+$lh-small-desk: 18;
+
+// рзамеры шрифта для заголовков
+$fs-title: 16;
+$lh-title: 22;
+
+$fs-title-mob: 20;
+$lh-title-mob: 26;
+
+$fs-title-tab: 22;
+$lh-title-tab: 28;
+
+$fs-title-desk: 24;
+$lh-title-desk: 32;
+
+// размеры шрифта для фич
+$fs-feature: 14;
+$lh-feature: 20;
+
+$fs-feature-mob: 16;
+$lh-feature-mob: 22;
+
+$fs-feature-tab: 18;
+$lh-feature-tab: 26;
+
+$fs-feature-desk: 20;
+$lh-feature-desk: 28;
+
+// letter-space
+$ls: 0.03;
 
 // стандартные отступы
 $gap: 30px;
@@ -37,22 +64,5 @@ $min-padding: 15px;
 $transition-duration: 250ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// светлая тень
-$light-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-
-// темная тень
-$dark-shadow: 3px 3px 6px 4px #888888;
-
-// тень - подсветка
-$lights-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
-
-// тень снизу
-$bottom-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
-
-// тень сверху
-$top-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
-
-$paper-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.6),
-  23px 0 20px -23px rgba(0, 0, 0, 0.6), inset 0 0 40px rgba(0, 0, 0, 0.1);
-
-$header-max-height: 82px;
+$header-height: 82px;
+$header-max-height: 145px;

@@ -1,14 +1,14 @@
 .link {
   display: inline-block;
-  transition: transform $transition-duration $timing-function,
-    color $transition-duration $timing-function;
+  font-size: inherit;
+  transition: transform $transition-duration $timing-function, color $transition-duration $timing-function;
 
   &--underline {
     position: relative;
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       bottom: -2px;
       right: 0;
       width: 0;
@@ -61,7 +61,6 @@
     &--muted {
       display: flex;
       padding: 12px 0;
-      @include font-sizes(12, 16);
     }
 
     &--icon {

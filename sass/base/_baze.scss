@@ -1,8 +1,20 @@
 body {
   margin: 0px;
   font-family: $font-family-site;
-  @include font-set(14, 18, map-get($font-weights, 'regular'), 0.03);
+  @include font-set($fs-baze, $lh-baze, map-get($fw, "regular"), 0.03);
   color: $text-color;
+
+  @media screen and (min-width: $size-mob) {
+    @include font-sizes($fs-mob, $lh-mob);
+  }
+
+  @media screen and (min-width: $size-tab) {
+    @include font-sizes($fs-tab, $lh-tab);
+  }
+
+  @media screen and (min-width: $size-desk) {
+    @include font-sizes($fs-desk, $lh-desk);
+  }
 }
 
 .list {

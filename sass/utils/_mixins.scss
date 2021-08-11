@@ -8,7 +8,7 @@
   border-radius: $br + px;
 }
 // установка типографии
-@mixin font-sizes($fs, $lh) {
+@mixin font-sizes($fs: 14, $lh: 18) {
   font-size: $fs + px;
   line-height: lh-ceil($fs, $lh);
 }

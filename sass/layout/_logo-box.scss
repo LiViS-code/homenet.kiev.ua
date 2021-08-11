@@ -3,4 +3,8 @@
   align-items: center;
   justify-content: space-around;
   padding-right: 45px;
+
+  @media screen and (min-width: $size-tab) {
+    margin-bottom: $gap;
+  }
 }

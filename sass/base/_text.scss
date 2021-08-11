@@ -1,8 +1,5 @@
 .text {
   margin-bottom: $gap / 2;
-  @media screen and (min-width: $size-desk) {
-    margin-bottom: $gap;
-  }
 
   &--last-paragraph {
     margin-bottom: 0;
@@ -11,7 +8,7 @@
   &--welcome,
   &__address {
     margin-bottom: $gap / 4;
-    font-weight: map-get($font-weights, 'medium');
+    font-weight: map-get($fw, "medium");
   }
 
   &--no-margin {
@@ -23,7 +20,19 @@
   }
 
   &--copyright {
-    @include font-sizes(8, 10);
+    @include font-sizes($fs-small, $lh-small);
     margin-bottom: 0;
+
+    @media screen and (min-width: $size-mob) {
+      @include font-sizes($fs-small-mob, $lh-small-mob);
+    }
+
+    @media screen and (min-width: $size-tab) {
+      @include font-sizes($fs-small-tab, $lh-small-tab);
+    }
+
+    @media screen and (min-width: $size-desk) {
+      @include font-sizes($fs-small-desk, $lh-small-desk);
+    }
   }
 }

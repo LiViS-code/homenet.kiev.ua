@@ -4,14 +4,21 @@
   margin: 0 auto;
   padding: $min-padding;
 
+  @media screen and (min-width: $size-mob) {
+    width: 100%;
+  }
+
   @media screen and (min-width: $size-desk) {
     max-width: $size-desk - 400;
-    padding: 0 $min-padding;
   }
 
   // ограничиваем высоту хедера
   &__header {
-    max-height: $header-max-height;
+    max-height: $header-height;
+
+    @media screen and (min-width: $size-tab) {
+      max-height: none;
+    }
   }
 
   &__header,

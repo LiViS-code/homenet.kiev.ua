@@ -13,8 +13,16 @@
   }
 
   &__main {
-    padding-top: 81px + $gap;
+    padding-top: $header-height + $gap / 2;
     background-color: $background-primary-color;
+
+    @media screen and (min-width: $size-mob) {
+      padding-top: $header-height + $gap;
+    }
+
+    @media screen and (min-width: $size-tab) {
+      padding-top: $header-max-height + $gap;
+    }
   }
 
   &__footer {

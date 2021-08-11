@@ -6,10 +6,8 @@
   background-color: transparent;
   border: 1px solid $accent-color;
   box-shadow: $light-shadow;
-  transition: color $transition-duration $timing-function,
-    background-color $transition-duration $timing-function,
-    box-shadow $transition-duration $timing-function,
-    outline-color $transition-duration $timing-function;
+  transition: color $transition-duration $timing-function, background-color $transition-duration $timing-function,
+    box-shadow $transition-duration $timing-function, outline-color $transition-duration $timing-function;
 
   &.active,
   &:focus,
@@ -47,12 +45,27 @@
   }
 
   // иконка для кнопки
-  &__toggle-icon {
+  &__toggle-icon,
+  &__up-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     fill: currentColor;
+  }
+
+  &__up-icon {
+    @include circle(25px);
+    padding: 0;
+    border: 1px solid transparent;
+
+    @media screen and (min-width: $size-mob) {
+      @include circle(30px);
+    }
+
+    @media screen and (min-width: $size-tab) {
+      @include circle(32px);
+    }
   }
 
   // кнопки переключения вкладок

@@ -4,7 +4,7 @@
   @include bordered($accent-color);
 
   @media screen and (max-width: $size-mob - 1) {
-    @include font-sizes(10, 14);
+    @include font-sizes($fs-small-mob, $lh-small-mob);
   }
 
   &__header {

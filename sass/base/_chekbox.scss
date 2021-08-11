@@ -1,18 +1,27 @@
 .checkbox {
   &__content-hide {
-    &:checked ~ .checkbox__label {
-      border-bottom: 1px dashed $accent-color;
-      color: $accent-color;
+    &:checked ~ .title .checkbox__label {
+      color: $background-accent-color;
+      background-color: $accent-color;
+      border-radius: 5px;
+      text-align: center;
     }
   }
+
   &__label {
+    position: relative;
+    z-index: 1;
     display: block;
-    padding: 5px 0 5px $gap;
+    text-align: center;
+    padding: 5px;
     border-bottom: 1px dashed $accent-color;
+    transition: color $transition-duration $timing-function;
 
     &:focus,
-    &:hover {
+    &:hover,
+    &:active {
       cursor: pointer;
+      color: $accent-color;
     }
 
     &--bottom {

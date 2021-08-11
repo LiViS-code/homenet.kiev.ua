@@ -1,4 +1,6 @@
+// списки
 .list {
+  // контакты
   &__contact,
   &__contact-footer {
     margin: 0 auto;
@@ -17,42 +19,36 @@
     justify-content: space-around;
   }
 
+  // спискок платежных систем
   &__pay-list,
   &__terminal-list {
     @include flex-elements-center();
-    margin-bottom: $gap;
-  }
-
-  &__terminal-list {
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
-  &__pay-item {
-    flex-basis: calc((100% - 2 * #{$gap}) / 2);
-
-    &:not(:last-child) {
-      margin-right: $gap;
-    }
-  }
-
+  &__pay-item,
   &__terminal-item {
     flex-basis: calc((100% - 2 * #{$gap}) / 2);
+    margin-bottom: $gap;
 
-    &:nth-child(odd) {
-      margin-right: $gap;
+    @media screen and (min-width: $size-mob) {
+      flex-basis: calc((70% - 2 * #{$gap}) / 2);
     }
 
-    &:nth-child(-n + 2) {
-      margin-bottom: $gap;
+    @media screen and (min-width: $size-tab) {
+      flex-basis: calc((70% - 2 * #{$gap}) / 3);
     }
   }
 
+  // элементы вариантов оплаты
   &__methods-item {
     &:not(:last-child) {
       margin-bottom: $gap;
     }
   }
 
+  // варианты оплаты
   &__method-menu,
   &__marker {
     margin-bottom: $gap;
@@ -61,7 +57,7 @@
   &__marker,
   &__method-menu {
     padding-left: $min-padding;
-    list-style: '\2713';
+    list-style: "\2713";
   }
 
   &__marker-item {
@@ -86,6 +82,7 @@
   }
 }
 
+// список телефонов поддержки
 .list-supports > li {
   margin-bottom: $gap;
 }

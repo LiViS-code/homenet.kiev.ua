@@ -9,16 +9,15 @@
 
     // отображаем порядковый номер элемента списка
     &::before {
-      position: absolute;
-      transform: translate3d(50%, 25%, 0);
-      content: counter(num) '.';
-      @include font-set(16, 22, map-get($font-weights, 'bold'), 0.03);
+      display: none;
+      content: counter(num) ".";
     }
 
-    // курсор при наведении и фокусе на элемент списка
+    // при наведении и фокусе на элемент списка
     &:focus,
-    &:hover {
-      cursor: pointer;
+    &:hover,
+    &:active {
+      color: $accent-color;
     }
   }
 
@@ -34,7 +33,7 @@
     // формируем порядковый номер элемента списка второго уровня вложенности
     &::before {
       margin-right: $gap / 4;
-      content: counter(num) '.' counter(num2) '.';
+      content: counter(num) "." counter(num2) ".";
     }
   }
 
@@ -50,7 +49,7 @@
     // формируем порядковый номер 3-го уровня вложенности
     &::before {
       margin-right: $gap / 4;
-      content: counter(num) '.' counter(num2) '.' counter(num3) '.';
+      content: counter(num) "." counter(num2) "." counter(num3) ".";
     }
   }
 
@@ -66,7 +65,7 @@
   &__ul {
     margin-top: $gap / 2;
     padding-left: $gap / 3;
-    list-style-type: '\2014';
+    list-style-type: "\2014";
 
     // интервалы между элементами не нумерованного списка
     & > li {
