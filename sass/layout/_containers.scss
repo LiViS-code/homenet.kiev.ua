@@ -9,7 +9,8 @@
   }
 
   @media screen and (min-width: $size-desk) {
-    max-width: $size-desk - 400;
+    max-width: $size-desk - 200;
+    padding: $min-padding * 2;
   }
 
   // ограничиваем высоту хедера
@@ -49,6 +50,7 @@
     margin-bottom: $gap / 2;
     padding-left: $gap / 2;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
