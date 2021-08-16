@@ -38,7 +38,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 18px;
     line-height: 1.5556;
@@ -143,12 +143,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 0;
 }
 
 .link__nav--icon {
   margin-right: 5px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .link__nav--icon {
+    width: 15px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link__nav--icon {
+    width: 17px;
+    height: 18px;
+  }
 }
 
 .link--up {
@@ -161,15 +178,17 @@ body {
 
 .list__contact, .list__contact-footer {
   margin: 0 auto;
-  max-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.list__item-contact {
+  padding: 0 15px;
 }
 
 .list__contact-footer {
@@ -307,7 +326,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .text--copyright {
     font-size: 14px;
     line-height: 1.2858;
@@ -360,7 +379,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .title,
   .title--slogan {
     font-size: 24px;
@@ -395,7 +414,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .title__feature,
   .title__contract,
   .contract-list__item--first-level::before {
@@ -730,6 +749,18 @@ body {
   border: 1px solid #10a7e3;
 }
 
+@media screen and (min-width: 480px) {
+  .thumb-img--logo {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thumb-img--logo {
+    width: 130px;
+  }
+}
+
 .thumb-img--logo:focus, .thumb-img--logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -947,9 +978,10 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1000px;
+    padding: 30px;
   }
 }
 
@@ -994,6 +1026,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

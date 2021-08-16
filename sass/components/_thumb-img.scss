@@ -14,6 +14,14 @@
       box-shadow $transition-duration $timing-function;
     border: 1px solid $accent-color;
 
+    @media screen and (min-width: $size-mob) {
+      width: 110px;      
+    }
+
+    @media screen and (min-width: $size-tab) {
+      width: 130px;      
+    }
+
     &:focus,
     &:hover {
       transform: scale(1.1);

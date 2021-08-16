@@ -60,12 +60,28 @@
     &--footer,
     &--muted {
       display: flex;
+      align-items: center;
       padding: 12px 0;
     }
 
     &--icon {
       margin-right: $gap / 6;
       fill: currentColor;
+
+      @media screen and (min-width: $size-mob) {
+        width: $fs-mob + 1px;
+        height: $fs-mob + 2px;        
+      }
+
+      @media screen and (min-width: $size-tab) {
+        width: $fs-tab + 1px;
+        height: $fs-tab + 2px;        
+      }
+
+      @media screen and (min-width: $size-desk) {
+        // width: $fs-desk + 0px;
+        // height: $fs-desk + 2px;        
+      }
     }
   }
 

@@ -4,10 +4,18 @@
   &__contact,
   &__contact-footer {
     margin: 0 auto;
-    max-width: $size-min - 2 * $gap;
+    // max-width: $size-min - 2 * $gap;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    @media screen and (min-width: $size-tab) {
+      // max-width: $size-tab - 2 * $gap;      
+    }
+  }
+
+  &__item-contact {
+    padding: 0 $min-padding;
   }
 
   &__contact-footer {
