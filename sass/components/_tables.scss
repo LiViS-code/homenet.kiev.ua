@@ -46,4 +46,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  &__price {
+    margin-bottom: $min-padding;
+  }
 }
