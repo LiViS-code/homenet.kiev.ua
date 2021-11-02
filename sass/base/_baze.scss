@@ -19,6 +19,14 @@ body {
 
 .list {
   @include reset-list;
+
+  &--numeric {
+    padding-left: $gap;
+    list-style-type:decimal;
+    & li::marker{
+      font-weight: map-get($fw, "black")
+    }
+  }
 }
 
 .link {

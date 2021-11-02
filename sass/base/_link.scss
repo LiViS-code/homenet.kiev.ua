@@ -34,6 +34,17 @@
     transform: scale(1.05);
   }
 
+  &--bground {
+    transition: color $transition-duration $timing-function,
+      background-color $transition-duration $timing-function;
+    &:focus,
+    &:hover {
+      border-radius: 5px;
+      color: $background-accent-color;
+      background-color: $accent-color;
+    } 
+  }
+
   &--icon {
     padding: 5px 0;
     display: inline-flex;
