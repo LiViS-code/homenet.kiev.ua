@@ -1,0 +1,19 @@
+.paysys-logo {
+  width: 100px;
+  height: 65px;
+  padding: $min-padding;
+  border: 1px solid $accent-color;
+  background-color: $background-primary-color;
+  @media screen and (min-width: $size-mob) {
+    width: 120px;
+    height: 70px;
+  }
+  @media screen and (min-width: $size-tab) {
+    width: 150px;
+    height: 80px;
+  }
+  @media screen and (min-width: $size-desk) {
+    width: 180px;
+    height: 90px;
+  }
+}

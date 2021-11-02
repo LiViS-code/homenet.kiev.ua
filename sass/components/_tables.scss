@@ -60,4 +60,11 @@
   &__price {
     margin-bottom: $min-padding;
   }
+
+  &__data--company {
+    &:last-child {
+      width: 70%;
+      
+    }
+  }
 }

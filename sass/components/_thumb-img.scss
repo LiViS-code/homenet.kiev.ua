@@ -15,11 +15,16 @@
     border: 1px solid $accent-color;
 
     @media screen and (min-width: $size-mob) {
-      width: 110px;      
+      width: 110px;
     }
 
     @media screen and (min-width: $size-tab) {
-      width: 130px;      
+      width: 130px;
+      margin-right: $gap * 2;
+    }
+    
+    @media screen and (min-width: $size-desk) {
+      width: 180px;
     }
 
     &:focus,
