@@ -23,6 +23,16 @@
     }
   }
 
+  &__row {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $background-accent-color;
+      background-color: $accent-color;
+      transition: background-color $transition-duration $timing-function;
+    }
+  }
+
   &__data {
     white-space: normal;
     padding: 5px;
