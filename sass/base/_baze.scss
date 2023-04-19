@@ -15,7 +15,7 @@ body {
 
   @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
     @include font-sizes($fs-mob, $lh-mob);
-    background-image: url('../../img/background_mobile.jpg');
+    background-image: url('../img/background_mobile.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
   }
