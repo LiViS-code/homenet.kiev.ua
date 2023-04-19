@@ -1,5 +1,13 @@
-// точки перелома
+// точки перелома по ширине
 $size-min: 320px;
+$size-iphone: 375px;
 $size-mob: 480px;
 $size-tab: 768px;
 $size-desk: 1200px;
+
+// точки перелома по высоте
+$size-min-height: 568px;
+$size-mob-height: 640px;
+$size-iphone-height: 667px;
+$size-tab-height: 812px;
+$size-desk-height: 1080px;

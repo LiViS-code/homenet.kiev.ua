@@ -1,14 +1,15 @@
 .link {
   display: inline-block;
   font-size: inherit;
-  transition: transform $transition-duration $timing-function, color $transition-duration $timing-function;
+  transition: transform $transition-duration $timing-function,
+    color $transition-duration $timing-function;
 
   &--underline {
     position: relative;
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       bottom: -2px;
       right: 0;
       width: 0;
@@ -42,7 +43,7 @@
       border-radius: 5px;
       color: $background-accent-color;
       background-color: $accent-color;
-    } 
+    }
   }
 
   &--icon {
@@ -66,40 +67,38 @@
     &--muted {
       color: $link-nav-color-muted;
       justify-content: center;
+      padding: 12px 0;
+      align-items: center;
     }
 
     &--footer,
     &--muted {
       display: flex;
-      align-items: center;
-      padding: 12px 0;
+      color: $reverse-color;
     }
 
     &--icon {
       margin-right: $gap / 6;
       fill: currentColor;
+      width: $fs-mob + 1px;
+      height: $fs-mob + 2px;
 
-      @media screen and (min-width: $size-mob) {
-        width: $fs-mob + 1px;
-        height: $fs-mob + 2px;        
-      }
+      // @media screen and (min-width: $size-tab) {
+      //   width: $fs-tab + 1px;
+      //   height: $fs-tab + 2px;
+      // }
 
-      @media screen and (min-width: $size-tab) {
-        width: $fs-tab + 1px;
-        height: $fs-tab + 2px;        
-      }
-
-      @media screen and (min-width: $size-desk) {
-        // width: $fs-desk + 0px;
-        // height: $fs-desk + 2px;        
-      }
+      // @media screen and (min-width: $size-desk) {
+      //   width: $fs-desk + 0px;
+      //   height: $fs-desk + 2px;
+      // }
     }
   }
 
   &--up {
     display: none;
     position: fixed;
-    right: $gap;
+    right: 5%;
     bottom: 30%;
     z-index: 1;
   }

@@ -1,39 +1,52 @@
 // основной контейнер для разделов сайта
 .container {
-  max-width: 95vw;
-  margin: 0 auto;
-  padding: $min-padding;
-
-  @media screen and (min-width: $size-mob) {
-    width: 100%;
+  padding: 0;
+  &__main {
+    padding: 0 15px;
+  }
+  &__main-reverse_color {
+    color: $reverse-color;
+    position: relative;
+  }
+  &__main-background {
+    background-color: $background-primary-color;
   }
 
-  @media screen and (min-width: $size-desk) {
-    max-width: $size-desk - 200;
-    padding: $min-padding * 2;
-  }
-
-  // ограничиваем высоту хедера
-  &__header {
-    max-height: $header-height;
-
-    @media screen and (min-width: $size-tab) {
-      max-height: none;
-    }
+  &__main.container__main-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -2px;
+    margin-bottom: -2px;
   }
 
   &__header,
   &__footer {
-    padding: $min-padding;
     border-radius: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  &__main {
-    box-shadow: $light-shadow;
-    border-radius: $min-padding;
-    background-color: $background-block-color;
+  &__footer {
+    padding: $min-padding;
+  }
+
+  &--wrapper-footer {
+    position: relative;
+    display: flex;
+    @include font-sizes($fs-small-mob, $lh-small-mob);
+    margin-bottom: $gap/2;
+    justify-content: space-between;
+  }
+
+  &--subscribers,
+  &--contacts,
+  &--address {
+    width: 100%;
+  }
+
+  &--subscribers,
+  &--contacts {
+    margin-right: $gap/2;
   }
 
   &__support {
@@ -47,8 +60,8 @@
   }
 
   &__logo-img {
-    margin-bottom: $gap / 2;
-    padding-left: $gap / 2;
+    margin-bottom: $gap/2;
+    padding-left: $gap/2;
     display: flex;
     justify-content: center;
     align-items: center;

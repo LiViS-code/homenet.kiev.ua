@@ -1,0 +1,5 @@
+.heading-footer {
+  display: inline-block;
+  margin-bottom: $min-padding/2;
+  @include font-sizes($fs-mob, $lh-mob);
+}

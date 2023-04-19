@@ -1,30 +1,36 @@
-body {
-  margin: 0px;
-  font-family: $font-family-site;
-  @include font-set($fs-baze, $lh-baze, map-get($fw, "regular"), 0.03);
-  color: $text-color;
-
-  @media screen and (min-width: $size-mob) {
-    @include font-sizes($fs-mob, $lh-mob);
-  }
-
-  @media screen and (min-width: $size-tab) {
-    @include font-sizes($fs-tab, $lh-tab);
-  }
-
-  @media screen and (min-width: $size-desk) {
-    @include font-sizes($fs-desk, $lh-desk);
-  }
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
+body {
+  margin: calc($gap * 2) 0 0;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $font-family-site;
+  @include font-set($fs-baze, $lh-baze, map-get($fw, 'regular'), 0.03);
+  color: $text-color;
+
+  @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+    @include font-sizes($fs-mob, $lh-mob);
+    background-image: url('../../img/background_mobile.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+}
+p {
+  margin: 0;
+}
 .list {
   @include reset-list;
 
   &--numeric {
     padding-left: $gap;
-    list-style-type:decimal;
-    & li::marker{
-      font-weight: map-get($fw, "black")
+    list-style-type: decimal;
+    & li::marker {
+      font-weight: map-get($fw, 'black');
     }
   }
 }

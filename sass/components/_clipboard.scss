@@ -1,0 +1,11 @@
+@media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+  .clipboard {
+    height: 50px;
+    background-image: url('../../img/wave.png');
+    background-size: 100% 100%;
+
+    &__footer {
+      transform: scaleY(-1);
+    }
+  }
+}

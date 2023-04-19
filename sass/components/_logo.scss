@@ -1,7 +1,6 @@
 .logo {
   &__link {
     display: inline-flex;
-    margin-right: $gap;
     transition: transform $transition-duration $timing-function,
       box-shadow $transition-duration $timing-function;
 
@@ -15,6 +14,5 @@
   &__img {
     max-width: 100%;
     height: auto;
-    @include bordered($accent-color);
   }
 }

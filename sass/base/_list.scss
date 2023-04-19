@@ -4,27 +4,24 @@
   &__contact,
   &__contact-footer {
     margin: 0 auto;
-    // max-width: $size-min - 2 * $gap;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
-    @media screen and (min-width: $size-tab) {
-      // max-width: $size-tab - 2 * $gap;      
-    }
   }
 
-  &__item-contact {
-    padding: 0 $min-padding;
-  }
-
-  &__contact-footer {
-    margin-bottom: $gap / 4;
+  &__features {
+    list-style-position: outside;
+    padding-left: $min-padding * 1.5;
   }
 
   &__correspondence {
     display: flex;
     justify-content: space-around;
+  }
+
+  &__item-contact {
+    &:not(:last-child) {
+      margin-bottom: $gap/4;
+    }
   }
 
   // спискок платежных систем
@@ -65,14 +62,18 @@
   &__marker,
   &__method-menu {
     padding-left: $min-padding;
-    list-style: "\2713";
+    list-style: '\2713';
   }
 
   &__marker-item {
     padding-left: $min-padding;
     &::marker {
-      font-size: 1.5em;
+      font-size: 1.2em;
       color: $accent-color;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: calc($gap/2);
     }
   }
 
@@ -85,7 +86,7 @@
     flex: 1 1 50%;
 
     &:not(:last-child) {
-      margin-right: $gap / 2;
+      margin-right: calc($gap/2);
     }
   }
 }

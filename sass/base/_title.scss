@@ -5,13 +5,6 @@
     text-align: center;
   }
 
-  &--slogan {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-align: center;
-    color: $accent-color;
-  }
-
   &__represent {
     text-align: center;
   }
@@ -19,17 +12,13 @@
   &__feature,
   &__method,
   &__contract {
-    margin-bottom: $gap / 2;
+    margin-bottom: calc($gap/2);
   }
 }
 
-.title,
-.title--slogan {
-  @include font-sizes-weight($fs-title, $lh-title, map-get($fw, "black"));
-
-  @media screen and (min-width: $size-mob) {
-    @include font-sizes($fs-title-mob, $lh-title-mob);
-  }
+.title {
+  text-align: left;
+  @include font-sizes-weight($fs-title-mob, $lh-title-mob, map-get($fw, 'regular'));
 
   @media screen and (min-width: $size-tab) {
     @include font-sizes($fs-title-tab, $lh-title-tab);
@@ -38,12 +27,16 @@
   @media screen and (min-width: $size-desk) {
     @include font-sizes($fs-title-desk, $lh-title-desk);
   }
+
+  &--slogan {
+    @include font-sizes-weight($fs-title-slogan, $lh-title-slogan, map-get($fw, 'regular'));
+  }
 }
 
 .title__feature,
 .title__contract,
 .contract-list__item--first-level::before {
-  @include font-set($fs-feature, $lh-feature, map-get($fw, "bold"), $ls);
+  @include font-set($fs-feature, $lh-feature, map-get($fw, 'bold'), $ls);
 
   @media screen and (min-width: $size-mob) {
     @include font-sizes($fs-feature-mob, $lh-feature-mob);

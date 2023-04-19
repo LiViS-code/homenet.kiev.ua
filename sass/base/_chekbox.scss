@@ -15,7 +15,8 @@
     text-align: center;
     padding: 5px;
     border-bottom: 1px dashed $accent-color;
-    transition: color $transition-duration $timing-function, background-color $transition-duration $timing-function;
+    transition: color $transition-duration $timing-function,
+      background-color $transition-duration $timing-function;
 
     &:focus,
     &:hover,
@@ -25,10 +26,11 @@
     }
 
     &--bottom {
-      margin-top: $gap / 2;
+      margin-top: calc($gap/2);
       text-align: center;
       border-top: 1px dashed $accent-color;
-      transition: color $transition-duration $timing-function, background-color $transition-duration $timing-function;
+      transition: color $transition-duration $timing-function,
+        background-color $transition-duration $timing-function;
 
       &:hover,
       &:focus,

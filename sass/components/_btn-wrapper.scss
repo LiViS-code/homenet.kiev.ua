@@ -1,0 +1,8 @@
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc($gap / 2);
+  @media screen and (min-height: 668px) and (max-height: 740px) {
+    margin-bottom: calc($gap * 2);
+  }
+}
