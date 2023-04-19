@@ -1,8 +1,10 @@
 .logo-box {
   display: flex;
+  height: $min-padding * 3;
   align-items: center;
-  justify-content: space-around;
-  padding-right: 45px;
+  justify-content: start;
+  padding-left: $min-padding;
+  background-color: $background-primary-color;
 
   @media screen and (min-width: $size-tab) {
     margin-bottom: $gap;

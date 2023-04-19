@@ -3,7 +3,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: $gap / 2;
+      margin-right: calc($gap/2);
     }
   }
 }

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
@@ -24,18 +25,16 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <title>HomeNET</title>
+    <title>ХОУМНЕТ</title>
   </head>
   <body style>
     <header class="section section__header">
+      <div class="logo-box">
+        <a class="logo__link" href="./index.html">
+          <img class="logo__img" src="./img/tov_homenet_logo.png" alt="logo HomeNET" width="60" />
+        </a>
+      </div>
       <div class="container container__header">
-        <div class="logo-box">
-          <a class="logo__link" href="./index.html"
-            ><img class="logo__img" src="./img/homenet.png" alt="logo HomeNET" width="100" />
-          </a>
-          <!-- TODO сделать вызов формы оформления заказа -->
-          <h1 class="title title--slogan">Інтернет до кожної оселі!</h1>
-        </div>
         <!-- мобильное меню навигации -->
         <button
           class="btn btn__menu-toggle js-open-menu"
@@ -45,6 +44,26 @@
         >
           <svg class="btn__toggle-icon" width="20" height="20">
             <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button
+          class="btn btn__calls-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="btn__toggle-icon" width="20" height="20">
+            <use href="./img/icons.svg#icon-calls"></use>
+          </svg>
+        </button>
+        <button
+          class="btn btn__personal_account-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="btn__toggle-icon" width="20" height="20">
+            <use href="./img/icons.svg#icon-personal_account"></use>
           </svg>
         </button>
         <nav class="mob-nav js-menu-container" id="mobile-menu">
@@ -87,32 +106,36 @@
           </ul>
           <ul class="list mob-nav__contact-list">
             <li class="mob-nav__contact-item">
-              <a href="tel:+0930001659" class="link link__nav--muted"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(093) 000-16-59</a
-              >
+              <a href="tel:+0930001659" class="link link__nav--muted">
+                <svg class="link__nav--icon" width="12" height="14">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                (093) 000-16-59
+              </a>
             </li>
             <li class="mob-nav__contact-item">
-              <a href="tel:+0950001659" class="link link__nav--muted"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(095) 000-16-59</a
-              >
+              <a href="tel:+0950001659" class="link link__nav--muted">
+                <svg class="link__nav--icon" width="12" height="14">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                (095) 000-16-59
+              </a>
             </li>
             <li class="mob-nav__contact-item">
-              <a href="tel:+0960001659" class="link link__nav--muted"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(096) 000-16-59</a
-              >
+              <a href="tel:+0960001659" class="link link__nav--muted">
+                <svg class="link__nav--icon" width="12" height="14">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                (096) 000-16-59
+              </a>
             </li>
             <li class="mob-nav__contact-item">
-              <a href="tel:+0442281629" class="link link__nav--muted"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-phone"></use></svg
-                >(044) 228-16-29</a
-              >
+              <a href="tel:+0442281629" class="link link__nav--muted">
+                <svg class="link__nav--icon" width="12" height="14">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                (044) 228-16-29
+              </a>
             </li>
           </ul>
         </nav>
@@ -143,34 +166,83 @@
       </div>
     </header>
     <main class="section section__main">
-      <div class="container container__main">
-        <h2 class="title title__represent">
-          Ви на сайті мережі HomeNET <br />
-          (ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ)
-        </h2>
-        <p class="text text--welcome">Вітаємо!</p>
-        <p class="text">HomeNET - оптоволоконна мультисервісна мережа.</p>
-        <p class="text">
-          Пропонуємо Вам якісний і швидкий доступ до Інтернет та інших телекомунікаційних послуг за
-          місцем Вашого проживання або роботи.
-        </p>
-        <p class="text">
-          Для забезпечення доступу до Інтернет використовуюємо сучасне обладнання, що пройшло
-          сертифікацію в Україні. Наш багаторічний досвід є запорукою надання якісних і стабільних
-          послуг.
-        </p>
-        <p class="text">
-          Будемо раді бачити Вас нашим клієнтом. Сподіваємося на плідну і довгу співпрацю.
-        </p>
-        <p class="text">
-          З усіма нагальними питаннями звертайтесь за нашими
-          <a class="link link--underline" href="./contact.html">контактами</a>. Завжди раді надати
-          відповідь та допомогти.
-        </p>
-        <button class="btn" type="button">Замовити підключення</button>
-        <p class="text text--last-paragraph">
-          З повагою до Вас,<br />Команда ТОВ &laquo;ХОУМНЕТ&raquo; м.Київ
-        </p>
+      <div class="container">
+        <div class="container__main container__main-reverse_color">
+          <h1 class="title title--slogan">Інтернет до кожної оселі</h1>
+          <p class="text text--definition">ХОУМНЕТ оптоволоконна мультисервісна мережа</p>
+          <p class="text text--offer">
+            Пропонуємо Вам якісний і швидкий доступ до Інтернет та інших телекомунікаційних послуг
+            за місцем Вашого проживання або роботи
+          </p>
+          <div class="btn-wrapper">
+            <button class="btn btn__order" type="button">Замовити підключення</button>
+          </div>
+          <div class="thumb-img">
+            <img class="mech mech--mini" src="./img/mech_mini.png" alt="mechanizm" width="100" />
+          </div>
+          <div class="thumb-img">
+            <img class="mech" src="./img/mech.png" alt="mechanizm" width="100" />
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--small mech--small-top1"
+              src="./img/mech_small.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--small mech--small-top2"
+              src="./img/mech_small.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--small mech--small-top3"
+              src="./img/mech_small.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--small mech--small-top4"
+              src="./img/mech_small.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+        </div>
+        <div class="thumb-img clipboard"></div>
+        <div class="container__main container__main-background">
+          <h2 class="title">Чому нас обирають</h2>
+          <ul class="list list__marker">
+            <li class="list__marker-item">
+              <p>Надаємо послуги як у багатоквартирних будинках, так і у приватному секторі</p>
+            </li>
+            <li class="list__marker-item">
+              <p>
+                Послуги як для фізичних, так і для юридичних осіб. У житловому та не-житловому фонді
+              </p>
+            </li>
+            <li class="list__marker-item">
+              <p>
+                Мінімум «паперових» формальностей. Там, де це можливо, працюємо за пуб-лічними
+                договорами
+              </p>
+            </li>
+            <li class="list__marker-item"><p>Надаємо послуги виключно по передплаті</p></li>
+            <li class="list__marker-item">
+              <p>
+                Оперативно реагуємо на збої у роботі мережі та прикладаємо максимум зусиль, щоб
+                звести до мінімуму їх кількість
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- модальное окно для входа в личный кабинет -->
       <div class="backdrop is-hidden" data-modal-signin>
@@ -185,8 +257,9 @@
             </svg>
           </button>
           <form class="form-login">
-            <label class="form-login__label"
-              >Логін<input
+            <label class="form-login__label">
+              Логін
+              <input
                 class="form-login__input form-login__input--name"
                 type="text"
                 placeholder="введіть логін"
@@ -197,14 +270,18 @@
               </svg>
             </label>
 
-            <label class="form-login__label"
-              >Пароль<input
+            <label class="form-login__label">
+              Пароль
+              <input
                 class="form-login__input form-login__input--password"
                 type="password"
                 placeholder="введіть пароль"
-                required /><svg class="form-login__input--icon" width="16" height="18">
-                <use href="./img/icons.svg#icon-key"></use></svg
-            ></label>
+                required
+              />
+              <svg class="form-login__input--icon" width="16" height="18">
+                <use href="./img/icons.svg#icon-key"></use>
+              </svg>
+            </label>
             <a href="./contact.html">Забули параоль?</a>
             <button class="btn btn__sign-in" type="submit">Увійти</button>
           </form>
@@ -217,49 +294,67 @@
       </a>
     </main>
     <footer class="section section__footer">
+      <div class="thumb-img clipboard clipboard__footer"></div>
       <div class="container container__footer">
-        <address>
-          <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
-          <ul class="list list__contact-footer">
-            <li class="list__item-contact">
-              <a href="tel:+0930001659" class="link link__nav--footer"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(093) 000-16-59</a
-              >
-            </li>
+        <div class="container--wrapper-footer">
+          <div class="container--subscribers">
+            <span class="heading-footer">Абонентам</span>
+            <ul class="list">
+              <li class="list__item-contact">Особистий кабінет</li>
+              <li class="list__item-contact">Способи оплати</li>
+              <li class="list__item-contact">Телеграм бот</li>
+            </ul>
+          </div>
+          <div class="container--contacts">
+            <span class="heading-footer">Контакти</span>
+            <ul class="list list__contact-footer">
+              <li class="list__item-contact">
+                <a href="tel:+0930001659" class="link link__nav--footer">(093) 000-16-59</a>
+              </li>
 
-            <li class="list__item-contact">
-              <a href="tel:+0950001659" class="link link__nav--footer"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(095) 000-16-59</a
-              >
-            </li>
+              <li class="list__item-contact">
+                <a href="tel:+0950001659" class="link link__nav--footer">(095) 000-16-59</a>
+              </li>
 
-            <li class="list__item-contact">
-              <a href="tel:+0960001659" class="link link__nav--footer"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-smartphone"></use></svg
-                >(096) 000-16-59</a
-              >
-            </li>
+              <li class="list__item-contact">
+                <a href="tel:+0960001659" class="link link__nav--footer">(096) 000-16-59</a>
+              </li>
 
-            <li class="list__item-contact">
-              <a href="tel:+0442281629" class="link link__nav--footer"
-                ><svg class="link__nav--icon" width="12" height="14">
-                  <use href="./img/icons.svg#icon-phone"></use></svg
-                >(044) 228-16-29</a
-              >
-            </li>
-          </ul>
-        </address>
+              <li class="list__item-contact">
+                <a href="tel:+0442281629" class="link link__nav--footer">(044) 228-16-29</a>
+              </li>
+            </ul>
+          </div>
+          <div class="container--address">
+            <span class="heading-footer">Адреса</span>
+            <address>
+              <p class="text text__address">м. Київ, бульвар Академіка Вернадського, буд. 34/1</p>
+            </address>
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--small mech--small-footer"
+              src="./img/mech_small.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+          <div class="thumb-img">
+            <img
+              class="mech mech--mini mech--mini-footer"
+              src="./img/mech_mini.png"
+              alt="mechanizm"
+              width="100"
+            />
+          </div>
+        </div>
         <p class="text text--copyright">
           &copy; 2010
           <script>
             new Date().getFullYear() > 2010 && document.write('-' + new Date().getFullYear() + ',');
           </script>
-          ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено. <br />
+          ТОВ&laquo;ХОУМНЕТ&raquo; м.Київ. Всі права захищено.
+          <br />
           Використання матеріалів цього сайту можливе тільки за умови попередньої письмової згоди
           ТОВ&nbsp;&laquo;ХОУМНЕТ&raquo;.
         </p>
@@ -267,6 +362,7 @@
     </footer>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal-signin.js"></script>
+    <script src="./js/hide-header.js"></script>
     <script
       defer=""
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

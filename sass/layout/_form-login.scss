@@ -9,7 +9,7 @@
   // метка для поля ввода
   &__label {
     position: relative;
-    margin-bottom: $gap / 2;
+    margin-bottom: calc($gap/2);
 
     &:hover,
     &:focus {

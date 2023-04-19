@@ -1,18 +1,19 @@
 // цветовая палитра
 $text-color: #0b2549;
-$text-color-muted: rgba(7, 24, 48, 0.7);
-$accent-color: #10a7e3;
-$link-color: rgb(48, 24, 230);
-$link-nav-color: rgb(24, 48, 200);
-$link-nav-color-muted: rgba(48, 24, 230, 0.8);
+$text-color-muted: #071830b3;
+$reverse-color: #fff;
+$accent-color: #1fa3ed;
+$link-color: #1fa3ed;
+$link-nav-color: #1fa3ed;
+$link-nav-color-muted: #9dd4f1;
 
-$background-primary-color: #f5fafc;
-$backgouund-secondary-color: #b0c4de;
-$background-block-color: #ffffff;
+$background-primary-color: #fff;
+$backgouund-secondary-color: #113bb4;
+$background-block-color: #fff;
 // $background-block-color: #b0c4de;
 $background-block-color-dark: #8b9cb1;
-$background-accent-color: #f2f2f2;
-$background-backdrop: rgba(139, 156, 177, 0.5);
+$background-accent-color: #fff;
+$background-backdrop: #8b9cb180;
 $background-border-active: 0px 0px 2px 1px $accent-color;
 
 // цветовая палитра логотипа
@@ -22,20 +23,20 @@ $logo-3: #97d8f0;
 $logo-4: #5bc5eb;
 
 // светлая тень
-$light-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+$light-shadow: 0 2px 4px #00000040;
 
 // темная тень
 $dark-shadow: 3px 3px 6px 4px #888888;
 
 // тень - подсветка
-$lights-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+$lights-shadow: 0 0 10px 5px #dddddd;
 
 // тень снизу
-$bottom-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+$bottom-shadow: 0 5px 5px -5px #00000080;
 
 // тень сверху
-$top-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.5);
+$top-shadow: 0 -5px 5px -5px #00000080;
 
 // эффект бумаги
-$paper-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
-  inset 0 0 40px rgba(0, 0, 0, 0.1);
+$paper-shadow: 0 1px 4px #0000004d, -23px 0 20px -23px #00000099, 23px 0 20px -23px #00000099,
+  inset 0 0 40px #0000001a;

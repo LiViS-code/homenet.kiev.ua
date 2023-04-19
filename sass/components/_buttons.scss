@@ -6,8 +6,10 @@
   background-color: transparent;
   border: 1px solid $accent-color;
   box-shadow: $light-shadow;
-  transition: color $transition-duration $timing-function, background-color $transition-duration $timing-function,
-    box-shadow $transition-duration $timing-function, outline-color $transition-duration $timing-function;
+  transition: color $transition-duration $timing-function,
+    background-color $transition-duration $timing-function,
+    box-shadow $transition-duration $timing-function,
+    outline-color $transition-duration $timing-function;
 
   &.active,
   &:focus,
@@ -19,28 +21,53 @@
     outline-color: $accent-color;
   }
 
+  // кнопка заказа подключения
+  &__order {
+    padding: $min-padding;
+    @include font-sizes($fs-offer-min, $lh-offer-min);
+    @media screen and (min-width: ($size-min + 61)) {
+      @include font-sizes($fs-offer-mob, $lh-offer-mob);
+    }
+    color: $reverse-color;
+    background-color: $accent-color;
+  }
+
   // переключатель мобильного меню
   &__menu-toggle {
+    right: 5%;
+  }
+
+  // кнопка закрыть в модальном окне
+  &--modal {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  // переключатель меню с номерами телефонов
+  &__calls-toggle {
+    right: 15%;
+  }
+
+  // переключатель входа в личный кабинет
+  &__personal_account-toggle {
+    right: 25%;
+  }
+
+  &__menu-toggle,
+  &__calls-toggle,
+  &__personal_account-toggle {
     @include circle();
-    top: 8px;
-    right: 15px;
+    top: 22px;
     position: absolute;
     border: none;
     box-shadow: none;
-
     @media screen and (min-width: $size-tab) {
       display: none;
-    }
-
-    // кнопка закрыть в модальном окне
-    &--modal {
-      width: 25px;
-      height: 25px;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      border-radius: 50%;
-      outline: none;
     }
   }
 

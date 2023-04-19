@@ -1,15 +1,15 @@
 // ссылка-якорь с отступом
 .bookmark {
   &::before {
-    content: "";
+    content: '';
     width: 1px;
-    height: $header-height + $gap / 2;
-    margin-top: -$header-height - $gap / 2;
+    height: $header-height + calc($gap/2);
+    margin-top: -$header-height - calc($gap/2);
     display: block;
 
     @media screen and (min-width: $size-tab) {
-      height: $header-max-height + $gap / 2;
-      margin-top: -$header-max-height - $gap / 2;
+      height: $header-max-height + calc($gap/2);
+      margin-top: -$header-max-height - calc($gap/2);
     }
   }
 }

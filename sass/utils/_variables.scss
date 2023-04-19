@@ -2,10 +2,10 @@
 // fs - font-size
 // lh - line-height
 $fs-baze: 12;
-$lh-baze: 15;
+$lh-baze: 16;
 
 $fs-mob: 14;
-$lh-mob: 18;
+$lh-mob: 16;
 
 $fs-tab: 16;
 $lh-tab: 21;
@@ -17,7 +17,7 @@ $fs-small: 8;
 $lh-small: 10;
 
 $fs-small-mob: 10;
-$lh-small-mob: 12;
+$lh-small-mob: 14;
 
 $fs-small-tab: 12;
 $lh-small-tab: 15;
@@ -26,17 +26,33 @@ $fs-small-desk: 14;
 $lh-small-desk: 18;
 
 // рзамеры шрифта для заголовков
+$fs-title-slogan: 18;
+$lh-title-slogan: 21;
+
 $fs-title: 16;
 $lh-title: 22;
 
-$fs-title-mob: 20;
-$lh-title-mob: 26;
+$fs-title-mob: 30;
+$lh-title-mob: 35;
 
 $fs-title-tab: 22;
 $lh-title-tab: 28;
 
 $fs-title-desk: 24;
 $lh-title-desk: 32;
+
+// размеры шрифта для определения
+$fs-definition-min: 30;
+$lh-definition-min: 35;
+
+$fs-definition-mob: 41;
+$lh-definition-mob: 48;
+
+$fs-offer-min: 16;
+$lh-offer-min: 19;
+
+$fs-offer-mob: 18;
+$lh-offer-mob: 21;
 
 // размеры шрифта для фич
 $fs-feature: 14;

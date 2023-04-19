@@ -10,7 +10,7 @@
     // отображаем порядковый номер элемента списка
     &::before {
       display: none;
-      content: counter(num) ".";
+      content: counter(num) '.';
     }
 
     // при наведении и фокусе на элемент списка
@@ -33,7 +33,7 @@
     // формируем порядковый номер элемента списка второго уровня вложенности
     &::before {
       margin-right: $gap / 4;
-      content: counter(num) "." counter(num2) ".";
+      content: counter(num) '.' counter(num2) '.';
     }
   }
 
@@ -49,7 +49,7 @@
     // формируем порядковый номер 3-го уровня вложенности
     &::before {
       margin-right: $gap / 4;
-      content: counter(num) "." counter(num2) "." counter(num3) ".";
+      content: counter(num) '.' counter(num2) '.' counter(num3) '.';
     }
   }
 
@@ -57,15 +57,15 @@
   &__item--second-level,
   &__item--third-level {
     &:not(:last-child) {
-      margin-bottom: $gap / 2;
+      margin-bottom: calc($gap/2);
     }
   }
 
   // не нумерованный список в договре
   &__ul {
-    margin-top: $gap / 2;
+    margin-top: calc($gap/2);
     padding-left: $gap / 3;
-    list-style-type: "\2014";
+    list-style-type: '\2014';
 
     // интервалы между элементами не нумерованного списка
     & > li {

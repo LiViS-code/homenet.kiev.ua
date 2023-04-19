@@ -1,23 +1,32 @@
 // основная секция разделов сайта
 .section {
-  padding: $gap 0;
-
   &__header {
-    width: 100vw;
     top: 0;
+    left: 0;
+    right: 0;
     margin: 0;
+    padding-top: 15px;
     position: fixed;
-    z-index: 2;
-    border-bottom: 3px solid $accent-color;
-    box-shadow: $bottom-shadow;
+    z-index: 5;
+    background-color: $backgouund-secondary-color;
+    box-shadow: 0px 8px 24px #18274b14, 0px 6px 12px #18274b1f;
+    transition: top 0.5s;
+
+    &--hide {
+      top: -100px;
+    }
   }
 
   &__main {
-    padding-top: $header-height + $gap / 2;
-    background-color: $background-primary-color;
+    padding-top: $gap;
 
-    @media screen and (min-width: $size-mob) {
-      padding-top: $header-height + $gap;
+    @media screen and (min-width: ($size-mob)) {
+      padding-top: calc($gap * 2);
+    }
+
+    @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+      position: relative;
+      background-color: transparent;
     }
 
     @media screen and (min-width: $size-tab) {
@@ -26,16 +35,9 @@
   }
 
   &__footer {
-    border-top: 3px solid $accent-color;
-    box-shadow: $top-shadow;
+    color: $reverse-color;
   }
 
-  &__header,
-  &__footer {
-    background-color: $backgouund-secondary-color;
-  }
-
-  &__header,
   &__footer,
   &__features {
     padding-top: 0;
