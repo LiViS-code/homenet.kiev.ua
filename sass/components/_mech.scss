@@ -1,17 +1,18 @@
 .mech {
   position: absolute;
-  top: 35%;
-  right: 1.5%;
+  top: 33%;
+  right: 0;
   z-index: -1;
-  width: 27%;
+  width: 30%;
+
   @media screen and (min-width: ($size-min + 20)) {
-    top: 40%;
+    top: 38%;
   }
 
   &--mini {
-    width: 7%;
-    top: -6%;
-    right: 25%;
+    width: 10%;
+    top: -5%;
+    right: 0;
 
     &-footer {
       width: 10%;
@@ -24,34 +25,18 @@
     width: 15%;
 
     &-top1 {
-      top: -2%;
-      right: -8%;
+      top: 8%;
+      right: 5%;
     }
 
     &-top2 {
-      top: 10%;
-      right: 10%;
-    }
-
-    &-top3 {
       top: 75%;
-      right: 42%;
-      @media screen and (min-width: ($size-min + 20)) {
-        top: 77%;
-      }
-    }
-
-    &-top4 {
-      top: 105%;
-      right: 0;
-      // @media screen and (min-width: ($size-min + 20)) {
-      //   top: 51%;
-      // }
+      right: 14%;
     }
 
     &-footer {
-      top: -30%;
-      right: 30%;
+      top: -32%;
+      right: 24%;
     }
   }
 }

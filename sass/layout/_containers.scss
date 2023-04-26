@@ -1,13 +1,17 @@
 // основной контейнер для разделов сайта
 .container {
   padding: 0;
+
   &__main {
     padding: 0 15px;
   }
+
   &__main-reverse_color {
     color: $reverse-color;
     position: relative;
+    z-index: 1;
   }
+
   &__main-background {
     background-color: $background-primary-color;
   }
@@ -32,21 +36,25 @@
 
   &--wrapper-footer {
     position: relative;
+    z-index: 1;
     display: flex;
     @include font-sizes($fs-small-mob, $lh-small-mob);
     margin-bottom: $gap/2;
     justify-content: space-between;
   }
 
-  &--subscribers,
-  &--contacts,
-  &--address {
-    width: 100%;
+  &--subscribers {
+    width: 94px;
   }
 
-  &--subscribers,
+
   &--contacts {
-    margin-right: $gap/2;
+    width: 77px;
+  }
+
+
+  &--address {
+    width: 82px;
   }
 
   &__support {
@@ -81,7 +89,7 @@
       box-shadow: $paper-shadow;
     }
 
-    .checkbox__content-hide:checked ~ &--hidden {
+    .checkbox__content-hide:checked~&--hidden {
       display: block;
       color: $accent-color;
     }
@@ -110,4 +118,31 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+.background-wrap {
+
+  // position: relative;
+  // @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+  //   background-size: cover;
+  // }
+
+  &--main {
+    padding-top: $gap;
+
+    @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+      background-image: url('../../img/background_1x_top.png');
+      background-position: -15px;
+    }
+
+    @media screen and (min-width: ($size-mob)) {
+      padding-top: calc($gap * 2);
+    }
+
+  }
+
+  &--footer {
+    background-image: url('../../img/background_1x_footer.png');
+  }
+
 }
