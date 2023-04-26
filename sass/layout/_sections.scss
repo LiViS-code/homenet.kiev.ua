@@ -17,23 +17,6 @@
     }
   }
 
-  &__main {
-    padding-top: $gap;
-
-    @media screen and (min-width: ($size-mob)) {
-      padding-top: calc($gap * 2);
-    }
-
-    @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
-      position: relative;
-      background-color: transparent;
-    }
-
-    @media screen and (min-width: $size-tab) {
-      padding-top: $header-max-height + $gap;
-    }
-  }
-
   &__footer {
     color: $reverse-color;
   }
