@@ -38,10 +38,10 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta [name="theme-color" ] content="#ffffff" />
     <title>ХОУМНЕТ</title>
   </head>
-  <body style>
+  <body>
     <header class="section section__header">
       <div class="logo-box">
         <a class="logo__link" href="./index.html">
@@ -56,6 +56,7 @@
       <div class="container container__header">
         <!-- мобильное меню навигации -->
         <button
+          aria-label="button open menu"
           class="btn btn__menu-toggle js-open-menu"
           type="button"
           aria-expanded="false"
@@ -66,6 +67,7 @@
           </svg>
         </button>
         <button
+          aria-label="calls button toggle"
           class="btn btn__calls-toggle"
           type="button"
           aria-expanded="false"
@@ -76,6 +78,7 @@
           </svg>
         </button>
         <button
+          aria-label="personal account toggle"
           class="btn btn__personal_account-toggle"
           type="button"
           aria-expanded="false"
@@ -87,6 +90,7 @@
         </button>
         <nav class="mob-nav js-menu-container" id="mobile-menu">
           <button
+            aria-label="button close menu"
             class="btn btn__menu-toggle js-close-menu"
             type="button"
             aria-expanded="true"
@@ -198,7 +202,7 @@
     </header>
     <main class="section section__main">
       <div class="container">
-        <div class="background-wrap background-wrap--main">
+        <div class="background_wrap--main">
           <div class="container__main container__main-reverse_color">
             <h1 class="title title--slogan">Інтернет до кожної оселі</h1>
             <p class="text text--definition">
@@ -286,6 +290,7 @@
       <div class="backdrop is-hidden" data-modal-signin>
         <div class="modal__login">
           <button
+            aria-label="menu toggle"
             class="btn btn__menu-toggle btn__menu-toggle--modal"
             type="button"
             data-modal-close-signin
@@ -327,6 +332,7 @@
       </div>
       <a
         class="link link--up"
+        aria-label="up to top site"
         id="linkup"
         href="#"
         onclick="smoothJumpUp(); return false;"
@@ -337,7 +343,7 @@
       </a>
     </main>
     <footer class="section section__footer">
-      <div class="background-wrap background-wrap--footer">
+      <div class="background_wrap--footer">
         <div class="thumb-img clipboard clipboard__footer"></div>
         <div class="container container__footer">
           <div class="container--wrapper-footer">

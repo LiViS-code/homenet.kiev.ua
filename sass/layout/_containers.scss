@@ -20,7 +20,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: -2px;
-    margin-bottom: -3px;
+    margin-bottom: -5px;
   }
 
   &__header,
@@ -36,7 +36,7 @@
 
   &--wrapper-footer {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     display: flex;
     @include font-sizes($fs-small-mob, $lh-small-mob);
     margin-bottom: $gap/2;
@@ -118,34 +118,4 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-}
-
-.background-wrap {
-
-  // position: relative;
-  // @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
-  //   background-size: cover;
-  // }
-
-  &--main {
-    padding-top: $gap;
-
-    @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
-
-      background-image: url('../img/background_1x_top.png');
-      background-size: 100% 100%;
-
-    }
-
-    @media screen and (min-width: ($size-mob)) {
-      padding-top: calc($gap * 2);
-    }
-
-  }
-
-  &--footer {
-    background-image: url('../img/background_1x_footer.png');
-    background-size: 100% 100%;
-  }
-
 }
