@@ -131,7 +131,7 @@
     padding-top: $gap;
 
     @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
-      background-image: url('../../img/background_1x_top.png');
+      background-image: url('./img/background_1x_top.png');
       background-position: -15px;
     }
 
@@ -142,7 +142,7 @@
   }
 
   &--footer {
-    background-image: url('../../img/background_1x_footer.png');
+    background-image: url('./img/background_1x_footer.png');
   }
 
 }
