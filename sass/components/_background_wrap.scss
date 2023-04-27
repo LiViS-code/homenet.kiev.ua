@@ -1,0 +1,24 @@
+.background_wrap {
+
+  &--main {
+    padding-top: $gap;
+
+    @media screen and (min-width: $size-min) and (max-width: ($size-tab - 1)) {
+
+      background-image: url('../img/background_1x_top.png');
+      background-size: 100% 100%;
+
+    }
+
+    @media screen and (min-width: ($size-mob)) {
+      padding-top: calc($gap * 2);
+    }
+
+  }
+
+  &--footer {
+    background-image: url('../img/background_1x_footer.png');
+    background-size: 100% 100%;
+  }
+
+}
