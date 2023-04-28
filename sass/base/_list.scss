@@ -1,5 +1,6 @@
 // списки
 .list {
+
   // контакты
   &__contact,
   &__contact-footer {
@@ -54,8 +55,7 @@
   }
 
   // варианты оплаты
-  &__method-menu,
-  &__marker {
+  &__method-menu {
     margin-bottom: $gap;
   }
 
@@ -67,6 +67,7 @@
 
   &__marker-item {
     padding-left: $min-padding;
+
     &::marker {
       font-size: 1.2em;
       color: $accent-color;
@@ -92,6 +93,6 @@
 }
 
 // список телефонов поддержки
-.list-supports > li {
+.list-supports>li {
   margin-bottom: $gap;
 }

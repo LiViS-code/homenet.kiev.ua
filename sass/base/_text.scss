@@ -1,5 +1,5 @@
 .text {
-  margin-bottom: calc($gap/2);
+  margin-bottom: $gap / 2;
 
   &--definition {
     font-weight: map-get($fw, 'black');
@@ -9,6 +9,10 @@
       @include font-sizes($fs-definition-mob, $lh-definition-mob);
       max-width: 480px;
     }
+  }
+
+  &--definition span {
+    letter-spacing: 8px;
   }
 
   &--offer {
@@ -40,14 +44,22 @@
     margin-bottom: 0;
   }
 
+  &--center {
+    text-align: center;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--muted {
+    color: $text-color-muted;
+  }
+
   &--welcome,
   &__address {
     margin-bottom: $gap/4;
     font-weight: map-get($fw, 'medium');
-  }
-
-  &--no-margin {
-    margin-bottom: 0;
   }
 
   &__address {

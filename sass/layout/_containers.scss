@@ -4,6 +4,10 @@
 
   &__main {
     padding: 0 15px;
+
+    &--mb {
+      margin-bottom: $gap;
+    }
   }
 
   &__main-reverse_color {
@@ -13,15 +17,19 @@
   }
 
   &__main-background {
+    position: relative;
+    padding: $gap;
+    margin-top: -2px;
+    margin-bottom: $gap;
+
+    @media screen and (orientation: landscape) {
+      padding-left: $gap * 2;
+      padding-right: $gap * 2;
+    }
+
     background-color: $background-primary-color;
   }
 
-  &__main.container__main-background {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: -2px;
-    margin-bottom: -5px;
-  }
 
   &__header,
   &__footer {
@@ -43,15 +51,18 @@
     justify-content: space-between;
   }
 
+  &--wrapper-form-data {
+    @include flex-elements-center;
+    flex-wrap: wrap;
+  }
+
   &--subscribers {
     width: 94px;
   }
 
-
   &--contacts {
     width: 77px;
   }
-
 
   &--address {
     width: 82px;

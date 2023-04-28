@@ -17,8 +17,7 @@
 }
 
 .title {
-  text-align: left;
-  @include font-sizes-weight($fs-title-mob, $lh-title-mob, map-get($fw, 'regular'));
+  @include font-sizes-weight($fs-title-mob, $lh-title-mob, map-get($fw, 'bold'));
 
   @media screen and (min-width: $size-tab) {
     @include font-sizes($fs-title-tab, $lh-title-tab);
@@ -29,7 +28,7 @@
   }
 
   &--slogan {
-    @include font-sizes-weight($fs-title-slogan, $lh-title-slogan, map-get($fw, 'regular'));
+    @include font-sizes-weight($fs-title-slogan, $lh-title-slogan, map-get($fw, 'bold'));
   }
 }
 

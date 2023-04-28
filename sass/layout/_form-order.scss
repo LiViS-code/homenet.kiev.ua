@@ -1,0 +1,57 @@
+.form-order {
+  margin: 0 auto;
+  min-width: 270px;
+  max-width: 400px;
+  padding: $min-padding $min-padding $gap;
+  @include font-sizes($fs-mob, $lh-mob);
+  border-radius: $min-padding;
+  background-color: $background-form;
+  box-shadow: 0px 5px 15px #18274b14, 0px 4px 8px #18274b1f;
+
+  &__wrapper-field {
+    position: relative;
+    margin-bottom: $gap / 2;
+    padding: $min-padding 0;
+  }
+
+  &__lbl {
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+    left: 15px;
+    padding: 0 $min-padding / 3;
+    color: $accent-color;
+    background-color: $background-form;
+  }
+
+  &__input {
+    padding: $min-padding / 2 $min-padding $min-padding / 2 $min-padding * 2.5;
+  }
+
+  &__textarea {
+    height: 120px;
+    padding: $min-padding / 2 $min-padding;
+  }
+
+  &__input,
+  &__textarea {
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    border: none;
+    border-radius: $min-padding / 3;
+    outline: 1px solid $accent-color;
+    outline-offset: $min-padding / 3;
+
+    &::placeholder {
+      color: $text-color-muted;
+    }
+
+    &--icon {
+      position: absolute;
+      top: 23px;
+      left: -5px;
+      fill: $accent-color;
+    }
+  }
+}
