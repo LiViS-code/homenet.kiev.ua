@@ -53,6 +53,7 @@
           />
         </a>
       </div>
+
       <div class="container container__header">
         <!-- мобильное меню навигации -->
         <button
@@ -206,17 +207,16 @@
           <div class="container__main container__main-reverse_color">
             <h1 class="title title--slogan">Інтернет до кожної оселі</h1>
             <p class="text text--definition">
-              ХОУМНЕТ оптоволоконна мультисервісна мережа
+              <span>ХОУМНЕТ</span> оптоволоконна мультисервісна мережа
             </p>
             <p class="text text--offer">
               Пропонуємо Вам якісний і швидкий доступ до Інтернет та інших
               телекомунікаційних послуг за місцем Вашого проживання або роботи
             </p>
             <div class="btn-wrapper">
-              <button class="btn btn__order" type="button">
-                Замовити підключення
-              </button>
+              <a class="btn btn__order"> Замовити підключення </a>
             </div>
+
             <div class="thumb-img">
               <img
                 class="mech mech--mini"
@@ -225,6 +225,7 @@
                 width="100"
               />
             </div>
+
             <div class="thumb-img">
               <img
                 class="mech"
@@ -233,6 +234,7 @@
                 width="100"
               />
             </div>
+
             <div class="thumb-img">
               <img
                 class="mech mech--small mech--small-top1"
@@ -241,6 +243,7 @@
                 width="100"
               />
             </div>
+
             <div class="thumb-img">
               <img
                 class="mech mech--small mech--small-top2"
@@ -250,11 +253,12 @@
               />
             </div>
           </div>
+
           <div class="thumb-img clipboard"></div>
         </div>
 
         <div class="container__main container__main-background">
-          <h2 class="title">Чому нас обирають</h2>
+          <h2 class="title title--center">Чому нас обирають</h2>
           <ul class="list list__marker">
             <li class="list__marker-item">
               <p>
@@ -285,6 +289,75 @@
             </li>
           </ul>
         </div>
+
+        <div class="container__main container__main--mb">
+          <p class="title title--center title--slogan"
+            >Бажаєте підключитися до нашої мережі чи може лишилися запитання?
+          </p>
+          <form class="form-order">
+            <div class="container__main--mb">
+              <p class="text text--center text--bold"
+                >Форма для заповннення заявки</p
+              >
+              <p class="text text--center text--last-paragraph"
+                >Заповніть поля нижче і ми зв’яжемся з Вами найближчим часом</p
+              >
+            </div>
+
+            <div class="container--wrapper-form-data">
+              <div class="form-order__wrapper-field">
+                <label for="firstname" class="form-order__lbl"
+                  >Ім'я*
+                  <svg class="form-order__input--icon" width="16" height="18">
+                    <use href="./img/icons.svg#icon-person"></use>
+                  </svg>
+                </label>
+
+                <input
+                  class="form-order__input"
+                  type="text"
+                  id="person_name"
+                  placeholder="Ваше ім'я"
+                  required
+                />
+              </div>
+
+              <div class="form-order__wrapper-field"
+                ><label for="tel" class="form-order__lbl"
+                  >Телефон*
+                  <svg class="form-order__input--icon" width="16" height="18">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                </label>
+
+                <input
+                  class="form-order__input"
+                  type="text"
+                  id="tel"
+                  placeholder="Контактний телефон"
+                  required
+                />
+              </div>
+
+              <div class="form-order__wrapper-field"
+                ><label for="msg" class="form-order__lbl">Коментар</label>
+
+                <textarea
+                  class="form-order__textarea"
+                  id="msg"
+                  placeholder="Введіть додаткову інформацію, якщо потрібно"
+                ></textarea>
+              </div>
+
+              <p class="text text--muted"
+                ><span class="accent">*</span> Поля обов'язкові для
+                заповнення</p
+              >
+
+              <button type="submit" class="btn">Відправити заявку</button>
+            </div>
+          </form>
+        </div>
       </div>
       <!-- модальное окно для входа в личный кабинет -->
       <div class="backdrop is-hidden" data-modal-signin>
@@ -299,6 +372,7 @@
               <use href="./img/icons.svg#icon-menu-close"></use>
             </svg>
           </button>
+
           <form class="form-login">
             <label class="form-login__label">
               Логін
@@ -345,18 +419,24 @@
     <footer class="section section__footer">
       <div class="background_wrap--footer">
         <div class="thumb-img clipboard clipboard__footer"></div>
+
         <div class="container container__footer">
           <div class="container--wrapper-footer">
             <div class="container--subscribers">
               <span class="heading-footer">Абонентам</span>
+
               <ul class="list">
                 <li class="list__item-contact">Особистий кабінет</li>
+
                 <li class="list__item-contact">Способи оплати</li>
+
                 <li class="list__item-contact">Телеграм бот</li>
               </ul>
             </div>
+
             <div class="container--contacts">
               <span class="heading-footer">Контакти</span>
+
               <ul class="list list__contact-footer">
                 <li class="list__item-contact">
                   <a href="tel:+0930001659" class="link link__nav--footer">
@@ -383,8 +463,10 @@
                 </li>
               </ul>
             </div>
+
             <div class="container--address">
               <span class="heading-footer">Адреса</span>
+
               <address>
                 <p class="text text__address">
                   м. Київ, бульвар Академіка Вернадського, буд. 34/1
@@ -406,6 +488,7 @@
               width="100"
             />
           </div>
+
           <p class="text text--copyright">
             &copy; 2010
             <script>
