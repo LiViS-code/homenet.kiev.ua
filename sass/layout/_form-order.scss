@@ -29,8 +29,12 @@
   }
 
   &__textarea {
-    height: 120px;
+    height: 90px;
     padding: $min-padding / 2 $min-padding;
+
+    @media screen and (min-height: $size-mob-height) {
+      height: 120px;
+    }
   }
 
   &__input,
