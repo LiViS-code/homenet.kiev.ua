@@ -28,7 +28,12 @@
   }
 
   &--slogan {
-    @include font-sizes-weight($fs-title-slogan, $lh-title-slogan, map-get($fw, 'bold'));
+    @include font-sizes-weight($fs-title-slogan-min, $lh-title-slogan-min, map-get($fw, 'bold'));
+
+    @media screen and (min-width: ($size-min + 40)) {
+      @include font-sizes($fs-title-slogan-mob,
+        $lh-title-slogan-mob);
+    }
   }
 }
 
