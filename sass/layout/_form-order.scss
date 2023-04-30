@@ -20,12 +20,22 @@
     z-index: 1;
     left: 15px;
     padding: 0 $min-padding / 3;
+    @include font-sizes($fs-baze, $lh-baze);
     color: $accent-color;
     background-color: $background-form;
   }
 
   &__input {
     padding: $min-padding / 2 $min-padding $min-padding / 2 $min-padding * 2.5;
+
+    &.error {
+      outline-color: $error-color;
+    }
+  }
+
+  &__lbl.error,
+  &__input.error {
+    color: $error-color;
   }
 
   &__textarea {
@@ -56,6 +66,25 @@
       top: 23px;
       left: -5px;
       fill: $accent-color;
+
+      &.error {
+        fill: $error-color;
+      }
+    }
+
+    &:active,
+    &:focus {
+      color: $accent-color;
     }
   }
+}
+
+// спрятать списки автозаполнения для телефонных номеров
+input[type="tel"]::-webkit-contacts-auto-fill-button,
+input[type="tel"]::-webkit-credentials-auto-fill-button {
+  display: none !important;
+  pointer-events: none;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
 }
