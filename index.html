@@ -294,7 +294,7 @@
           <p class="title title--center title--slogan"
             >Бажаєте підключитися до нашої мережі чи може лишилися запитання?
           </p>
-          <form class="form-order">
+          <form class="form-order" id="frm_order">
             <div class="container__main--mb">
               <p class="text text--center text--bold"
                 >Форма для заповннення заявки</p
@@ -307,7 +307,7 @@
             <div class="container--wrapper-form-data">
               <div class="form-order__wrapper-field">
                 <label for="firstname" class="form-order__lbl"
-                  >Ім'я*
+                  >Ім'я *
                   <svg class="form-order__input--icon" width="16" height="18">
                     <use href="./img/icons.svg#icon-person"></use>
                   </svg>
@@ -318,23 +318,32 @@
                   type="text"
                   id="person_name"
                   placeholder="Ваше ім'я"
+                  minlength="3"
+                  maxlength="50"
                   required
                 />
               </div>
 
               <div class="form-order__wrapper-field"
-                ><label for="tel" class="form-order__lbl"
-                  >Телефон*
-                  <svg class="form-order__input--icon" width="16" height="18">
-                    <use href="./img/icons.svg#icon-phone"></use>
+                ><label for="tel" class="form-order__lbl" id="lbl-tel"
+                  >Телефон *
+                  <svg
+                    class="form-order__input--icon"
+                    id="icn-tel"
+                    width="16"
+                    height="18"
+                  >
+                    <use href="./img/icons.svg#icon-smartphone"></use>
                   </svg>
                 </label>
 
                 <input
                   class="form-order__input"
-                  type="text"
+                  type="tel"
                   id="tel"
                   placeholder="Контактний телефон"
+                  minlength="20"
+                  autocomplete="off"
                   required
                 />
               </div>
@@ -354,7 +363,9 @@
                 заповнення</p
               >
 
-              <button type="submit" class="btn">Відправити заявку</button>
+              <button type="submit" class="btn" id="submit-order"
+                >Відправити заявку</button
+              >
             </div>
           </form>
         </div>
@@ -513,5 +524,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/up-button.js"></script>
+    <script src="./js/name-input.js"></script>
+    <script src="./js/phone-input.js"></script>
+    <script src="./js/submit-order.js"></script>
   </body>
 </html>
